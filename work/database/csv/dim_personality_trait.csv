@@ -1,0 +1,6 @@
+trait_id,trait_code,trait_name,description
+1,neuroticism,Neuroticism,"Tendency to experience negative emotions such as anxiety, anger and self-doubt"
+2,extraversion,Extraversion,"Outgoing, energetic and assertive (high) vs. quiet and reserved (low)"
+3,openness_to_experience,Openness to experience,"Creativity, curiosity and willingness to embrace new ideas"
+4,agreeableness,Agreeableness,"Compassionate, cooperative and trusting rather than antagonistic"
+5,conscientiousness,Conscientiousness,"Organised, responsible, hardworking and goal-directed"

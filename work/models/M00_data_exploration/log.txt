@@ -1,0 +1,23 @@
+M00 data_exploration - run 2026-10-07 17:31 - seed 42
+table saved: results/raw_profile.csv  (+ vfl copy)
+table saved: results/data_quality_log.csv  (+ vfl copy)
+figure saved: figures/01_issues_and_missing.png
+table saved: results/analytics_jobs_funnel.csv  (+ vfl copy)
+figure saved: figures/02_analytics_jobs_funnel.png
+table saved: results/role_family_counts.csv  (+ vfl copy)
+figure saved: figures/03_role_families.png
+table saved: results/salary_band_distribution.csv  (+ vfl copy)
+table saved: results/top_cities.csv  (+ vfl copy)
+figure saved: figures/04_salary_experience_city.png
+table saved: results/skill_recovery_from_descriptions.csv  (+ vfl copy)
+               skill_area  from_key_skills_only  after_description_recovery
+                 Big data                 0.153                       0.163
+       Maths & statistics                 0.138                       0.158
+                   Coding                 0.416                       0.428
+    AI & machine learning                 0.190                       0.195
+Dashboards & storytelling                 0.155                       0.178
+figure saved: figures/05_skill_recovery.png
+figure saved: figures/06_ds_jobs_distributions.png
+figure saved: figures/07_people_data_distributions.png
+table saved: results/jds_ceiling_effect.csv  (+ vfl copy)
+finished in 5.1s

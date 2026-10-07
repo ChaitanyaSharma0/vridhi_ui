@@ -1,0 +1,59 @@
+stage,file,issue,rows_affected,treatment
+S2,Analytics Jobs,Exact duplicate postings (every field equal except s_no),1001,Dropped (the only rows deleted in the whole pipeline)
+S2,Analytics Jobs,"Near-duplicates after normalisation (same clean title, skills, city, experience and salary band; repost with another description)",78,Flagged is_near_duplicate; excluded from demand counts
+S2,Analytics Jobs,"Possible reposts (same clean title, skills, city and experience, but a different salary band)",2777,"Flagged possible_repost only - kept in the sample (salary differs, may be a genuinely separate vacancy); used as a sensitivity check"
+S3,Analytics Jobs,job_desig: non-ASCII characters / leading-trailing / repeated spaces,427,Normalised
+S3,Analytics Jobs,job_description: non-ASCII characters / leading-trailing / repeated spaces,1845,Normalised
+S3,Analytics Jobs,key_skills: non-ASCII characters / leading-trailing / repeated spaces,20,Normalised
+S3,Analytics Jobs,job_description uses ';-' as bullet separators,1573,Converted to sentences
+S3,Analytics Jobs,"Designations padded with recruiting noise ('Urgent Hiring', 'Walk-in', 'Opening for', '@Mumbai', bracketed notes)",3548,Stripped into job_title_clean (original kept in job_desig)
+S4,Analytics Jobs,Experience stored as text ('6-10 yrs'),14840,Parsed to exp_min / exp_max / exp_mid / exp_range_width (years)
+S4,Analytics Jobs,Salary only available as 6 text bands ('10to15'),14840,"Ordinal salary_band_ord 1-6, band low/high/mid (LPA), high_pay_15plus (target)"
+S5,Analytics Jobs,Unparseable or inverted experience ranges,0,None found
+S5,Analytics Jobs,Lowest band (0-3 LPA) with 8+ years minimum experience - likely undisclosed salary coded as lowest band,20,Flagged salary_exp_inconsistent; excluded from salary models
+S5,Analytics Jobs,Very wide experience ranges (more than 8 years between min and max),237,Kept; exp_mid used with care
+S7,Analytics Jobs,"job_type: one value spelt 5 ways (Analytics, analytics, ANALYTICS, analytic, Analytic)",3273,Merged to 'analytics'
+S7,Analytics Jobs,"job_type missing for 76% of the original rows (12,011 of 15,841); 78% after removing exact duplicates - not usable as a classifier",11567,Original column kept unchanged + job_type_tagged (0/1); analytics relevance re-derived from title + skills
+S7,Analytics Jobs,"location: 1,355 distinct strings, 16% list several cities, variants (Bangalore/Bengaluru, Gurgaon/Gurugram, Mumbai Suburbs, Sohna Road, Hyderabad/Secunderabad), states instead of cities, 'Anywhere Inindia'",1355,"Tokenised; 100+ variants mapped to canonical cities / metro areas; states and 'anywhere' -> Anywhere in India; derived primary_city, cities, n_cities, is_multi_city, city_tier"
+S7,Analytics Jobs,"Overseas locations (Dubai, Canada, US, Singapore, Nigeria, Sweden, New Jersey ...) in an India dataset",184,Flagged is_international; excluded from the India market sample
+S7,Analytics Jobs,"key_skills free text: 8,462 distinct tokens after lower-casing",14840,"Lower-cased, trimmed, trailing '...' removed, synonym map (ML->machine learning, PowerBI->power bi, Base SAS->sas ...), de-duplicated per posting"
+S7,Analytics Jobs,"Spelling/format variants of the same skill (power bi/powerbi, big data/bigdata, javascript/java script, c / c++ ...)",122,Auto-merged by letters-only key to the most frequent spelling
+S7,Analytics Jobs,"Junk skill tokens (empty, numbers like '1120', stray quotes, whole sentences > 45 chars, single letters)",965,Removed
+S7,Analytics Jobs,"Non-skill tokens mixed into skills: education (MBA, B.Com, B.Tech), job meta (fresher, BPO, non voice, present job), soft skills",2153,"Separated into education_mentioned, job_meta_tags, soft_skills; 'skills' keeps technical/domain skills only"
+S7,Analytics Jobs,key_skills truncated with '...' (87%) - lists are incomplete,12907,Flagged; supplemented by skills found in the description (skills_from_desc)
+S7,Analytics Jobs,"10,097 distinct free-text designations",10097,"Ordered keyword rules on job_title_clean (skills used when the title is uninformative) -> 18 role families + 'Other'; non-analytics guards (RCM, BPO, HR, SEO, IT) run before the generic 'analyst' rule; seniority (5 levels)"
+S8,Analytics Jobs,"Non-analytics roles inside 'Analytics Jobs' (software, BPO, HR, sales, finance, medical coding ...)",9609,Flagged is_analytics_role=0; core analytics sample uses the 9 analytics families
+S8,Analytics Jobs,Low-quality 'data entry / work from home / part-time / freelance' postings,166,Flagged is_spam; excluded
+S8,Analytics Jobs,"job_description missing (3,508 in the original file; count shown is after removing exact duplicates)",3371,Not imputed (text); flagged desc_missing
+S8,Analytics Jobs,job_description truncated with '...',11469,Flagged desc_truncated; text treated as partial
+S9,Analytics Jobs,Skills recovered from job_description using a 488-skill vocabulary built from key_skills,7526,"skills_from_desc + union skills_all (descriptions also truncated, so a lower bound)"
+S9,Analytics Jobs,No common key between the 4 files,14840,"Built a 5-dimension skill taxonomy (big data, maths-stats, coding, AI-ML, dashboards-storytelling) matching the JDS scores; each posting flagged dim_* - this is the bridge for linking market demand to the JDS success data"
+S9,Analytics Jobs,"Tool flags must catch compound skills ('Oracle SQL', 'SQL Server', 'SAS SQL', 'MS Excel')",14840,"has_* and dim_* use whole-word matching inside each skill (taxonomy.has), with exclusions such as 'medical coding'"
+S10,Analytics Jobs,Manual audit of role_family on a final independent random sample of 150 postings,150,"Exact family correct ~91%; analytics vs non-analytics split correct ~92%. Residual errors are ambiguous titles (e.g. 'SOC Analyst', 'Investment Analyst - Real Estate'); reported as a limitation"
+S1,DataScience Jobs,reference_no is not unique: 134 numbers shared by 276 different rows,276,Kept original as reference_no; new surrogate key row_id (1..n) used as the record key
+S3,DataScience Jobs,company_name leading/trailing/double spaces,0,Trimmed
+S3,DataScience Jobs,"Same employer group listed under two names (BNP Paribas / bnp paribas india solutions; HSBC / Hsbc Technology) - the units post the same titles with DIFFERENT salaries and openings, so they are separate listings",13,Kept as separate companies (not merged); linked through new company_group column
+S3,DataScience Jobs,"Placeholder / non-company employer names (Confidential, Xyz Company, Data Entry, Freelancer.com, Freelance Consultants)",12,Flagged is_placeholder_employer; excluded from company-level analysis
+S4,DataScience Jobs,Salaries stored as text with an 'L' suffix ('7.8L'),1602,Parsed to numeric lakhs per annum (LPA)
+S5,DataScience Jobs,Rule min <= avg <= max salary,0,0 violations - internally consistent
+S5,DataScience Jobs,"Minimum salary below 1 LPA (e.g. 0.2L = Rs 20,000 a year) - likely monthly/stipend figures entered as annual",3,Flagged min_salary_implausible; min salary not used in modelling for these rows (avg/max kept)
+S5,DataScience Jobs,Very wide salary range (max more than 6x min),34,Flagged wide_salary_range; avg salary used as the main measure
+S5,DataScience Jobs,'Senior' titles asking for 0 years minimum experience,14,Flagged senior_zero_exp (title/experience inconsistency)
+S6,DataScience Jobs,"num_of_jobs extremely right-skewed (median 22, max 4,200 = TCS Business Analyst); 3xIQR rule",98,Genuine bulk hiring - kept; flagged and log-transformed (log_num_jobs) for models
+S6,DataScience Jobs,"Average salary far from its job title's typical range (robust z > 3 within title, e.g. Flipkart Senior DS 82 LPA)",11,Kept (top employers pay more); flagged; salary_lpa_w = winsorised copy for models
+S6,DataScience Jobs,min_experience above 12 years (max 21),12,All are Data Architect rows - plausible; kept
+S1,JDS Skill Traits,Column name with a hyphen ('maths-stats_skills') - invalid in SAS/SQL,1,Renamed maths_stats_skills
+S1,JDS Skill Traits,id not unique: 2 ids shared by different people (different scores),4,Kept as different people; surrogate row_id used as key
+S5,JDS Skill Traits,Skill scores outside the documented 1-5 scale,0,None found
+S5,JDS Skill Traits,Target salary_hike_high not 0/1,0,None; class balance 53% high / 47% low (balanced)
+S5,JDS Skill Traits,Missing values,0,None
+S6,JDS Skill Traits,"Ceiling effect - share of perfect 5.0 scores: big_data 18%, maths_stats 41%, coding 45%, ai_and_ml 49%, dashboard_and_storytelling 58%",293,"Kept (real scores); handled with rank tests, tree models and n_skills_at_max"
+S6,JDS Skill Traits,Low outliers (|z| > 2.5),3,"Kept - genuine weak scores, scale is bounded"
+S9,JDS Skill Traits,Derived profile variables,139,"skill_mean, skill_min, skill_range, n_skills_at_max, weakest/strongest skill (no composite indices or segments: the 5 scores are used directly)"
+S1,SDS Personality Traits,"Column names with stray spaces (' extraversion', 'success_ classification_ high_low')",2,Trimmed; target renamed success_high
+S1,SDS Personality Traits,id not unique: 9 ids shared by different people,18,Kept; surrogate row_id used as key
+S5,SDS Personality Traits,Trait scores outside a plausible 0-100 normalised range,0,None (observed 17-68)
+S5,SDS Personality Traits,Missing values,0,None
+S5,SDS Personality Traits,Target success_high balance,161,53% high / 47% low (balanced)
+S6,SDS Personality Traits,Trait outliers (|z| > 2.5),4,Kept - extreme but valid personality scores
+S9,SDS Personality Traits,Derived variables,161,"z-scores per trait, emotional_stability_z (= -neuroticism_z), trait_mean (positive traits), dominant_trait (highest z among emotional stability and the 4 positive traits)"

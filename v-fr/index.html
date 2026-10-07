@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vriddhi | Hiring for the Right Signals</title>
+  <meta name="description"
+    content="Paste the job description you post. See whether it asks for what actually gets junior data scientists a high raise, and how to fix it.">
+
+  <!-- Typography: Instrument Serif (Season Mix alternative) + Plus Jakarta Sans (Matter alternative) + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Compiled Tailwind CSS v4 -->
+  <link rel="stylesheet" href="dist/css/styles.css?v=3">
+  <link rel="stylesheet" href="src/css/jd.css?v=1">
+
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+
+<body
+  class="bg-[#fcfcfc] text-[#1f1f1f] font-sans antialiased selection:bg-[#feede6] selection:text-[#1f1f1f] flex flex-col min-h-screen">
+
+  <!-- ============================================================
+       VRIDDHI PLATFORM VIEW (LANDING & SHOWCASE)
+       ============================================================ -->
+  <div id="platform-view" class="flex-1 flex flex-col">
+
+    <!-- ============================================================
+       TOP ANNOUNCEMENT TICKER
+       ============================================================ -->
+    <div
+      class="relative z-50 flex shrink-0 justify-center items-center border-b border-[#f0f0f0] h-8 overflow-hidden bg-gradient-to-b from-white to-[#fffbfa]">
+      <div class="flex items-center gap-3.5 text-xs">
+        <svg class="shrink-0 opacity-40 scale-75" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path
+            d="M5.4 9.2C4.4 10.3 2.7 10.3 1.6 9.2L0.2 7.8c-.3-.3-.3-.7 0-1L1.6 5.4C2.7 4.4 4.4 4.4 5.4 5.4L7.4 7.4 5.4 9.2z"
+            fill="#e96c2f" />
+          <path d="M5.4 13.1c-1-1-1-2.7 0-3.8l2-1.9 1.9 1.9c1.1 1.1 1.1 2.8 0 3.8L7.4 15 5.4 13.1z" fill="#e96c2f" />
+          <path d="M5.4 5.4c-1-1-1-2.7 0-3.8L6.8.2c.3-.3.7-.3 1 0l1.5 1.4c1 1 1 2.7 0 3.8L7.4 7.4 5.4 5.4z"
+            fill="#e96c2f" />
+          <path d="M13.1 9.2c-1 1.1-2.8 1.1-3.8 0L7.4 7.4l1.9-2c1.1-1 2.8-1 3.8 0L15 7.4l-1.9 1.8z" fill="#e96c2f" />
+        </svg>
+        <span
+          class="px-2 py-0.5 border rounded-full font-semibold text-[11px] leading-none bg-white border-[#f0f0f0] text-[#a5460f]">
+          Verified
+        </span>
+        <span class="text-[#1f1f1f] text-[13px] tracking-wide font-medium" id="ticker-text">Every number on this site is computed from the cleaned data</span>
+        <a href="#" class="btn-open-counselor underline underline-offset-2 text-[#a5460f] hover:text-[#682906] font-medium text-[13px]">Audit a job description</a>
+        <svg class="shrink-0 opacity-40 scale-75" width="15" height="15" viewBox="0 0 15 15" fill="none">
+          <path
+            d="M5.4 9.2C4.4 10.3 2.7 10.3 1.6 9.2L0.2 7.8c-.3-.3-.3-.7 0-1L1.6 5.4C2.7 4.4 4.4 4.4 5.4 5.4L7.4 7.4 5.4 9.2z"
+            fill="#e96c2f" />
+          <path d="M5.4 13.1c-1-1-1-2.7 0-3.8l2-1.9 1.9 1.9c1.1 1.1 1.1 2.8 0 3.8L7.4 15 5.4 13.1z" fill="#e96c2f" />
+          <path d="M5.4 5.4c-1-1-1-2.7 0-3.8L6.8.2c.3-.3.7-.3 1 0l1.5 1.4c1 1 1 2.7 0 3.8L7.4 7.4 5.4 5.4z"
+            fill="#e96c2f" />
+          <path d="M13.1 9.2c-1 1.1-2.8 1.1-3.8 0L7.4 7.4l1.9-2c1.1-1 2.8-1 3.8 0L15 7.4l-1.9 1.8z" fill="#e96c2f" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- ============================================================
+       STICKY HEADER / NAVIGATION
+       ============================================================ -->
+    <header class="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md border-b border-[#f0f0f0] transition-all">
+      <div class="max-w-[1340px] mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <img src="logo.svg" alt="Vriddhi"
+            class="w-9 h-9 sm:w-10 sm:h-10 object-contain transition-transform group-hover:scale-105" />
+          <span class="font-bold text-xl sm:text-2xl tracking-tight text-[#1f1f1f]">vriddhi</span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#1f1f1f]">
+          <a href="#pillars" class="hover:text-[#3d3d3d] transition-colors">The three signals</a>
+          <a href="#showcase" class="hover:text-[#3d3d3d] transition-colors">Live lab</a>
+          <a href="#features" class="hover:text-[#3d3d3d] transition-colors">Findings</a>
+          <a href="#" class="btn-open-counselor hover:text-[#3d3d3d] transition-colors">JD audit</a>
+        </nav>
+
+        <!-- Right CTAs -->
+        <div class="flex items-center gap-3">
+          <button class="btn-open-counselor btn-pill-dark text-xs py-2 px-4.5">
+            Audit a JD
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ============================================================
+       HERO SECTION (Matching Reference Screenshot 3)
+       ============================================================ -->
+    <section class="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden flex flex-col items-center">
+
+      <!-- Top Sunset Arc Gradient SVG from demo -->
+      <img src="public/assets/hero-gradient.svg" alt=""
+        class="absolute -top-[130%] md:-top-[105%] left-1/2 -translate-x-1/2 pointer-events-none max-w-none scale-75 md:scale-x-90 md:scale-y-80 z-0 opacity-90"
+        aria-hidden="true">
+
+      <!-- Soft Central Radial Glow -->
+      <div
+        class="top-1/2 left-1/2 -z-10 absolute opacity-30 md:opacity-40 blur-[90px] w-72 md:w-[600px] h-72 md:h-[400px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        style="background: radial-gradient(ellipse, #A5BBFC 0%, #D5E2FF 40%, transparent 70%);" aria-hidden="true">
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
+
+        <!-- Top Floral Motif SVG from demo -->
+        <img src="public/assets/motif.svg" alt="" class="w-auto h-7 md:h-8 mb-5 object-contain">
+
+        <!-- Radial divider + Subtitle -->
+        <div class="flex flex-col items-center gap-2 mb-4 w-fit">
+          <div class="w-full h-px" style="background: radial-gradient(circle, #6a88e2 0%, transparent 100%);"></div>
+          <p class="px-8 text-[#212191] text-xs md:text-sm text-center font-medium tracking-wide">
+            Talent intelligence for data science hiring
+          </p>
+          <div class="w-full h-px" style="background: radial-gradient(circle, #6a88e2 0%, transparent 100%);"></div>
+        </div>
+
+        <!-- Massive Season Mix / Instrument Serif Headline -->
+        <h1 class="font-season text-[48px] sm:text-[64px] md:text-[76px] text-[#1f1f1f] leading-[1.03] tracking-tight">
+          Hire for the skills that actually grow talent
+        </h1>
+
+        <!-- Clean Minimal Subtitle -->
+        <p class="mt-4 md:mt-5 text-[#3d3d3d] text-base md:text-[20px] max-w-2xl leading-[1.75]">
+          Organisations hire for coding and pay for experience, but juniors are rewarded for maths, storytelling and breadth.
+          Paste your job description and see if it hires for what actually grows talent.
+        </p>
+
+        <!-- Pill Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
+          <button class="btn-open-counselor btn-pill-dark">Audit your job description</button>
+          <a href="#pillars" class="btn-pill-light">See the three signals</a>
+        </div>
+
+      </div>
+
+      <!-- Live evidence strip (replaces partner logos: we have no partners to show) -->
+      <div class="relative z-10 mt-16 md:mt-24 w-full">
+        <p class="text-center text-xs uppercase tracking-[2px] font-medium text-stone-400 mb-6">Built on</p>
+        <div class="jd-strip">
+          <div><b data-count="postings_dedup">-</b><span>job postings</span></div>
+          <div><b data-count="core_postings">-</b><span>core analytics postings</span></div>
+          <div><b data-count="jds_rows">-</b><span>junior data scientists</span></div>
+          <div><b data-count="sds_rows">-</b><span>senior data scientists</span></div>
+          <div><b id="ver-count">-</b><span>verification checks passed</span></div>
+        </div>
+        <p class="jd-offline" id="offline">The local engine is not running. Start it with: python work/api/server.py</p>
+      </div>
+</section>
+
+    <!-- ============================================================
+       3-MODULE PILLARS SECTION (Matching Reference Screenshot 4)
+       ============================================================ -->
+    <section id="pillars" class="py-24 md:py-32 bg-[#fcfcfc] border-t border-[#f0f0f0]">
+      <div class="max-w-[1280px] mx-auto px-6 md:px-10">
+
+        <!-- Section Title -->
+        <h2
+          class="font-season text-[38px] md:text-[54px] text-[#1f1f1f] text-center leading-[1.1] tracking-tight mb-16 md:mb-20">
+          Three signals that should agree,<br>but don't
+        </h2>
+
+        <!-- 3 Columns with Soft Rounded Gradient Top Banners -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Pillar 1: Career Intelligence -->
+          <div class="flex flex-col">
+            <!-- Top Lavender Banner with model-03 SVG -->
+            <div
+              class="w-full h-48 rounded-[24px] bg-gradient-to-br from-[#e8effc] to-[#d2dff9] flex items-center justify-center p-6 mb-6 shadow-sm">
+              <img src="public/assets/model-03.svg" alt="Module 1" class="w-24 h-24 object-contain drop-shadow-md">
+            </div>
+            <h3 class="text-xl font-semibold text-[#1f1f1f] mb-2">1. What postings ask for</h3>
+            <p class="text-sm text-[#3d3d3d] leading-relaxed mb-6">
+              Job ads define the data scientist companies want. They are dominated by one skill area.
+            </p>
+            <div class="mt-auto space-y-3 border-t border-[#f0f0f0] pt-4 text-sm font-medium text-[#1f1f1f]">
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">ask for coding</span><span class="font-mono font-bold" data-stat="coding">-</span></div>
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">ask for maths and statistics</span><span class="font-mono font-bold" data-stat="maths">-</span></div>
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">ask for storytelling</span><span class="font-mono font-bold" data-stat="story">-</span></div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Skill Gap Diagnostics -->
+          <div class="flex flex-col">
+            <!-- Top Warm Orange Banner with model-01 SVG -->
+            <div
+              class="w-full h-48 rounded-[24px] bg-gradient-to-br from-[#feede6] to-[#fddcce] flex items-center justify-center p-6 mb-6 shadow-sm">
+              <img src="public/assets/model-01.svg" alt="Module 2" class="w-24 h-24 object-contain drop-shadow-md">
+            </div>
+            <h3 class="text-xl font-semibold text-[#1f1f1f] mb-2">2. What the market pays for</h3>
+            <p class="text-sm text-[#3d3d3d] leading-relaxed mb-6">
+              The salary band a posting offers follows experience, role and city. Listed skills barely move it.
+            </p>
+            <div class="mt-auto space-y-3 border-t border-[#f0f0f0] pt-4 text-sm font-medium text-[#1f1f1f]">
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">odds of a higher band, per year</span><span class="font-mono font-bold" data-stat="exp">-</span></div>
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">pay prediction with skills added</span><span class="font-mono font-bold">no better</span></div>
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">postings modelled</span><span class="font-mono font-bold" data-stat="salary_n">-</span></div>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Job Match & Salary Calibrator -->
+          <div class="flex flex-col">
+            <!-- Top Soft Green Banner with model-07 SVG -->
+            <div
+              class="w-full h-48 rounded-[24px] bg-gradient-to-br from-[#f2f8eb] to-[#e3f1d8] flex items-center justify-center p-6 mb-6 shadow-sm">
+              <img src="public/assets/model-07.svg" alt="Module 3" class="w-24 h-24 object-contain drop-shadow-md">
+            </div>
+            <h3 class="text-xl font-semibold text-[#1f1f1f] mb-2">3. What gets juniors a raise</h3>
+            <p class="text-sm text-[#3d3d3d] leading-relaxed mb-6">
+              Inside a company, maths, storytelling and breadth separate the juniors who earn high raises. Coding adds least.
+            </p>
+            <div class="mt-auto space-y-3 border-t border-[#f0f0f0] pt-4 text-sm font-medium text-[#1f1f1f]">
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">maths and statistics, per point</span><span class="font-mono font-bold" data-stat="odds_maths">-</span></div>
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">storytelling, per point</span><span class="font-mono font-bold" data-stat="odds_story">-</span></div>
+              <div class="flex items-center justify-between py-1"><span class="text-[#3d3d3d]">coding, per point</span><span class="font-mono font-bold" data-stat="odds_coding">-</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Centered Pill Button -->
+        <div class="text-center mt-16">
+          <button class="btn-open-counselor btn-pill-dark">Audit your job description</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+       INTERACTIVE SHOWCASE TERMINAL (Matching Reference Screenshot 1)
+       ============================================================ -->
+    <section id="showcase" class="py-24 md:py-32 bg-white border-t border-[#f0f0f0]">
+      <div class="max-w-[1280px] mx-auto px-6 md:px-10">
+
+        <!-- Headline -->
+        <h2
+          class="font-season text-[38px] md:text-[54px] text-[#1f1f1f] text-center leading-[1.1] tracking-tight mb-12 md:mb-16">
+          See the gap<br>for any role
+        </h2>
+
+        <!-- Giant Rounded Showcase Container (rounded-[32px]) -->
+        <div class="sarvam-card rounded-[32px] overflow-hidden border border-[#e6e6e6] bg-white">
+
+          <!-- Top Tab Bar with Icons -->
+          <div class="flex items-center border-b border-[#f0f0f0] overflow-x-auto scrollbar-none bg-[#fdfdfd]">
+            <button
+              class="showcase-tab-btn active flex items-center gap-2.5 px-8 py-4.5 text-sm font-medium border-b-2 border-[#e96c2f] text-[#a5460f] whitespace-nowrap"
+              data-tab-id="asked">
+              <img src="public/assets/model-03.svg" class="w-4.5 h-4.5 object-contain">
+              <span>Asked for</span>
+            </button>
+            <button
+              class="showcase-tab-btn flex items-center gap-2.5 px-8 py-4.5 text-sm font-medium border-b-2 border-transparent text-stone-500 hover:text-[#1f1f1f] whitespace-nowrap transition-colors"
+              data-tab-id="paid">
+              <img src="public/assets/model-01.svg" class="w-4.5 h-4.5 object-contain">
+              <span>Paid for</span>
+            </button>
+            <button
+              class="showcase-tab-btn flex items-center gap-2.5 px-8 py-4.5 text-sm font-medium border-b-2 border-transparent text-stone-500 hover:text-[#1f1f1f] whitespace-nowrap transition-colors"
+              data-tab-id="rewarded">
+              <img src="public/assets/model-07.svg" class="w-4.5 h-4.5 object-contain">
+              <span>Rewarded</span>
+            </button>
+            <button
+              class="showcase-tab-btn flex items-center gap-2.5 px-8 py-4.5 text-sm font-medium border-b-2 border-transparent text-stone-500 hover:text-[#1f1f1f] whitespace-nowrap transition-colors"
+              data-tab-id="counselor">
+              <img src="public/assets/model-11.svg" class="w-4.5 h-4.5 object-contain">
+              <span>JD audit</span>
+            </button>
+          </div>
+
+          <!-- 3-Column Split Layout (Matching Screenshot 1) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
+
+            <!-- Column 1: Choose Option (Left List) -->
+            <div
+              class="lg:col-span-3 p-6 md:p-8 border-b lg:border-b-0 lg:border-r border-[#f0f0f0] flex flex-col justify-between">
+              <div>
+                <span class="text-xs uppercase tracking-wider font-mono text-stone-400 block mb-4">Choose a role family</span>
+                <div class="space-y-2">
+                  <button
+                    class="showcase-option-btn active w-full text-left p-3 rounded-2xl bg-[#feede6] text-[#a5460f] font-medium text-xs flex items-center justify-between transition-all"
+                    data-role-id="Data Analyst / Analytics">
+                    <span>Data Analyst</span>
+                    <span class="text-[10px] font-mono" data-n="Data Analyst / Analytics">-</span>
+                  </button>
+                  <button
+                    class="showcase-option-btn w-full text-left p-3 rounded-2xl hover:bg-[#f5f5f5] text-[#3d3d3d] font-medium text-xs flex items-center justify-between transition-all"
+                    data-role-id="Data Scientist / ML / AI">
+                    <span>Data Scientist</span>
+                    <span class="text-[10px] font-mono" data-n="Data Scientist / ML / AI">-</span>
+                  </button>
+                  <button
+                    class="showcase-option-btn w-full text-left p-3 rounded-2xl hover:bg-[#f5f5f5] text-[#3d3d3d] font-medium text-xs flex items-center justify-between transition-all"
+                    data-role-id="BI / Reporting / MIS">
+                    <span>BI / Reporting</span>
+                    <span class="text-[10px] font-mono" data-n="BI / Reporting / MIS">-</span>
+                  </button>
+                  <button
+                    class="showcase-option-btn w-full text-left p-3 rounded-2xl hover:bg-[#f5f5f5] text-[#3d3d3d] font-medium text-xs flex items-center justify-between transition-all"
+                    data-role-id="Business Analyst">
+                    <span>Business Analyst</span>
+                    <span class="text-[10px] font-mono" data-n="Business Analyst">-</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pt-6 text-[11px] font-mono text-stone-400">
+                Numbers next to each role = core postings
+              </div>
+            </div>
+
+            <!-- Column 2: Center Stage with Glowing Radial Orb & Dotted Grid -->
+            <div
+              class="lg:col-span-5 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-[#f0f0f0] bg-dotted-pattern flex flex-col items-center justify-center text-center relative overflow-hidden">
+
+              <h4 id="showcase-center-title" class="text-base font-semibold text-[#1f1f1f] mb-8">
+                Data Analyst: what is asked for
+              </h4>
+
+              <!-- Glowing Sage/Green Radial Orb from screenshot -->
+              <div class="relative w-48 h-48 rounded-full flex items-center justify-center mb-6"
+                style="background: radial-gradient(circle, rgba(131, 192, 64, 0.45) 0%, rgba(200, 228, 176, 0.2) 60%, transparent 80%);">
+                <button id="btn-showcase-action"
+                  class="bg-white text-[#1f1f1f] font-medium text-xs px-5 py-2.5 rounded-full shadow-md hover:scale-105 transition-transform border border-stone-200">
+                  Show the signal
+                </button>
+              </div>
+
+              <p id="showcase-center-subtext" class="text-xs text-stone-500 max-w-xs leading-relaxed">
+                Pick a role and a signal. Every number on the right is computed live by the engine.
+              </p>
+            </div>
+
+            <!-- Column 3: Live Output Transcript with Soft Tints -->
+            <div class="lg:col-span-4 p-6 md:p-8 flex flex-col justify-between bg-[#fafafa]">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs uppercase tracking-wider font-mono text-stone-400">Live from the models</span>
+                  <span class="text-xs text-[#a5460f] font-mono">Verified</span>
+                </div>
+
+                <!-- Soft Speech Bubbles -->
+                <div id="showcase-bubbles-container" class="space-y-3 text-xs leading-relaxed">
+                  <div class="bubble-blue">Loading from the engine...</div>
+                </div>
+              </div>
+
+              <div class="pt-6">
+                <button class="btn-open-counselor w-full btn-pill-dark text-xs py-3 justify-center">
+                  Audit a job description
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+       4 MINIMAL FEATURE CARDS (Matching Reference Screenshot 6)
+       ============================================================ -->
+    <section id="features" class="py-24 md:py-32 bg-[#fcfcfc] border-t border-[#f0f0f0]">
+      <div class="max-w-[1280px] mx-auto px-6 md:px-10">
+
+        <!-- Section Header -->
+        <div class="mb-16 max-w-xl">
+          <h2 class="font-season text-[38px] md:text-[54px] text-[#1f1f1f] leading-[1.08] tracking-tight">
+            What the data<br>says
+          </h2>
+          <p class="text-base text-[#666666] mt-3">
+            Four findings from the trained models. Each number is read live from the engine.
+          </p>
+        </div>
+
+        <!-- 2x2 Grid of Minimal Rounded Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div class="sarvam-card p-8 min-h-[220px]"><span class="text-xs font-mono uppercase text-stone-400 block mb-2">Loading</span><p class="text-sm text-[#666666]">Waiting for the engine.</p></div>
+        </div>
+
+        <!-- Bottom 3 Minimal Info Cards (Matching Screenshot 6) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="sarvam-card p-6">
+            <h4 class="text-base font-semibold text-[#1f1f1f] mb-1">Verified data</h4>
+            <p class="text-xs text-[#666666]" id="trust-1">Every cleaned number is re-checked against the raw files.</p>
+          </div>
+          <div class="sarvam-card p-6">
+            <h4 class="text-base font-semibold text-[#1f1f1f] mb-1">Honest limits</h4>
+            <p class="text-xs text-[#666666]" id="trust-2">Small people samples, proxy outcomes, association not causation.</p>
+          </div>
+          <div class="sarvam-card p-6">
+            <h4 class="text-base font-semibold text-[#1f1f1f] mb-1">Runs offline</h4>
+            <p class="text-xs text-[#666666]">Models run on this laptop. No data leaves the machine.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+       BIG DARK HERO CTA SECTION (Matching Reference Screenshot 2)
+       ============================================================ -->
+    <section class="py-16 md:py-24 max-w-[1280px] mx-auto px-6 md:px-10">
+      <div class="rounded-[32px] p-12 md:p-24 text-center relative overflow-hidden text-white"
+        style="background: linear-gradient(135deg, #2b2e44 0%, #1e2033 50%, #141522 100%);">
+
+        <!-- Motif SVG in Center -->
+        <div class="relative z-10 flex flex-col items-center">
+          <h2
+            class="font-season text-[36px] sm:text-[48px] md:text-[62px] text-white leading-[1.08] tracking-tight max-w-3xl mx-auto">
+            Is your job description hiring the right person?
+          </h2>
+
+          <img src="public/assets/motif.svg" alt="" class="h-8 my-8 opacity-80 invert object-contain">
+
+          <button
+            class="btn-open-counselor bg-white text-[#1e2033] hover:bg-stone-100 font-medium text-sm px-8 py-3.5 rounded-full shadow-lg transition-transform hover:scale-105">
+            Audit your job description
+          </button>
+        </div>
+
+        <!-- Subtle background geometric curves -->
+        <div
+          class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       MINIMAL EDITORIAL FOOTER (Matching Reference Screenshot 7)
+       ============================================================ -->
+    <footer
+      class="pt-20 pb-0 bg-[#fcfcfc] border-t border-[#f0f0f0] relative overflow-hidden flex flex-col justify-between">
+      <div class="max-w-[1280px] mx-auto px-6 md:px-10 w-full">
+
+        <!-- Top Row -->
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-8 pb-10">
+
+          <!-- Brand Info -->
+          <div class="col-span-2 space-y-3">
+            <div class="flex items-center gap-3">
+              <img src="logo.svg" alt="Vriddhi" class="w-10 h-10 sm:w-11 sm:h-11 object-contain" />
+              <span class="font-bold text-2xl tracking-tight text-[#1f1f1f]">vriddhi</span>
+            </div>
+            <p class="text-xs text-stone-500 leading-relaxed max-w-xs">
+              Hiring for the right signals: what the market asks for, what it pays for, and what is rewarded.
+            </p>
+            <div class="text-[11px] font-mono text-stone-400 pt-2">
+              © 2026 Vriddhi Intelligence. All rights reserved.
+            </div>
+          </div>
+
+          <!-- Links Columns -->
+          <div class="space-y-2 text-xs font-medium text-[#3d3d3d]">
+            <div class="text-stone-400 uppercase font-mono text-[10px] tracking-wider mb-3">Vriddhi AI</div>
+            <div><a href="#" class="btn-open-counselor hover:text-black">JD audit</a></div>
+            <div><a href="#showcase" class="hover:text-black">Live lab</a></div>
+          </div>
+          <div class="space-y-2 text-xs font-medium text-[#3d3d3d]">
+            <div class="text-stone-400 uppercase font-mono text-[10px] tracking-wider mb-3">Signals</div>
+            <div>Asked for: postings</div><div>Paid for: salary bands</div><div>Rewarded: juniors and seniors</div>
+          </div>
+          <div class="space-y-2 text-xs font-medium text-[#3d3d3d]">
+            <div class="text-stone-400 uppercase font-mono text-[10px] tracking-wider mb-3">Data</div>
+            <div>Analytics Jobs</div><div>DataScience Jobs</div><div>JDS and SDS</div>
+          </div>
+          <div class="space-y-2 text-xs font-medium text-[#3d3d3d]">
+            <div class="text-stone-400 uppercase font-mono text-[10px] tracking-wider mb-3">Trust</div>
+            <div>58 of 58 checks</div><div>Association, not causation</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Giant Background Lettering Sticking Flush to Bottom Edge -->
+      <div class="footer-bottom-watermark">
+        vriddhi
+      </div>
+    </footer>
+  </div> <!-- /#platform-view -->
+
+  <!-- ============================================================
+       VRIDDHI AI — DEDICATED FULL-SCREEN IMMERSIVE EXPERIENCE
+       ============================================================ -->
+  <div id="vriddhi-ai-view" class="fixed inset-0 z-50 bg-[#ffffff] overflow-hidden flex flex-col">
+
+    <!-- Vriddhi AI Top Minimal Floating Header -->
+    <header id="ai-header"
+      class="ai-header-anim absolute top-0 inset-x-0 h-14 bg-transparent px-6 flex items-center justify-between z-30 pointer-events-auto">
+      <div class="flex items-center gap-4">
+        <button id="btn-ai-back-logo" class="flex items-center gap-3 group cursor-pointer border-none bg-transparent"
+          title="Return to Platform">
+          <img src="logo.svg" alt="Vriddhi"
+            class="w-8.5 h-8.5 sm:w-9 sm:h-9 object-contain transition-transform group-hover:scale-105" />
+          <span
+            class="font-season text-2xl tracking-tight text-[#1f1f1f] group-hover:text-[#a5460f] transition-colors">vriddhi</span>
+        </button>
+        <div class="h-4 w-[1px] bg-stone-300/60"></div>
+        <button id="btn-ai-back"
+          class="flex items-center gap-1.5 text-xs text-stone-700 hover:text-stone-900 bg-white/75 hover:bg-white backdrop-blur-md border border-stone-200/60 px-3 py-1.5 rounded-full transition-all shadow-xs cursor-pointer">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>Back to Platform</span>
+        </button>
+      </div>
+
+      <!-- Center left clear for vertical line and atmospheric canopy glow -->
+      <div class="flex items-center gap-3">
+        <!-- New Chat / Reset Button -->
+        <button id="btn-ai-new-chat"
+          class="p-2 text-stone-500 hover:text-stone-900 bg-white/70 hover:bg-white backdrop-blur-md border border-stone-200/50 rounded-full transition-colors shadow-xs cursor-pointer"
+          title="Audit another job description">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- VriddhiAI Workspace (100vw × 100vh viewport space, pure white background) -->
+    <div id="ai-workspace" class="flex-1 relative overflow-hidden flex flex-col w-full h-full pt-0">
+
+      <!-- Top-Centered Elliptical Atmospheric Gradient Canopy (Top 35-45% of viewport) -->
+      <div id="ai-canopy-container" class="ai-canopy-container ai-canopy-anim">
+        <div class="ai-gradient-canopy"></div>
+      </div>
+
+      <!-- Bottom Ambient Glow (Active only during conversation mode) -->
+      <div id="ai-bottom-glow" class="ai-bottom-glow"></div>
+
+      <!-- Main Workspace Scroll / Flow Container -->
+      <div class="flex-1 flex flex-col w-full h-full relative z-10 overflow-hidden">
+
+        <!-- Conversation Scroll Container (Expands when conversation starts, offset strictly below 56px header) -->
+        <div id="ai-conversation-scroll"
+          class="mt-14 h-0 max-h-0 opacity-0 overflow-hidden pointer-events-none transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col">
+          <div id="ai-conversation-messages"
+            class="flex-1 overflow-y-auto px-4 sm:px-6 pt-4 pb-16 max-w-4xl mx-auto w-full space-y-6">
+            <!-- Dynamically populated with user messages & AI structured cards -->
+          </div>
+        </div>
+
+        <!-- AILanding Hero Section (Collapses smoothly when conversation starts) -->
+        <div id="ai-landing-hero"
+          class="w-full max-w-4xl mx-auto px-4 flex flex-col items-center justify-start pt-1 sm:pt-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
+
+          <!-- Atmospheric Centerpiece: Vertical Line + Spark + Lotus + Curved Under-Arc -->
+          <div class="ai-centerpiece-anim flex flex-col items-center relative z-10 w-full mb-1">
+
+            <!-- Straight Line dropping from top edge with Diamond Spark in the middle -->
+            <div class="flex flex-col items-center">
+              <!-- Fading line in from top -->
+              <div class="w-[1.2px] h-16 sm:h-20 bg-gradient-to-b from-transparent via-white/70 to-white/95"></div>
+              <div class="relative -my-1.5 flex items-center justify-center">
+                <img src="public/assets/vriddhi/spark.svg"
+                  class="w-7 h-11 sm:w-8 sm:h-13 drop-shadow-[0_0_12px_rgba(255,255,255,1)] animate-spark-shimmer"
+                  alt="Spark" />
+              </div>
+              <!-- Fading line out cleanly well before reaching the lotus -->
+              <div class="w-[1.2px] h-10 sm:h-12 bg-gradient-to-b from-white/95 via-white/30 to-transparent mb-2"></div>
+            </div>
+
+            <!-- Official White Lotus Logo (Enlarged) -->
+            <div class="relative z-10 -mt-1 flex items-center justify-center">
+              <img src="public/assets/vriddhi/lotus.svg"
+                class="w-20 h-15 sm:w-22 sm:h-16 drop-shadow-[0_2px_16px_rgba(255,255,255,0.95)] transition-transform hover:scale-105 duration-300 pointer-events-auto"
+                alt="Vriddhi AI Lotus" />
+            </div>
+
+            <!-- Flipped Orbit SVG (cradling under the lotus) -->
+            <div
+              class="w-full max-w-[580px] -mt-11 sm:-mt-13 -mb-5 flex items-center justify-center pointer-events-none select-none">
+              <img src="public/assets/vriddhi/orbit.svg"
+                class="w-full h-auto drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]" style="transform: scaleY(-1);"
+                alt="Orbit curves" />
+            </div>
+
+          </div>
+
+          <!-- Central Branding: Large, Bold Editorial Serif -->
+          <div class="ai-title-anim text-center mb-6">
+            <h1
+              class="font-season text-6xl sm:text-7xl md:text-[76px] text-[#111111] tracking-tight leading-none text-center mt-2 mb-2.5 font-normal">
+              Vriddhi AI
+            </h1>
+            <p
+              class="font-sans text-lg sm:text-[21px] text-[#374151] max-w-lg mx-auto leading-snug text-center font-normal">
+              Paste the job description you post.<br class="hidden sm:inline" />
+              See if it hires for what actually grows juniors.
+            </p>
+          </div>
+
+          <!-- How it works + real example postings -->
+          <div class="ai-pills-anim flex flex-col items-center gap-3 mb-5 w-full max-w-3xl">
+            <div class="jd-steps"><span><b>1</b> What your JD asks for</span><span><b>2</b> What actually gets juniors a raise</span><span><b>3</b> Your updated JD</span></div>
+            <div class="flex flex-wrap items-center justify-center gap-3" id="jd-examples">
+              <span class="text-xs text-stone-400">Loading real example postings...</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ============================================================
+             THE PERSISTENT COMPOSER (Elevated upward from bottom)
+             ============================================================ -->
+        <div id="ai-composer-wrapper"
+          class="ai-composer-anim w-full max-w-[680px] mx-auto px-4 pb-10 sm:pb-12 pt-2 relative z-20 flex-shrink-0 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
+
+          <!-- Persistent Slim Input Pill (Centered, with refined ambient halo) -->
+          <form id="ai-persistent-form" class="ai-input-pill jd-composer flex items-end px-5 py-3 gap-3.5">
+            <span class="text-[#6366f1] text-lg select-none mr-0.5 self-start pt-1">&#10022;</span>
+            <textarea id="ai-persistent-input" rows="3" placeholder="Paste a job description here (title on the first line)..."
+              class="flex-1 bg-transparent border-none text-sm sm:text-base text-[#1f1f1f] placeholder:text-stone-400 focus:outline-none resize-none"></textarea>
+            <button type="submit"
+              class="ai-send-btn w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 cursor-pointer"
+              aria-label="Audit this job description">
+              <img src="public/assets/vriddhi/send.svg" class="w-4 h-4 ml-0.5" alt="Audit" />
+            </button>
+          </form>
+          <p class="jd-hint">Compared against what got 139 junior data scientists at one company a high raise. Association, not causation.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- Application Entry Point -->
+  <script type="module" src="src/js/jdAudit.js?v=1"></script>
+</body>
+
+</html>

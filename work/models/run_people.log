@@ -1,0 +1,212 @@
+[M06] M06 junior_logistic_regression - run 2026-10-07 17:24 - seed 42
+[M07] M07 junior_decision_tree - run 2026-10-07 17:24 - seed 42
+[M08] M08 junior_ensembles_benchmark - run 2026-10-07 17:24 - seed 42
+[M06] n = 139; high-hike share 0.525; skills on a 1-5 scale
+[M06] table saved: results/skill_correlations.csv  (+ vfl copy)
+[M06]                                    Results: Logit
+====================================================================================
+Model:                     Logit                  Method:                 MLE       
+Dependent Variable:        salary_hike_high       Pseudo R-squared:       0.499     
+Date:                      2026-10-07 17:24       AIC:                    108.3057  
+No. Observations:          139                    BIC:                    125.9125  
+Df Model:                  5                      Log-Likelihood:         -48.153   
+Df Residuals:              133                    LL-Null:                -96.171   
+Converged:                 1.0000                 LLR p-value:            3.6132e-19
+No. Iterations:            8.0000                 Scale:                  1.0000    
+------------------------------------------------------------------------------------
+                                   Coef.   Std.Err.    z    P>|z|   [0.025   0.975] 
+------------------------------------------------------------------------------------
+const                             -26.2243   4.6508 -5.6386 0.0000 -35.3397 -17.1088
+big_data_skills                     0.9962   0.3707  2.6876 0.0072   0.2697   1.7226
+maths_stats_skills                  1.8211   0.4969  3.6650 0.0002   0.8472   2.7949
+coding_skills                       0.6090   0.3436  1.7725 0.0763  -0.0644   1.2823
+ai_and_ml_skills                    1.2639   0.4707  2.6851 0.0073   0.3413   2.1865
+dashboard_and_storytelling_skills   1.3548   0.3700  3.6616 0.0003   0.6296   2.0799
+====================================================================================
+
+[M06] table saved: results/odds_ratios.csv  (+ vfl copy)
+[M06]                  variable  or_per_unit  or_unit_low  or_unit_high  or_per_sd  or_sd_low  or_sd_high  p_value  univariate_or_per_sd  univariate_p    vif
+                 Big data       2.7079       1.3096        5.5993     2.3241     1.2565      4.2990   0.0072                1.2553        0.1871 1.0421
+       Maths & statistics       6.1784       2.3331       16.3610     4.6498     2.0441     10.5770   0.0002                4.0754        0.0000 1.4475
+                   Coding       1.8385       0.9376        3.6050     1.7225     0.9441      3.1427   0.0763                2.8350        0.0000 1.3908
+    AI & machine learning       3.5392       1.4068        8.9038     2.3236     1.2557      4.2998   0.0073                3.0001        0.0000 1.2189
+Dashboards & storytelling       3.8758       1.8768        8.0039     3.5398     1.7994      6.9637   0.0003                4.8413        0.0000 1.3259
+[M06] pseudo R2 (McFadden) 0.499; odds ratio per unit = per 1 point on the 1-5 skill scale
+[M06] figure saved: figures/01_odds_ratios_forest.png
+[M06] Logistic regression: nested CV AUC 0.901 +/- 0.054 over 50 outer folds; acc 0.854; best params on full data {'logisticregression__C': 0.3, 'logisticregression__penalty': 'l2'}
+[M07] Decision tree: nested CV AUC 0.814 +/- 0.065 over 50 outer folds; acc 0.766; best params on full data {'criterion': 'gini', 'max_depth': 4, 'min_samples_leaf': 5}
+[M08] Random forest: nested CV AUC 0.893 +/- 0.070 over 15 outer folds; acc 0.835; best params on full data {'max_depth': 2, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+[M08] Gradient boosting: nested CV AUC 0.880 +/- 0.069 over 15 outer folds; acc 0.827; best params on full data {'learning_rate': 0.03, 'max_depth': 1, 'n_estimators': 300, 'subsample': 0.8}
+[M08] table saved: results/model_comparison.csv  (+ vfl copy)
+[M08]                           model  auc_mean  auc_sd  accuracy     f1  brier  outer_folds
+            Logistic regression    0.9007  0.0542    0.8538 0.8678 0.1444           50
+                  Decision tree    0.8136  0.0649    0.7660 0.7819 0.1794           50
+                  Random forest    0.8930  0.0695    0.8346 0.8451 0.1390           15
+              Gradient boosting    0.8799  0.0693    0.8273 0.8370 0.1420           15
+Baseline (guess majority class)    0.5000  0.0000    0.5252    NaN 0.2494            0
+[M08] table saved: results/roc_points.csv  (+ vfl copy)
+[M08] figure saved: figures/01_roc_curves.png
+[M08] figure saved: figures/02_model_comparison_auc.png
+[M08] table saved: results/permutation_importance.csv  (+ vfl copy)
+[M08] figure saved: figures/03_permutation_importance.png
+[M08] figure saved: figures/04_confusion_matrix_best.png
+[M08] table saved: results/confusion_matrix_best.csv
+[M07] figure saved: figures/01_decision_tree.png
+[M07] tree rules:
+|--- Dashboards & storytelling <= 4.15
+|   |--- Maths & statistics <= 4.60
+|   |   |--- weights: [26.00, 0.00] class: 0
+|   |--- Maths & statistics >  4.60
+|   |   |--- Dashboards & storytelling <= 2.65
+|   |   |   |--- weights: [3.00, 2.00] class: 0
+|   |   |--- Dashboards & storytelling >  2.65
+|   |   |   |--- Maths & statistics <= 4.95
+|   |   |   |   |--- weights: [4.00, 1.00] class: 0
+|   |   |   |--- Maths & statistics >  4.95
+|   |   |   |   |--- weights: [5.00, 0.00] class: 0
+|--- Dashboards & storytelling >  4.15
+|   |--- Maths & statistics <= 3.55
+|   |   |--- weights: [9.00, 0.00] class: 0
+|   |--- Maths & statistics >  3.55
+|   |   |--- Coding <= 4.65
+|   |   |   |--- Dashboards & storytelling <= 4.85
+|   |   |   |   |--- weights: [7.00, 5.00] class: 0
+|   |   |   |--- Dashboards & storytelling >  4.85
+|   |   |   |   |--- weights: [6.00, 14.00] class: 1
+|   |   |--- Coding >  4.65
+|   |   |   |--- Big data <= 3.15
+|   |   |   |   |--- weights: [4.00, 10.00] class: 1
+|   |   |   |--- Big data >  3.15
+|   |   |   |   |--- weights: [2.00, 41.00] class: 1
+
+[M07] table saved: results/leaf_summary.csv  (+ vfl copy)
+[M06] table saved: results/group_means.csv  (+ vfl copy)
+[M06] figure saved: figures/02_group_means.png
+[M06] finished in 611.9s
+[M07] finished in 611.9s
+[M08] finished in 611.9s
+[M09] M09 junior_breadth_vs_spike - run 2026-10-07 17:34 - seed 42
+[M09] table saved: results/single_measure_auc.csv  (+ vfl copy)
+[M09]                     measure   auc          direction  auc_either_direction
+        Average of 5 skills 0.917 higher = high hike                 0.917
+              Weakest skill 0.852 higher = high hike                 0.852
+            Strongest skill 0.588 higher = high hike                 0.588
+      Gap strongest-weakest 0.189  lower = high hike                 0.811
+Unevenness (sd of 5 skills) 0.200  lower = high hike                 0.800
+[M09] table saved: results/nested_tests_vs_average.csv  (+ vfl copy)
+[M09]            added_to_average  or_per_sd  p_value  lr_stat   lr_p
+              Weakest skill     1.1782   0.7004   0.1477 0.7008
+            Strongest skill     0.7219   0.7005   0.1456 0.7028
+      Gap strongest-weakest     0.8445   0.6641   0.1881 0.6645
+Unevenness (sd of 5 skills)     0.7613   0.4472   0.5766 0.4477
+[M09] figure saved: figures/01_breadth_vs_spike_auc.png
+[M09] table saved: results/hike_rate_by_level_and_shape.csv  (+ vfl copy)
+[M09]  average_level    profile_shape  high_hike_rate  people
+ Lower average Balanced profile           0.125       8
+ Lower average    Spiky profile           0.077      39
+Middle average Balanced profile           0.720      25
+Middle average    Spiky profile           0.517      29
+   Top average Balanced profile           0.947      38
+   Top average    Spiky profile             NaN       0
+[M09] figure saved: figures/02_hike_rate_by_level_and_shape.png
+[M09] finished in 0.2s
+[M10] M10 senior_logistic_regression - run 2026-10-07 17:34 - seed 42
+[M11] M11 senior_decision_tree - run 2026-10-07 17:34 - seed 42
+[M12] M12 senior_ensembles_benchmark - run 2026-10-07 17:34 - seed 42
+[M10] n = 161; high-success share 0.528; traits on a normalised score (observed 17-68)
+[M10] table saved: results/trait_correlations.csv  (+ vfl copy)
+[M10] figure saved: figures/03_trait_correlations.png
+[M10]                              Results: Logit
+=========================================================================
+Model:                  Logit              Method:             MLE       
+Dependent Variable:     success_high       Pseudo R-squared:   0.757     
+Date:                   2026-10-07 17:34   AIC:                66.1797   
+No. Observations:       161                BIC:                84.6681   
+Df Model:               5                  Log-Likelihood:     -27.090   
+Df Residuals:           155                LL-Null:            -111.35   
+Converged:              1.0000             LLR p-value:        1.5168e-34
+No. Iterations:         9.0000             Scale:              1.0000    
+-------------------------------------------------------------------------
+                        Coef.   Std.Err.    z    P>|z|   [0.025   0.975] 
+-------------------------------------------------------------------------
+const                  -36.3314   7.2717 -4.9963 0.0000 -50.5836 -22.0791
+neuroticism              0.1216   0.0379  3.2069 0.0013   0.0473   0.1960
+extraversion             0.1129   0.0405  2.7839 0.0054   0.0334   0.1923
+openness_to_experience   0.2688   0.0579  4.6405 0.0000   0.1553   0.3823
+agreeableness            0.0798   0.0417  1.9126 0.0558  -0.0020   0.1616
+conscientiousness        0.2489   0.0588  4.2337 0.0000   0.1336   0.3641
+=========================================================================
+
+[M10] table saved: results/odds_ratios.csv  (+ vfl copy)
+[M10]          variable  or_per_unit  or_unit_low  or_unit_high  or_per_sd  or_sd_low  or_sd_high  p_value  univariate_or_per_sd  univariate_p    vif
+      Neuroticism       1.1293       1.0484        1.2165     3.9374     1.7039      9.0986   0.0013                0.9881        0.9399 1.0926
+     Extraversion       1.1195       1.0340        1.2121     3.9338     1.4998     10.3179   0.0054                3.4235        0.0000 1.3977
+         Openness       1.3084       1.1680        1.4657    20.9744     5.8004     75.8446   0.0000               10.6981        0.0000 1.3848
+    Agreeableness       1.0831       0.9980        1.1754     2.4630     0.9779      6.2031   0.0558                1.8887        0.0004 1.1459
+Conscientiousness       1.2826       1.1430        1.4392    26.7849     5.8460    122.7211   0.0000                9.6942        0.0000 1.4431
+[M10] pseudo R2 (McFadden) 0.757; odds ratio per unit = per 1 point of the normalised trait score
+[M10] figure saved: figures/01_odds_ratios_forest.png
+[M10] Logistic regression: nested CV AUC 0.963 +/- 0.033 over 50 outer folds; acc 0.913; best params on full data {'logisticregression__C': 0.01, 'logisticregression__penalty': 'l2'}
+[M11] Decision tree: nested CV AUC 0.941 +/- 0.041 over 50 outer folds; acc 0.916; best params on full data {'criterion': 'gini', 'max_depth': 4, 'min_samples_leaf': 12}
+[M12] Random forest: nested CV AUC 0.997 +/- 0.005 over 15 outer folds; acc 0.961; best params on full data {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+[M12] Gradient boosting: nested CV AUC 0.988 +/- 0.017 over 15 outer folds; acc 0.932; best params on full data {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300, 'subsample': 0.8}
+[M12] table saved: results/model_comparison.csv  (+ vfl copy)
+[M12]                           model  auc_mean  auc_sd  accuracy     f1  brier  outer_folds
+            Logistic regression    0.9633  0.0331    0.9125 0.9204 0.0974           50
+                  Decision tree    0.9406  0.0414    0.9155 0.9206 0.0718           50
+                  Random forest    0.9967  0.0053    0.9605 0.9625 0.0322           15
+              Gradient boosting    0.9878  0.0168    0.9317 0.9373 0.0494           15
+Baseline (guess majority class)    0.5000  0.0000    0.5280    NaN 0.2492            0
+[M12] table saved: results/roc_points.csv  (+ vfl copy)
+[M12] figure saved: figures/01_roc_curves.png
+[M12] figure saved: figures/02_model_comparison_auc.png
+[M12] table saved: results/permutation_importance.csv  (+ vfl copy)
+[M12] figure saved: figures/03_permutation_importance.png
+[M12] figure saved: figures/04_confusion_matrix_best.png
+[M12] table saved: results/confusion_matrix_best.csv
+[M11] figure saved: figures/01_decision_tree.png
+[M11] tree rules:
+|--- Openness <= 38.50
+|   |--- weights: [52.00, 0.00] class: 0
+|--- Openness >  38.50
+|   |--- Conscientiousness <= 36.50
+|   |   |--- weights: [16.00, 0.00] class: 0
+|   |--- Conscientiousness >  36.50
+|   |   |--- Neuroticism <= 27.50
+|   |   |   |--- weights: [6.00, 16.00] class: 1
+|   |   |--- Neuroticism >  27.50
+|   |   |   |--- Agreeableness <= 41.50
+|   |   |   |   |--- weights: [2.00, 10.00] class: 1
+|   |   |   |--- Agreeableness >  41.50
+|   |   |   |   |--- weights: [0.00, 59.00] class: 1
+
+[M11] table saved: results/leaf_summary.csv  (+ vfl copy)
+[M10] figure saved: figures/04_univariate_vs_multivariate.png
+[M10] table saved: results/group_means.csv  (+ vfl copy)
+[M10] figure saved: figures/02_group_means.png
+[M10] finished in 555.6s
+[M11] finished in 555.6s
+[M12] finished in 555.6s
+[M13] M13 senior_personas_kmeans - run 2026-10-07 17:43 - seed 42
+[M13] table saved: results/choosing_k.csv  (+ vfl copy)
+[M13]  k  silhouette  inertia
+ 2      0.3128 567.2284
+ 3      0.3010 473.2192
+ 4      0.3275 407.1642
+ 5      0.2070 360.9794
+ 6      0.2182 329.9438
+ 7      0.2201 304.9294
+[M13] chosen k = 4 (highest silhouette among 3-5 clusters, kept small enough to interpret)
+[M13] figure saved: figures/01_choosing_k.png
+[M13] chi-square persona x success: chi2 106.28, p 6.92e-23
+[M13] table saved: results/personas.csv  (+ vfl copy)
+[M13]  cluster                             persona  people  success_rate  ci_low  ci_high  Neuroticism_z  Extraversion_z  Openness_z  Agreeableness_z  Conscientiousness_z
+       1   High Conscientiousness & Openness      88         0.886   0.803    0.937         -0.221           0.534       0.586            0.330                0.646
+       3 High Neuroticism, low Agreeableness      22         0.318   0.164    0.527          1.610          -0.524       0.180           -0.817               -0.634
+       0    High Agreeableness, low Openness      23         0.000  -0.000    0.143         -0.102          -0.416      -1.189            1.078               -0.907
+       2        Low Agreeableness & Openness      28         0.000   0.000    0.121         -0.485          -0.926      -1.007           -1.281               -0.786
+[M13] figure saved: figures/02_personas.png
+[M13] figure saved: figures/03_persona_map.png
+[M13] table saved: results/persona_assignments.csv  (+ vfl copy)
+[M13] finished in 1.5s
+ALL MODELS DONE in 1169s

@@ -1,0 +1,22 @@
+M13 senior_personas_kmeans - run 2026-10-07 17:43 - seed 42
+table saved: results/choosing_k.csv  (+ vfl copy)
+ k  silhouette  inertia
+ 2      0.3128 567.2284
+ 3      0.3010 473.2192
+ 4      0.3275 407.1642
+ 5      0.2070 360.9794
+ 6      0.2182 329.9438
+ 7      0.2201 304.9294
+chosen k = 4 (highest silhouette among 3-5 clusters, kept small enough to interpret)
+figure saved: figures/01_choosing_k.png
+chi-square persona x success: chi2 106.28, p 6.92e-23
+table saved: results/personas.csv  (+ vfl copy)
+ cluster                             persona  people  success_rate  ci_low  ci_high  Neuroticism_z  Extraversion_z  Openness_z  Agreeableness_z  Conscientiousness_z
+       1   High Conscientiousness & Openness      88         0.886   0.803    0.937         -0.221           0.534       0.586            0.330                0.646
+       3 High Neuroticism, low Agreeableness      22         0.318   0.164    0.527          1.610          -0.524       0.180           -0.817               -0.634
+       0    High Agreeableness, low Openness      23         0.000  -0.000    0.143         -0.102          -0.416      -1.189            1.078               -0.907
+       2        Low Agreeableness & Openness      28         0.000   0.000    0.121         -0.485          -0.926      -1.007           -1.281               -0.786
+figure saved: figures/02_personas.png
+figure saved: figures/03_persona_map.png
+table saved: results/persona_assignments.csv  (+ vfl copy)
+finished in 1.5s

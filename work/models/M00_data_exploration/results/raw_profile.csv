@@ -1,0 +1,31 @@
+file,column,dtype,rows,missing,missing_pct,distinct,example
+DataScience Jobs,reference_no,int64,1602,0,0.0,1460,7834
+DataScience Jobs,company_name,str,1602,0,0.0,642,TCS
+DataScience Jobs,job_title,str,1602,0,0.0,10,Data Scientist
+DataScience Jobs,min_experience,int64,1602,0,0.0,18,2
+DataScience Jobs,avg_salary,str,1602,0,0.0,305,7.8L
+DataScience Jobs,min_salary,str,1602,0,0.0,197,4.5L
+DataScience Jobs,max_salary,str,1602,0,0.0,304,16.0L
+DataScience Jobs,num_of_jobs,int64,1602,0,0.0,220,841
+Analytics Jobs,s_no,int64,15841,0,0.0,15841,1
+Analytics Jobs,experience,str,15841,0,0.0,128,6-10 yrs
+Analytics Jobs,job_description,str,15841,3508,22.1,7859,Must be knowledgeable and experienced in relational database
+Analytics Jobs,job_desig,str,15841,0,0.0,10097,Oracle EBS Technical Consultant
+Analytics Jobs,job_type,str,15841,12011,75.8,5,Analytics
+Analytics Jobs,key_skills,str,15841,1,0.0,11155,"Oracle SQL, PLSQL, PL, Oracle Forms, Oracle Reports, Oracle "
+Analytics Jobs,location,str,15841,0,0.0,1355,"Bengaluru, Chennai"
+Analytics Jobs,salary,str,15841,0,0.0,6,6to10
+JDS Skill Traits,id,int64,139,0,0.0,137,2809
+JDS Skill Traits,big_data_skills,float64,139,0,0.0,28,3.6
+JDS Skill Traits,maths-stats_skills,float64,139,0,0.0,27,4.0
+JDS Skill Traits,coding_skills,float64,139,0,0.0,22,4.5
+JDS Skill Traits,ai_and_ml_skills,float64,139,0,0.0,22,4.8
+JDS Skill Traits,dashboard_and_storytelling_skills,float64,139,0,0.0,21,5.0
+JDS Skill Traits,salary_hike_high_or_low,int64,139,0,0.0,2,1
+SDS Personality Traits,id,int64,161,0,0.0,152,8120
+SDS Personality Traits,neuroticism,int64,161,0,0.0,45,33
+SDS Personality Traits, extraversion,int64,161,0,0.0,47,34
+SDS Personality Traits,openness_to_experience,int64,161,0,0.0,46,39
+SDS Personality Traits,agreeableness,int64,161,0,0.0,47,45
+SDS Personality Traits,conscientiousness,int64,161,0,0.0,46,51
+SDS Personality Traits,success_ classification_ high_low,int64,161,0,0.0,2,1

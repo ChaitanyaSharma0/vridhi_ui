@@ -1,0 +1,6 @@
+measure,auc,direction,auc_either_direction
+Average of 5 skills,0.9174968866749689,higher = high hike,0.9174968866749689
+Weakest skill,0.8520132835201328,higher = high hike,0.8520132835201328
+Strongest skill,0.5876919883769198,higher = high hike,0.5876919883769198
+Gap strongest-weakest,0.1888750518887505,lower = high hike,0.8111249481112495
+Unevenness (sd of 5 skills),0.19997924449979243,lower = high hike,0.8000207555002076

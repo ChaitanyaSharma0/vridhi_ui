@@ -1,0 +1,13 @@
+|--- Openness <= 38.50
+|   |--- weights: [52.00, 0.00] class: 0
+|--- Openness >  38.50
+|   |--- Conscientiousness <= 36.50
+|   |   |--- weights: [16.00, 0.00] class: 0
+|   |--- Conscientiousness >  36.50
+|   |   |--- Neuroticism <= 27.50
+|   |   |   |--- weights: [6.00, 16.00] class: 1
+|   |   |--- Neuroticism >  27.50
+|   |   |   |--- Agreeableness <= 41.50
+|   |   |   |   |--- weights: [2.00, 10.00] class: 1
+|   |   |   |--- Agreeableness >  41.50
+|   |   |   |   |--- weights: [0.00, 59.00] class: 1

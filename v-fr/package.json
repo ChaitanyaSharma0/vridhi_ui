@@ -1,0 +1,19 @@
+{
+  "name": "v-fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/css/input.css -o dist/css/styles.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/css/input.css -o dist/css/styles.css --watch",
+    "serve": "python3 -m http.server 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

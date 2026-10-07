@@ -1,0 +1,4 @@
+company_scale,headroom_pct,avg_salary,rows
+Large (>100),51.910905550146055,11.7,840
+Mid (21-100),37.99536798764797,11.9,494
+Small (<=20 openings),27.94158361018826,13.55,256

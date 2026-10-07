@@ -1,0 +1,643 @@
+company_id,company_name,company_group,company_type,is_placeholder_employer
+1,3i Infotech,3i Infotech,Product / captive / other,0
+2,AAIC Technologies,AAIC Technologies,Product / captive / other,0
+3,ABB Group,ABB Group,Product / captive / other,0
+4,ABC,ABC,Product / captive / other,0
+5,ACL Digital,ACL Digital,Product / captive / other,0
+6,ACS Solution,ACS Solution,Product / captive / other,0
+7,ADP Solutions,ADP Solutions,Product / captive / other,0
+8,AI Touch,AI Touch,Product / captive / other,0
+9,ANR Software,ANR Software,Product / captive / other,0
+10,ANZ Banking Group,ANZ Banking Group,Product / captive / other,0
+11,APA Engineering,APA Engineering,Product / captive / other,0
+12,AVASOFT,AVASOFT,Product / captive / other,0
+13,Aakash Institute,Aakash Institute,Product / captive / other,0
+14,Ab Inbev,Ab Inbev,Product / captive / other,0
+15,Abzooba India Infotech,Abzooba India Infotech,Product / captive / other,0
+16,Accenture,Accenture,IT services / consulting,0
+17,Accion Labs,Accion Labs,Product / captive / other,0
+18,Accolite Digital,Accolite Digital,Product / captive / other,0
+19,Acidaes Solutions,Acidaes Solutions,Product / captive / other,0
+20,Adidas,Adidas,Product / captive / other,0
+21,Aditya Birla Group,Aditya Birla Group,Product / captive / other,0
+22,Adobe,Adobe,Product / captive / other,0
+23,Advance Auto Parts,Advance Auto Parts,Product / captive / other,0
+24,Advantmed,Advantmed,Product / captive / other,0
+25,Affine Analytics,Affine Analytics,Product / captive / other,0
+26,Ags Infotech,Ags Infotech,Product / captive / other,0
+27,Akamai Technologies,Akamai Technologies,Product / captive / other,0
+28,Aktrix Technologies,Aktrix Technologies,Product / captive / other,0
+29,AlgoAnalytics Financial Consultancy,AlgoAnalytics Financial Consultancy,Product / captive / other,0
+30,Algonomy,Algonomy,Product / captive / other,0
+31,Alliance Data,Alliance Data,Product / captive / other,0
+32,Allianz Technology,Allianz Technology,Product / captive / other,0
+33,Allscripts,Allscripts,Product / captive / other,0
+34,Allsec Technologies,Allsec Technologies,Product / captive / other,0
+35,Allstate,Allstate,Product / captive / other,0
+36,Altimetrik,Altimetrik,Product / captive / other,0
+37,Altisource,Altisource,Product / captive / other,0
+38,Amadeus,Amadeus,Product / captive / other,0
+39,Amazon,Amazon,Product / captive / other,0
+40,Amdocs,Amdocs,Product / captive / other,0
+41,American Express,American Express,Product / captive / other,0
+42,Ameriprise Financial,Ameriprise Financial,Product / captive / other,0
+43,Amnet Digital,Amnet Digital,Product / captive / other,0
+44,Analytics Quotient,Analytics Quotient,Product / captive / other,0
+45,Anju Software,Anju Software,Product / captive / other,0
+46,Annalect,Annalect,Product / captive / other,0
+47,AntWorks,AntWorks,Product / captive / other,0
+48,Anthology,Anthology,Product / captive / other,0
+49,Aon,Aon,Product / captive / other,0
+50,Apar Technologies,Apar Technologies,Product / captive / other,0
+51,Apex CoVantage,Apex CoVantage,Product / captive / other,0
+52,Apexon,Apexon,Product / captive / other,0
+53,Apisero,Apisero,Product / captive / other,0
+54,Apple,Apple,Product / captive / other,0
+55,Applied Materials,Applied Materials,Product / captive / other,0
+56,Ardem Data Services,Ardem Data Services,Product / captive / other,0
+57,Arthur J. Gallagher & Co,Arthur J. Gallagher & Co,Product / captive / other,0
+58,AstraZeneca,AstraZeneca,Product / captive / other,0
+59,Athenahealth Technology,Athenahealth Technology,Product / captive / other,0
+60,Atidiv,Atidiv,Product / captive / other,0
+61,Atos,Atos,IT services / consulting,0
+62,Atos Syntel,Atos Syntel,Product / captive / other,0
+63,Autodesk,Autodesk,Product / captive / other,0
+64,Automatic Data Processing,Automatic Data Processing,Product / captive / other,0
+65,Axa XL,Axa XL,Product / captive / other,0
+66,Axis Bank,Axis Bank,Product / captive / other,0
+67,Axtria,Axtria,Product / captive / other,0
+68,Azentio,Azentio,Product / captive / other,0
+69,B3Intelligence,B3Intelligence,Product / captive / other,0
+70,BA Continuum,BA Continuum,Product / captive / other,0
+71,BCG,BCG,Product / captive / other,0
+72,BEPEC Solutions,BEPEC Solutions,Product / captive / other,0
+73,BNP Paribas,BNP Paribas,Product / captive / other,0
+74,BNY Mellon,BNY Mellon,Product / captive / other,0
+75,BUDDI.AI,BUDDI.AI,Product / captive / other,0
+76,BYJU'S,BYJU'S,Product / captive / other,0
+77,Bahar Infocons,Bahar Infocons,Product / captive / other,0
+78,Bajaj Finance,Bajaj Finance,Product / captive / other,0
+79,Bajaj Finserv,Bajaj Finserv,Product / captive / other,0
+80,Baker Hughes,Baker Hughes,Product / captive / other,0
+81,Bank of America,Bank of America,Product / captive / other,0
+82,Barclays,Barclays,Product / captive / other,0
+83,Barclays Global Service Centre,Barclays Global Service Centre,Product / captive / other,0
+84,Barclays Shared Services,Barclays Shared Services,Product / captive / other,0
+85,Better.com,Better.com,Product / captive / other,0
+86,Bharti Airtel,Bharti Airtel,Product / captive / other,0
+87,Birlasoft,Birlasoft,IT services / consulting,0
+88,Bitwise Solutions,Bitwise Solutions,Product / captive / other,0
+89,Blackbuck Insights,Blackbuck Insights,Product / captive / other,0
+90,Blackhawk Network,Blackhawk Network,Product / captive / other,0
+91,BlazeClan Technologies,BlazeClan Technologies,Product / captive / other,0
+92,Blend360,Blend360,Product / captive / other,0
+93,Blinkit,Blinkit,Product / captive / other,0
+94,Blue Yonder,Blue Yonder,Product / captive / other,0
+95,Bluemind Solutions,Bluemind Solutions,Product / captive / other,0
+96,Boeing,Boeing,Product / captive / other,0
+97,Bosch Global Software Technologies,Bosch Global Software Technologies,Product / captive / other,0
+98,Brane Enterprises,Brane Enterprises,Product / captive / other,0
+99,Bridgei2i Analytics Solutions,Bridgei2i Analytics Solutions,Product / captive / other,0
+100,Brillio,Brillio,Product / captive / other,0
+101,Bristlecone,Bristlecone,Product / captive / other,0
+102,Broadridge Financial Solutions,Broadridge Financial Solutions,Product / captive / other,0
+103,CAMP Systems,CAMP Systems,Product / captive / other,0
+104,CARS24.com,CARS24.com,Product / captive / other,0
+105,CES,CES,Product / captive / other,0
+106,CG Foods,CG Foods,Product / captive / other,0
+107,CIMCON Software,CIMCON Software,Product / captive / other,0
+108,CMS Computers Limited (INDIA),CMS Computers Limited (INDIA),Product / captive / other,0
+109,CRG Solutions,CRG Solutions,Product / captive / other,0
+110,CRMnext,CRMnext,Product / captive / other,0
+111,CSS Corp,CSS Corp,Product / captive / other,0
+112,Calsoft,Calsoft,Product / captive / other,0
+113,Capco Technologies,Capco Technologies,Product / captive / other,0
+114,Capgemini,Capgemini,IT services / consulting,0
+115,Capita,Capita,Product / captive / other,0
+116,Care Health Insurance,Care Health Insurance,Product / captive / other,0
+117,Cartesian Consulting,Cartesian Consulting,Product / captive / other,0
+118,Caterpillar Inc,Caterpillar Inc,Product / captive / other,0
+119,Celebal Technologies,Celebal Technologies,Product / captive / other,0
+120,Cerner,Cerner,Product / captive / other,0
+121,Cgi Group,Cgi Group,Product / captive / other,0
+122,Chegg,Chegg,Product / captive / other,0
+123,Chubb Group,Chubb Group,Product / captive / other,0
+124,Cimpress,Cimpress,Product / captive / other,0
+125,Cisco Systems,Cisco Systems,Product / captive / other,0
+126,Citibank,Citibank,Product / captive / other,0
+127,Citicorp,Citicorp,Product / captive / other,0
+128,Citigroup,Citigroup,Product / captive / other,0
+129,CitiusTech,CitiusTech,Product / captive / other,0
+130,Cittabase Solutions,Cittabase Solutions,Product / captive / other,0
+131,Claim Genius,Claim Genius,Product / captive / other,0
+132,Clairvoyant India,Clairvoyant India,Product / captive / other,0
+133,Clarivate Analytics,Clarivate Analytics,Product / captive / other,0
+134,Clover Infotech,Clover Infotech,Product / captive / other,0
+135,Coforge,Coforge,IT services / consulting,0
+136,Cogencis Information Services,Cogencis Information Services,Product / captive / other,0
+137,Cognizant,Cognizant,IT services / consulting,0
+138,Colgate Global Business Services,Colgate Global Business Services,Product / captive / other,0
+139,Colgate Palmolive,Colgate Palmolive,Product / captive / other,0
+140,Collabera Technologies,Collabera Technologies,Product / captive / other,0
+141,Collegedunia,Collegedunia,Product / captive / other,0
+142,Commonwealth Bank of Australia,Commonwealth Bank of Australia,Product / captive / other,0
+143,Competent Software,Competent Software,Product / captive / other,0
+144,Concentrix Corporation,Concentrix Corporation,Product / captive / other,0
+145,ConcertAI,ConcertAI,Product / captive / other,0
+146,Conduent,Conduent,Product / captive / other,0
+147,Confidential,Confidential,Product / captive / other,1
+148,Continental Automotive Components,Continental Automotive Components,Product / captive / other,0
+149,Course5,Course5,Product / captive / other,0
+150,Credit Suisse,Credit Suisse,Product / captive / other,0
+151,Crif High Mark Credit Information Services,Crif High Mark Credit Information Services,Product / captive / other,0
+152,Cross-tab Marketing Services,Cross-tab Marketing Services,Product / captive / other,0
+153,Cummins,Cummins,Product / captive / other,0
+154,Cybage,Cybage,Product / captive / other,0
+155,Cygnet Infotech,Cygnet Infotech,Product / captive / other,0
+156,Cyient,Cyient,IT services / consulting,0
+157,D Cube Analytics,D Cube Analytics,Product / captive / other,0
+158,D2L Pharma Research Solutions,D2L Pharma Research Solutions,Product / captive / other,0
+159,DBS Bank,DBS Bank,Product / captive / other,0
+160,DUNNHUMBY IT SERVICES INDIA,DUNNHUMBY IT SERVICES INDIA,Product / captive / other,0
+161,DXC Technology,DXC Technology,IT services / consulting,0
+162,Danaher,Danaher,Product / captive / other,0
+163,Danske IT,Danske IT,Product / captive / other,0
+164,Data Entry,Data Entry,Product / captive / other,1
+165,Data Gyan,Data Gyan,Product / captive / other,0
+166,Data Semantics,Data Semantics,Product / captive / other,0
+167,DataMetica,DataMetica,Product / captive / other,0
+168,DataWeave,DataWeave,Product / captive / other,0
+169,Dataction Analytics,Dataction Analytics,Product / captive / other,0
+170,Datamatics Global Services,Datamatics Global Services,Product / captive / other,0
+171,Decimal Point Analytics,Decimal Point Analytics,Product / captive / other,0
+172,Decision Minds,Decision Minds,Product / captive / other,0
+173,Decision Point,Decision Point,Product / captive / other,0
+174,DecisionTree Analytics & Services,DecisionTree Analytics & Services,Product / captive / other,0
+175,Delhivery,Delhivery,Product / captive / other,0
+176,Dell,Dell,Product / captive / other,0
+177,Dell EMC,Dell EMC,Product / captive / other,0
+178,Deloitte,Deloitte,IT services / consulting,0
+179,Denave,Denave,Product / captive / other,0
+180,Denodo Technologies,Denodo Technologies,Product / captive / other,0
+181,Deutsche Bank,Deutsche Bank,Product / captive / other,0
+182,Digitalmain,Digitalmain,Product / captive / other,0
+183,Dun & Bradstreet,Dun & Bradstreet,Product / captive / other,0
+184,Dunnhumby,Dunnhumby,Product / captive / other,0
+185,Dynata,Dynata,Product / captive / other,0
+186,E2OPEN,E2OPEN,Product / captive / other,0
+187,EC-Mobility,EC-Mobility,Product / captive / other,0
+188,EEGRAB,EEGRAB,Product / captive / other,0
+189,EPAM Systems,EPAM Systems,Product / captive / other,0
+190,EXL Service,EXL Service,Product / captive / other,0
+191,Ebix Software India,Ebix Software India,Product / captive / other,0
+192,Ecolab Digital Center,Ecolab Digital Center,Product / captive / other,0
+193,Ecolab Food Safety & Hygiene Solutions,Ecolab Food Safety & Hygiene Solutions,Product / captive / other,0
+194,EdgeVerve Systems,EdgeVerve Systems,Product / captive / other,0
+195,Eli Lilly and Company,Eli Lilly and Company,Product / captive / other,0
+196,Embibe,Embibe,Product / captive / other,0
+197,Emirates Airlines,Emirates Airlines,Product / captive / other,0
+198,Encore Capital Group,Encore Capital Group,Product / captive / other,0
+199,Enquero,Enquero,Product / captive / other,0
+200,Epsilon,Epsilon,Product / captive / other,0
+201,Equifax,Equifax,Product / captive / other,0
+202,Ericsson,Ericsson,Product / captive / other,0
+203,Ernst & Young,Ernst & Young,Product / captive / other,0
+204,Etech Global Services,Etech Global Services,Product / captive / other,0
+205,Eurofins It Solutions,Eurofins It Solutions,Product / captive / other,0
+206,Evalueserve,Evalueserve,Product / captive / other,0
+207,Eversana,Eversana,Product / captive / other,0
+208,Exela Technologies,Exela Technologies,Product / captive / other,0
+209,Exl India,Exl India,IT services / consulting,0
+210,Expedia,Expedia,Product / captive / other,0
+211,Experis IT,Experis IT,Product / captive / other,0
+212,Expert Global Solutions,Expert Global Solutions,Product / captive / other,0
+213,Exxon Mobil,Exxon Mobil,Product / captive / other,0
+214,FE fundinfo,FE fundinfo,Product / captive / other,0
+215,Factspan Analytics,Factspan Analytics,Product / captive / other,0
+216,FedEx Express,FedEx Express,Product / captive / other,0
+217,Fedby Information Services,Fedby Information Services,Product / captive / other,0
+218,Fidelity International,Fidelity International,Product / captive / other,0
+219,Fidelity Investment,Fidelity Investment,Product / captive / other,0
+220,Fidelity National Financial,Fidelity National Financial,Product / captive / other,0
+221,Fidelity National Information Services,Fidelity National Information Services,Product / captive / other,0
+222,First American Corporation,First American Corporation,Product / captive / other,0
+223,First Source,First Source,Product / captive / other,0
+224,Fiserv,Fiserv,Product / captive / other,0
+225,Flip Robo Technologies,Flip Robo Technologies,Product / captive / other,0
+226,Flipkart,Flipkart,Product / captive / other,0
+227,Fluentgrid,Fluentgrid,Product / captive / other,0
+228,Ford Motor,Ford Motor,Product / captive / other,0
+229,Fractal Analytics,Fractal Analytics,Product / captive / other,0
+230,Fragma Data Systems,Fragma Data Systems,Product / captive / other,0
+231,Franklin Templeton International Services,Franklin Templeton International Services,Product / captive / other,0
+232,Franklin Templeton Investments,Franklin Templeton Investments,Product / captive / other,0
+233,Freelance Consultants,Freelance Consultants,Product / captive / other,1
+234,Freelancer.com,Freelancer.com,Product / captive / other,1
+235,Fuel Intelligence,Fuel Intelligence,Product / captive / other,0
+236,Futurense Technologies,Futurense Technologies,Product / captive / other,0
+237,GE,GE,Product / captive / other,0
+238,GE Aviation,GE Aviation,Product / captive / other,0
+239,GE Digital,GE Digital,Product / captive / other,0
+240,GE Healthcare,GE Healthcare,Product / captive / other,0
+241,GE Power,GE Power,Product / captive / other,0
+242,GE Transportation,GE Transportation,Product / captive / other,0
+243,GEP Worldwide,GEP Worldwide,Product / captive / other,0
+244,GGK Technologies,GGK Technologies,Product / captive / other,0
+245,GSK Pharmaceuticals,GSK Pharmaceuticals,Product / captive / other,0
+246,Galytix Analytics,Galytix Analytics,Product / captive / other,0
+247,Games24x7,Games24x7,Product / captive / other,0
+248,Ganit Business Solutions,Ganit Business Solutions,Product / captive / other,0
+249,Gartner,Gartner,Product / captive / other,0
+250,Gartner India Research and Advisory Services,Gartner India Research and Advisory Services,Product / captive / other,0
+251,General Mills,General Mills,Product / captive / other,0
+252,Genpact,Genpact,IT services / consulting,0
+253,GlobalLogic,GlobalLogic,Product / captive / other,0
+254,Globant,Globant,Product / captive / other,0
+255,Go-Jek,Go-Jek,Product / captive / other,0
+256,Goldman Sachs,Goldman Sachs,Product / captive / other,0
+257,Google,Google,Product / captive / other,0
+258,Gramener,Gramener,Product / captive / other,0
+259,Great Learning,Great Learning,Product / captive / other,0
+260,HALODOC,HALODOC,Product / captive / other,0
+261,HARMAN,HARMAN,Product / captive / other,0
+262,HCL Infosystems,HCL Infosystems,Product / captive / other,0
+263,HCL Technologies,HCL Technologies,IT services / consulting,0
+264,HCL Technologies BPO Services,HCL Technologies BPO Services,Product / captive / other,0
+265,HDFC Bank,HDFC Bank,Product / captive / other,0
+266,HERE Technologies,HERE Technologies,Product / captive / other,0
+267,HSBC,HSBC,Product / captive / other,0
+268,HTC Global Services,HTC Global Services,Product / captive / other,0
+269,HUDL,HUDL,Product / captive / other,0
+270,Happiest Minds Technologies,Happiest Minds Technologies,Product / captive / other,0
+271,Harman Connected Services,Harman Connected Services,Product / captive / other,0
+272,Hashedin By Deloitte,Hashedin By Deloitte,Product / captive / other,0
+273,Hewlett-Packard Enterprise,Hewlett-Packard Enterprise,Product / captive / other,0
+274,Hexaware Technologies,Hexaware Technologies,IT services / consulting,0
+275,Hinduja Global Solutions,Hinduja Global Solutions,IT services / consulting,0
+276,Hindustan Unilever,Hindustan Unilever,Product / captive / other,0
+277,Hitachi,Hitachi,Product / captive / other,0
+278,Hitachi Vantara,Hitachi Vantara,Product / captive / other,0
+279,Hive,Hive,Product / captive / other,0
+280,Home Credit Finance,Home Credit Finance,Product / captive / other,0
+281,Honeywell Technology Solutions,Honeywell Technology Solutions,Product / captive / other,0
+282,Hsbc Technology,HSBC,Product / captive / other,0
+283,Huawei Technologies,Huawei Technologies,Product / captive / other,0
+284,Hudson's bay Company,Hudson's bay Company,Product / captive / other,0
+285,IBM,IBM,IT services / consulting,0
+286,IBS Software Services,IBS Software Services,Product / captive / other,0
+287,ICICI Bank,ICICI Bank,Product / captive / other,0
+288,ICICI Lombard General Insurance Company,ICICI Lombard General Insurance Company,Product / captive / other,0
+289,IDFC FIRST Bank,IDFC FIRST Bank,Product / captive / other,0
+290,IHS Markit,IHS Markit,Product / captive / other,0
+291,IQVIA,IQVIA,Product / captive / other,0
+292,ITC Infotech India,ITC Infotech India,Product / captive / other,0
+293,IVY Comptech,IVY Comptech,Product / captive / other,0
+294,Ignitarium Technology Solutions,Ignitarium Technology Solutions,Product / captive / other,0
+295,Impact Analytics,Impact Analytics,Product / captive / other,0
+296,Impetus Technologies,Impetus Technologies,Product / captive / other,0
+297,InSync Analytics,InSync Analytics,Product / captive / other,0
+298,Incedo,Incedo,Product / captive / other,0
+299,Indegene,Indegene,Product / captive / other,0
+300,Indium Software,Indium Software,Product / captive / other,0
+301,Indus Valley Partners,Indus Valley Partners,Product / captive / other,0
+302,IndusInd Bank,IndusInd Bank,Product / captive / other,0
+303,Infinite Computer Solutions,Infinite Computer Solutions,Product / captive / other,0
+304,Info Edge,Info Edge,Product / captive / other,0
+305,InfoStretch,InfoStretch,Product / captive / other,0
+306,Infor Global Solution,Infor Global Solution,Product / captive / other,0
+307,Information Evolution,Information Evolution,Product / captive / other,0
+308,Infosys,Infosys,IT services / consulting,0
+309,Infosys BPM,Infosys BPM,Product / captive / other,0
+310,Innodatatics,Innodatatics,Product / captive / other,0
+311,Innominds Software,Innominds Software,Product / captive / other,0
+312,InnovAccer,InnovAccer,Product / captive / other,0
+313,Innova Solutions,Innova Solutions,Product / captive / other,0
+314,Intel,Intel,Product / captive / other,0
+315,Intellect Design Arena,Intellect Design Arena,Product / captive / other,0
+316,Intelligent Image Management Inc,Intelligent Image Management Inc,Product / captive / other,0
+317,International School of Engineering,International School of Engineering,Product / captive / other,0
+318,Intersoft Data Labs,Intersoft Data Labs,Product / captive / other,0
+319,Intuit,Intuit,Product / captive / other,0
+320,Iris Software,Iris Software,Product / captive / other,0
+321,JLL,JLL,Product / captive / other,0
+322,JP Morgan Chase,JP Morgan Chase,Product / captive / other,0
+323,Jio Platforms,Jio Platforms,Product / captive / other,0
+324,Jocata Financial Advisory and Technology,Jocata Financial Advisory and Technology,Product / captive / other,0
+325,Johnson & Johnson,Johnson & Johnson,Product / captive / other,0
+326,Johnson Controls,Johnson Controls,Product / captive / other,0
+327,KJ System,KJ System,Product / captive / other,0
+328,KPI Partners,KPI Partners,Product / captive / other,0
+329,KPIT Technologies,KPIT Technologies,Product / captive / other,0
+330,KPMG,KPMG,IT services / consulting,0
+331,Kantar,Kantar,Product / captive / other,0
+332,Kloud 9,Kloud 9,Product / captive / other,0
+333,Knoema IT Solutions,Knoema IT Solutions,Product / captive / other,0
+334,Koch Business Solutions,Koch Business Solutions,Product / captive / other,0
+335,Kotak Mahindra Bank,Kotak Mahindra Bank,Product / captive / other,0
+336,KrazyBee,KrazyBee,Product / captive / other,0
+337,Kriya It,Kriya It,Product / captive / other,0
+338,Kyndryl,Kyndryl,Product / captive / other,0
+339,L&T Financial Services,L&T Financial Services,Product / captive / other,0
+340,L&T Infotech,L&T Infotech,IT services / consulting,0
+341,L&T Technology Services,L&T Technology Services,Product / captive / other,0
+342,Lam Research,Lam Research,Product / captive / other,0
+343,Landis+Gyr,Landis+Gyr,Product / captive / other,0
+344,Landmark Group,Landmark Group,Product / captive / other,0
+345,Larsen & Toubro Limited,Larsen & Toubro Limited,Product / captive / other,0
+346,LatentView Analytics,LatentView Analytics,Product / captive / other,0
+347,LearningMate Solutions,LearningMate Solutions,Product / captive / other,0
+348,Legato Health Technologies,Legato Health Technologies,Product / captive / other,0
+349,Lenovo,Lenovo,Product / captive / other,0
+350,Lentra AI,Lentra AI,Product / captive / other,0
+351,LiquidHub,LiquidHub,Product / captive / other,0
+352,Lowe's,Lowe's,Product / captive / other,0
+353,Lucida Technologies,Lucida Technologies,Product / captive / other,0
+354,Lumen Technologies,Lumen Technologies,Product / captive / other,0
+355,Lumiq.ai,Lumiq.ai,Product / captive / other,0
+356,Luxoft,Luxoft,Product / captive / other,0
+357,MKS Vision,MKS Vision,Product / captive / other,0
+358,MResult Services,MResult Services,Product / captive / other,0
+359,MSC Technology India,MSC Technology India,Product / captive / other,0
+360,MSCI,MSCI,Product / captive / other,0
+361,Maersk,Maersk,Product / captive / other,0
+362,Maersk Line,Maersk Line,Product / captive / other,0
+363,Majesco,Majesco,Product / captive / other,0
+364,MakeMyTrip,MakeMyTrip,Product / captive / other,0
+365,Marlabs,Marlabs,Product / captive / other,0
+366,MassMutual,MassMutual,Product / captive / other,0
+367,Mastek,Mastek,Product / captive / other,0
+368,MasterCard,MasterCard,Product / captive / other,0
+369,Maveric Systems,Maveric Systems,Product / captive / other,0
+370,McKinsey & Company,McKinsey & Company,Product / captive / other,0
+371,Meesho,Meesho,Product / captive / other,0
+372,Mercedes-Benz Research & Development India,Mercedes-Benz Research & Development India,Product / captive / other,0
+373,Mercer,Mercer,Product / captive / other,0
+374,Merilytics,Merilytics,Product / captive / other,0
+375,Merkle Sokrati,Merkle Sokrati,Product / captive / other,0
+376,MetLife,MetLife,Product / captive / other,0
+377,Metagogy Learning Systems,Metagogy Learning Systems,Product / captive / other,0
+378,Michelin,Michelin,Product / captive / other,0
+379,Micron Technology,Micron Technology,Product / captive / other,0
+380,Microsoft Corporation,Microsoft Corporation,Product / captive / other,0
+381,Milliman,Milliman,Product / captive / other,0
+382,MindGate Solutions,MindGate Solutions,Product / captive / other,0
+383,Mindtree,Mindtree,IT services / consulting,0
+384,Mobikwik,Mobikwik,Product / captive / other,0
+385,Mobile Premier League,Mobile Premier League,Product / captive / other,0
+386,Monsoon CreditTech,Monsoon CreditTech,Product / captive / other,0
+387,Morgan Stanley,Morgan Stanley,Product / captive / other,0
+388,Morningstar,Morningstar,Product / captive / other,0
+389,Mphasis,Mphasis,IT services / consulting,0
+390,Mr Cooper,Mr Cooper,Product / captive / other,0
+391,Mu Sigma,Mu Sigma,Product / captive / other,0
+392,Myntra,Myntra,Product / captive / other,0
+393,N+A,N+A,Product / captive / other,0
+394,NCR Corporation,NCR Corporation,Product / captive / other,0
+395,NDS InfoServ,NDS InfoServ,Product / captive / other,0
+396,NIIT Technologies,NIIT Technologies,Product / captive / other,0
+397,NIKE,NIKE,Product / captive / other,0
+398,NISC Export Services,NISC Export Services,Product / captive / other,0
+399,NSE.IT,NSE.IT,Product / captive / other,0
+400,NTT DATA,NTT DATA,IT services / consulting,0
+401,Nagarro,Nagarro,IT services / consulting,0
+402,Nailbiter,Nailbiter,Product / captive / other,0
+403,Nailbiter Research,Nailbiter Research,Product / captive / other,0
+404,NatWest Group,NatWest Group,Product / captive / other,0
+405,NatWest Markets,NatWest Markets,Product / captive / other,0
+406,Neal Analytics,Neal Analytics,Product / captive / other,0
+407,Neewee Analytics,Neewee Analytics,Product / captive / other,0
+408,NeoSoft Technologies,NeoSoft Technologies,Product / captive / other,0
+409,NetCracker,NetCracker,Product / captive / other,0
+410,Newgen Software Technologies,Newgen Software Technologies,Product / captive / other,0
+411,News Technology Services,News Technology Services,Product / captive / other,0
+412,Nielsen,Nielsen,Product / captive / other,0
+413,NielsenIQ,NielsenIQ,Product / captive / other,0
+414,Ninjacart,Ninjacart,Product / captive / other,0
+415,Nisum Technologies,Nisum Technologies,Product / captive / other,0
+416,Nokia,Nokia,Product / captive / other,0
+417,Noodle.Ai,Noodle.Ai,Product / captive / other,0
+418,Northern Trust Operating Services,Northern Trust Operating Services,Product / captive / other,0
+419,Novartis Healthcare,Novartis Healthcare,Product / captive / other,0
+420,Novo Nordisk,Novo Nordisk,Product / captive / other,0
+421,Numeratr,Numeratr,Product / captive / other,0
+422,Nvidia,Nvidia,Product / captive / other,0
+423,Objectways Technologies,Objectways Technologies,Product / captive / other,0
+424,Ocwen Financial Solutions,Ocwen Financial Solutions,Product / captive / other,0
+425,Odessa,Odessa,Product / captive / other,0
+426,Oil Field Instrumentation,Oil Field Instrumentation,Product / captive / other,0
+427,Ola Cabs,Ola Cabs,Product / captive / other,0
+428,Omega Healthcare,Omega Healthcare,Product / captive / other,0
+429,Onepoint IT Consulting,Onepoint IT Consulting,Product / captive / other,0
+430,OptiSol Business Solutions,OptiSol Business Solutions,Product / captive / other,0
+431,Optimint Solutions,Optimint Solutions,Product / captive / other,0
+432,Optum,Optum,Product / captive / other,0
+433,Optum Global Solutions,Optum Global Solutions,Product / captive / other,0
+434,Oracle,Oracle,Product / captive / other,0
+435,Oracle Financial Services Software,Oracle Financial Services Software,Product / captive / other,0
+436,Orange Business Services,Orange Business Services,Product / captive / other,0
+437,Oyo Rooms,Oyo Rooms,Product / captive / other,0
+438,Pacecom Technologies,Pacecom Technologies,Product / captive / other,0
+439,PayPal,PayPal,Product / captive / other,0
+440,Paytm,Paytm,Product / captive / other,0
+441,Pboplus Consulting Services,Pboplus Consulting Services,Product / captive / other,0
+442,PepsiCo,PepsiCo,Product / captive / other,0
+443,Persistent Systems,Persistent Systems,IT services / consulting,0
+444,Phenom,Phenom,Product / captive / other,0
+445,Philips,Philips,Product / captive / other,0
+446,Phoenix American Sales Focus Solutions India,Phoenix American Sales Focus Solutions India,Product / captive / other,0
+447,Photon Interactive,Photon Interactive,Product / captive / other,0
+448,Pitney Bowes,Pitney Bowes,Product / captive / other,0
+449,Polestar Solutions & Services India,Polestar Solutions & Services India,Product / captive / other,0
+450,Principal Global Services,Principal Global Services,Product / captive / other,0
+451,Prodapt Solutions,Prodapt Solutions,Product / captive / other,0
+452,Provana,Provana,Product / captive / other,0
+453,Proziod Analytics,Proziod Analytics,Product / captive / other,0
+454,Publicis,Publicis,Product / captive / other,0
+455,PwC,PwC,IT services / consulting,0
+456,QL2 Software,QL2 Software,Product / captive / other,0
+457,QUADRANT RESOURCE LLC,QUADRANT RESOURCE LLC,Product / captive / other,0
+458,Qualcomm,Qualcomm,Product / captive / other,0
+459,Qualitas Technologies,Qualitas Technologies,Product / captive / other,0
+460,QualityKiosk Technologies,QualityKiosk Technologies,Product / captive / other,0
+461,Qualsquad Infotech,Qualsquad Infotech,Product / captive / other,0
+462,Quantiphi Analytics Solutions,Quantiphi Analytics Solutions,Product / captive / other,0
+463,Quantium Analytics,Quantium Analytics,Product / captive / other,0
+464,Quest Global,Quest Global,Product / captive / other,0
+465,R Systems International,R Systems International,Product / captive / other,0
+466,R1 RCM,R1 RCM,Product / captive / other,0
+467,Rackspace,Rackspace,Product / captive / other,0
+468,Rakuten,Rakuten,Product / captive / other,0
+469,Ramco Systems,Ramco Systems,Product / captive / other,0
+470,Randstad,Randstad,Product / captive / other,0
+471,Rapido,Rapido,Product / captive / other,0
+472,Red Hat,Red Hat,Product / captive / other,0
+473,Reflections Info Systems,Reflections Info Systems,Product / captive / other,0
+474,Reliance Industries,Reliance Industries,Product / captive / other,0
+475,Reliance Retail,Reliance Retail,Product / captive / other,0
+476,Reliance jio,Reliance jio,Product / captive / other,0
+477,Renault Nissan Technology & Business Centre India,Renault Nissan Technology & Business Centre India,Product / captive / other,0
+478,Reserve Bank Information Technology,Reserve Bank Information Technology,Product / captive / other,0
+479,Resilinc,Resilinc,Product / captive / other,0
+480,RevGurus Info India,RevGurus Info India,Product / captive / other,0
+481,Riskonnect,Riskonnect,Product / captive / other,0
+482,Roche Diagnostics,Roche Diagnostics,Product / captive / other,0
+483,Royal Bank of Scotland International,Royal Bank of Scotland International,Product / captive / other,0
+484,Rubixe,Rubixe,Product / captive / other,0
+485,S&P Capital IQ,S&P Capital IQ,Product / captive / other,0
+486,S&P Global,S&P Global,Product / captive / other,0
+487,S&P Global Market Intelligence,S&P Global Market Intelligence,Product / captive / other,0
+488,SAP,SAP,Product / captive / other,0
+489,SG Analytics,SG Analytics,Product / captive / other,0
+490,Saama Technologies,Saama Technologies,Product / captive / other,0
+491,Sabre,Sabre,Product / captive / other,0
+492,Samsung,Samsung,Product / captive / other,0
+493,Samsung Research,Samsung Research,Product / captive / other,0
+494,Sandcube Analytics,Sandcube Analytics,Product / captive / other,0
+495,Sapiens,Sapiens,Product / captive / other,0
+496,Sapient Corporation,Sapient Corporation,Product / captive / other,0
+497,Sapient Global Markets,Sapient Global Markets,Product / captive / other,0
+498,Schlumberger,Schlumberger,Product / captive / other,0
+499,Schneider Electric,Schneider Electric,Product / captive / other,0
+500,Scienaptic Systems,Scienaptic Systems,Product / captive / other,0
+501,Searce Cosourcing Services,Searce Cosourcing Services,Product / captive / other,0
+502,Sentieo,Sentieo,Product / captive / other,0
+503,Senvion,Senvion,Product / captive / other,0
+504,Shadowfax Technologies,Shadowfax Technologies,Product / captive / other,0
+505,Shell,Shell,Product / captive / other,0
+506,Shipco Transport,Shipco Transport,Product / captive / other,0
+507,Siemens,Siemens,Product / captive / other,0
+508,Siemens Healthineers,Siemens Healthineers,Product / captive / other,0
+509,Sigmoid Analytics,Sigmoid Analytics,Product / captive / other,0
+510,Simplify Healthcare,Simplify Healthcare,Product / captive / other,0
+511,Societe Generale,Societe Generale,Product / captive / other,0
+512,Softcrylic Technology Solutions,Softcrylic Technology Solutions,Product / captive / other,0
+513,Sonata Software,Sonata Software,Product / captive / other,0
+514,Sopra Banking Software,Sopra Banking Software,Product / captive / other,0
+515,Sopra Steria,Sopra Steria,IT services / consulting,0
+516,Sphera Solutions,Sphera Solutions,Product / captive / other,0
+517,SpringML,SpringML,Product / captive / other,0
+518,Springer Nature,Springer Nature,Product / captive / other,0
+519,Sri Ayyan Kendra Vidyalaya International School,Sri Ayyan Kendra Vidyalaya International School,Product / captive / other,0
+520,Standard Chartered Bank,Standard Chartered Bank,Product / captive / other,0
+521,Standard Chartered Global Business Services,Standard Chartered Global Business Services,Product / captive / other,0
+522,State Street Corporation,State Street Corporation,Product / captive / other,0
+523,Statestreet HCL Services,Statestreet HCL Services,Product / captive / other,0
+524,Stats Systems India,Stats Systems India,Product / captive / other,0
+525,Straive,Straive,Product / captive / other,0
+526,Subex,Subex,Product / captive / other,0
+527,Sutherland Global Services,Sutherland Global Services,Product / captive / other,0
+528,Swiggy,Swiggy,Product / captive / other,0
+529,Swiss Re,Swiss Re,Product / captive / other,0
+530,Symphony Retail AI,Symphony Retail AI,Product / captive / other,0
+531,Synchrony,Synchrony,Product / captive / other,0
+532,Synechron,Synechron,Product / captive / other,0
+533,Sysark,Sysark,Product / captive / other,0
+534,Systech Solutions,Systech Solutions,Product / captive / other,0
+535,T-Systems,T-Systems,Product / captive / other,0
+536,TCS,TCS,IT services / consulting,0
+537,TEKsystems,TEKsystems,Product / captive / other,0
+538,TIAA Global Business Services,TIAA Global Business Services,Product / captive / other,0
+539,TO THE NEW,TO THE NEW,Product / captive / other,0
+540,TSWRDC WOMEN'S DEGREE COLLEGE,TSWRDC WOMEN'S DEGREE COLLEGE,Product / captive / other,0
+541,TVS Credit Services,TVS Credit Services,Product / captive / other,0
+542,Taglr Technologies,Taglr Technologies,Product / captive / other,0
+543,Takvaviya Analytics,Takvaviya Analytics,Product / captive / other,0
+544,Target,Target,Product / captive / other,0
+545,Tata Communications,Tata Communications,Product / captive / other,0
+546,Tata Motors,Tata Motors,Product / captive / other,0
+547,Tata Technologies,Tata Technologies,Product / captive / other,0
+548,Tavant Technologies,Tavant Technologies,Product / captive / other,0
+549,Tech Mahindra,Tech Mahindra,IT services / consulting,0
+550,Techolution,Techolution,Product / captive / other,0
+551,Teleperformance,Teleperformance,IT services / consulting,0
+552,Telstra,Telstra,Product / captive / other,0
+553,Temenos,Temenos,Product / captive / other,0
+554,Teradata,Teradata,Product / captive / other,0
+555,Tesco,Tesco,Product / captive / other,0
+556,The Data Team,The Data Team,Product / captive / other,0
+557,The Smart Cube,The Smart Cube,Product / captive / other,0
+558,TheMathCompany,TheMathCompany,Product / captive / other,0
+559,Thomson Reuters,Thomson Reuters,Product / captive / other,0
+560,ThoughtWorks,ThoughtWorks,Product / captive / other,0
+561,Thryve Digital,Thryve Digital,Product / captive / other,0
+562,Tiger Analytics,Tiger Analytics,Product / captive / other,0
+563,Toluna,Toluna,Product / captive / other,0
+564,TransOrg Analytics,TransOrg Analytics,Product / captive / other,0
+565,Trantor,Trantor,Product / captive / other,0
+566,Tredence,Tredence,Product / captive / other,0
+567,Tsys Card Tech Services,Tsys Card Tech Services,Product / captive / other,0
+568,UBS,UBS,Product / captive / other,0
+569,USEReady,USEReady,Product / captive / other,0
+570,UST,UST,Product / captive / other,0
+571,Uber,Uber,Product / captive / other,0
+572,Udaan,Udaan,Product / captive / other,0
+573,Ugam Solution,Ugam Solution,Product / captive / other,0
+574,Unacademy,Unacademy,Product / captive / other,0
+575,Unilog Content Solutions ( P),Unilog Content Solutions ( P),Product / captive / other,0
+576,Unire Business Solutions,Unire Business Solutions,Product / captive / other,0
+577,Unisys,Unisys,Product / captive / other,0
+578,UnitedHealth,UnitedHealth,Product / captive / other,0
+579,UnitedLex,UnitedLex,Product / captive / other,0
+580,Urjanet Energy Solutions,Urjanet Energy Solutions,Product / captive / other,0
+581,V2 Solutions,V2 Solutions,Product / captive / other,0
+582,VASTA BIO-INFORMATICS,VASTA BIO-INFORMATICS,Product / captive / other,0
+583,VMware Software,VMware Software,Product / captive / other,0
+584,Vaco Binary Semantics,Vaco Binary Semantics,Product / captive / other,0
+585,Value c Consulting India,Value c Consulting India,Product / captive / other,0
+586,ValueLabs,ValueLabs,Product / captive / other,0
+587,ValueMomentum,ValueMomentum,Product / captive / other,0
+588,Vedantu,Vedantu,Product / captive / other,0
+589,VeeTechnologies,VeeTechnologies,Product / captive / other,0
+590,Veeraraghavan & Company,Veeraraghavan & Company,Product / captive / other,0
+591,Verificient Technologies,Verificient Technologies,Product / captive / other,0
+592,Verizon,Verizon,Product / captive / other,0
+593,Vinculum Solutions,Vinculum Solutions,Product / captive / other,0
+594,Virtusa Consulting Services,Virtusa Consulting Services,Product / captive / other,0
+595,Visa,Visa,Product / captive / other,0
+596,Vodafone Idea,Vodafone Idea,Product / captive / other,0
+597,Volante Technologies,Volante Technologies,Product / captive / other,0
+598,WNS,WNS,IT services / consulting,0
+599,Wabtec,Wabtec,Product / captive / other,0
+600,Walmart,Walmart,Product / captive / other,0
+601,Wavicle Data Solutions,Wavicle Data Solutions,Product / captive / other,0
+602,Webhelp,Webhelp,Product / captive / other,0
+603,Wells Fargo India,Wells Fargo India,Product / captive / other,0
+604,Western Union,Western Union,Product / captive / other,0
+605,Whishworks It Consulting,Whishworks It Consulting,Product / captive / other,0
+606,Whitehat jr,Whitehat jr,Product / captive / other,0
+607,Williams Lea Tag,Williams Lea Tag,Product / captive / other,0
+608,Wipro,Wipro,IT services / consulting,0
+609,Wipro Digital,Wipro Digital,Product / captive / other,0
+610,Wissend,Wissend,Product / captive / other,0
+611,Wolters Kluwer,Wolters Kluwer,Product / captive / other,0
+612,Wunderman,Wunderman,Product / captive / other,0
+613,XL Catlin,XL Catlin,Product / captive / other,0
+614,XL Health,XL Health,Product / captive / other,0
+615,Xceedance,Xceedance,Product / captive / other,0
+616,Xiaomi,Xiaomi,Product / captive / other,0
+617,Xoriant,Xoriant,Product / captive / other,0
+618,Xpo Logistics,Xpo Logistics,Product / captive / other,0
+619,Xyz Company,Xyz Company,Product / captive / other,1
+620,Yardi Systems,Yardi Systems,Product / captive / other,0
+621,Yash Technologies,Yash Technologies,Product / captive / other,0
+622,Yodlee,Yodlee,Product / captive / other,0
+623,Yukthi Datasoft,Yukthi Datasoft,Product / captive / other,0
+624,Yum!,Yum!,Product / captive / other,0
+625,ZF Group,ZF Group,Product / captive / other,0
+626,ZS,ZS,Product / captive / other,0
+627,Zee Entertainment Enterprises,Zee Entertainment Enterprises,Product / captive / other,0
+628,Zen3 Info Solutions,Zen3 Info Solutions,Product / captive / other,0
+629,Zensar Technologies,Zensar Technologies,Product / captive / other,0
+630,Zomato,Zomato,Product / captive / other,0
+631,bnp paribas india solutions,BNP Paribas,Product / captive / other,0
+632,comScore,comScore,Product / captive / other,0
+633,e-Zest,e-Zest,Product / captive / other,0
+634,eClerx,eClerx,Product / captive / other,0
+635,eClinicalWorks,eClinicalWorks,Product / captive / other,0
+636,eMids Technologies,eMids Technologies,Product / captive / other,0
+637,i2e Consulting,i2e Consulting,Product / captive / other,0
+638,iNeuron.ai,iNeuron.ai,Product / captive / other,0
+639,iOPEX Technologies,iOPEX Technologies,Product / captive / other,0
+640,nThrive Global Solutions,nThrive Global Solutions,Product / captive / other,0
+641,o9 Solutions,o9 Solutions,Product / captive / other,0
+642,phData,phData,Product / captive / other,0

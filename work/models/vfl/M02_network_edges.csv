@@ -1,0 +1,46 @@
+source,target,lift
+machine learning,python,4.532944315291842
+machine learning,r,3.492061421814135
+machine learning,data science,4.1760932198826
+machine learning,natural language processing,6.6446929092346885
+machine learning,deep learning,6.5098638576030465
+machine learning,data mining,3.838235624396416
+machine learning,java,1.9582083299964885
+python,r,3.7018350856697824
+python,sql,1.897658924770982
+python,java,3.212073662792703
+python,data science,3.3811614410612005
+python,natural language processing,4.2031480570585344
+python,big data,1.9091066427515029
+python,spark,2.412785842115729
+python,data mining,2.5426218515569343
+python,hadoop,2.085890640256661
+python,deep learning,3.8242727392391735
+r,sas,3.4115979889589902
+r,sql,1.9640205091937766
+r,data science,3.050760248655914
+r,data mining,3.2730287742899855
+r,predictive modelling,3.975798611111111
+r,statistical modelling,4.485564304461943
+r,predictive analytics,4.450520833333334
+sas,sql,1.7843467086681628
+sas,excel,2.0633719795765715
+sas,predictive modelling,4.474668769716088
+sas,banking,2.8023393822032046
+sas,statistics,2.571363153992644
+sql,excel,2.2241247320608353
+sql,big data,1.9289214635749288
+sql,tableau,2.8544193325107585
+sql,java,1.8463911230342855
+sql,hadoop,1.7317655006438812
+hadoop,spark,11.559765004763417
+hadoop,hive,14.23925118724559
+hadoop,big data,7.407470224634404
+hadoop,java,6.21214958418241
+spark,big data,8.300752202879861
+spark,hive,14.007519342359764
+spark,java,6.440449085341917
+spark,scala,15.903996818452969
+hive,big data,6.669651056014692
+natural language processing,deep learning,14.489760934025202
+business process,outsourcing,25.70528789659225

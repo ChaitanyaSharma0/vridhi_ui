@@ -1,0 +1,32 @@
+M01 demand_profile - run 2026-10-07 17:00 - seed 42
+core analytics postings: 5127
+table saved: results/skill_area_demand.csv  (+ vfl copy)
+               skill_area  postings  share  ci_low  ci_high
+                   Coding      2193 0.4277  0.4143   0.4413
+    AI & machine learning      1000 0.1950  0.1844   0.2061
+Dashboards & storytelling       914 0.1783  0.1680   0.1890
+                 Big data       835 0.1629  0.1530   0.1732
+       Maths & statistics       808 0.1576  0.1479   0.1678
+figure saved: figures/01_skill_area_demand.png
+table saved: results/role_by_skill_area.csv  (+ vfl copy)
+figure saved: figures/02_role_by_skill_area_heatmap.png
+table saved: results/top_25_skills.csv  (+ vfl copy)
+figure saved: figures/03_top_25_skills.png
+table saved: results/tool_demand.csv  (+ vfl copy)
+            tool  share
+             sql  0.195
+             sas  0.137
+          python  0.127
+machine learning  0.118
+               r  0.113
+           excel  0.083
+      statistics  0.082
+            java  0.059
+          hadoop  0.053
+           spark  0.047
+         tableau  0.038
+   deep learning  0.028
+        power bi  0.016
+             aws  0.004
+table saved: results/seniority_by_skill_area.csv  (+ vfl copy)
+finished in 0.7s

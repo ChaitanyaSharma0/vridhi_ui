@@ -1,0 +1,993 @@
+@import "tailwindcss";
+@source "../js/**/*.js";
+@source "../../index.html";
+
+/* ============================================================
+   VRIDDHI (वृद्धि) — Editorial Design System
+   Inspired by Sarvam AI: Minimal, spacious, soft rounded elements
+   ============================================================ */
+
+@theme {
+  /* Brand Typography */
+  --font-serif: "Instrument Serif", "Georgia", serif;
+  --font-matter: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Sarvam-matched Palette */
+  --color-sf: #fcfcfc;
+  --color-sf-secondary: #f5f5f5;
+  --color-sf-tertiary: #f0f0f0;
+  --color-st: #e6e6e6;
+  --color-st-secondary: #f0f0f0;
+
+  --color-tx: #1f1f1f;
+  --color-tx-secondary: #3d3d3d;
+  --color-tx-tertiary: #666666;
+
+  --color-sr-slate: #2a2c33;
+  --color-sr-orange-50: #fffbfa;
+  --color-sr-orange-100: #feede6;
+  --color-sr-orange-500: #f38858;
+  --color-sr-orange-700: #e96c2f;
+  --color-sr-orange-900: #a5460f;
+
+  --color-sr-indigo-50: #fafcff;
+  --color-sr-indigo-100: #e8effc;
+  --color-sr-indigo-500: #6a88e2;
+  --color-sr-indigo-900: #212191;
+
+  --color-sr-green-50: #f2f8eb;
+  --color-sr-green-500: #83c040;
+  --color-sr-green-900: #263d0e;
+
+  /* Soft border radiuses */
+  --radius-4xl: 32px;
+  --radius-3xl: 24px;
+}
+
+/* ============================================================
+   BASE TYPOGRAPHY & LAYOUT
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-matter);
+  color: var(--color-tx);
+  background-color: var(--color-sf);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #fddcce;
+  color: #1f1f1f;
+}
+
+/* Serif Headings - Season Mix Aesthetic */
+.font-season {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+/* Subtle Dotted Pattern */
+.bg-dotted-pattern {
+  background-image: radial-gradient(#d6d3d1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Soft Rounded Card */
+.sarvam-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 28px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.sarvam-card:hover {
+  box-shadow: 0px 8px 40px -4px rgba(0, 0, 0, 0.08);
+  border-color: #d6d3d1;
+}
+
+/* Pill Buttons */
+.btn-pill-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(to bottom, #3a3f5c 0%, #1e2033 100%);
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.btn-pill-dark:hover {
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 4px 16px rgba(30, 32, 51, 0.2);
+}
+
+.btn-pill-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(to bottom, #ffffff 0%, #f0f1f5 100%);
+  color: #1e2033;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: 1px solid rgba(30, 32, 51, 0.14);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-light:hover {
+  background: #ffffff;
+  border-color: rgba(30, 32, 51, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Chat Speech Bubbles */
+.bubble-blue {
+  background: #ebf3ff;
+  color: #1f1f1f;
+  border-radius: 20px;
+  border-bottom-left-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.bubble-peach {
+  background: #fff1e8;
+  color: #1f1f1f;
+  border-radius: 20px;
+  border-bottom-right-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-left: auto;
+}
+
+.bubble-green {
+  background: #eefbf2;
+  color: #1f1f1f;
+  border-radius: 20px;
+  border-bottom-left-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+/* Hide scrollbar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ============================================================
+   VRIDDHI AI — SMOOTH FULL-SCREEN TRANSITIONS & CHOREOGRAPHY
+   ============================================================ */
+
+/* Platform View — Smooth Dim & Zoom Out when transitioning to AI */
+#platform-view {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.42s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity, filter;
+  transform-origin: center 25vh;
+}
+
+#platform-view.platform-dimmed {
+  opacity: 0;
+  transform: scale(0.972) translateY(-10px);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* Full-Screen Vriddhi AI View Container */
+#vriddhi-ai-view {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.982) translateY(18px);
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, visibility;
+  transform-origin: center center;
+}
+
+#vriddhi-ai-view.ai-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+
+/* Closing State for graceful exit */
+#vriddhi-ai-view.ai-closing {
+  opacity: 0;
+  visibility: visible;
+  transform: scale(0.985) translateY(14px);
+  pointer-events: none;
+}
+
+/* Choreographed Internal Elements Entrance on AI Page Activation */
+.ai-header-anim {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease 0.08s, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.08s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-header-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dedicated Frosted Navigation Bar in Conversation Mode */
+.conversation-mode #ai-header,
+#vriddhi-ai-view.conversation-mode #ai-header {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ai-canopy-anim {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.05s, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-canopy-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ai-centerpiece-anim {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.93);
+  transition: opacity 0.48s ease 0.12s, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.12s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-centerpiece-anim {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.ai-title-anim {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.48s ease 0.18s, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.18s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-title-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ai-pills-anim {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.48s ease 0.24s, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.24s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-pills-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ai-composer-anim {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.48s ease 0.28s, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.28s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-composer-anim {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.ai-suggestions-anim {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.45s ease 0.34s, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.34s;
+  will-change: opacity, transform;
+}
+.ai-active .ai-suggestions-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================
+   VRIDDHI AI — TOP-CENTERED ELLIPTICAL ATMOSPHERIC DOME CANOPY
+   ============================================================ */
+
+/* Canopy Container: Top 55-62% of viewport, extending blue aura down near title */
+.ai-canopy-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 62vh;
+  min-height: 560px;
+  max-height: 700px;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background-color: transparent;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Layered Radial Gradient Canopy with Smooth Curved Arc Bottom Boundary */
+.ai-gradient-canopy {
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 135vw;
+  max-width: 1980px;
+  height: 130%;
+  background:
+    /* 1. Luminous Periwinkle / Twilight Indigo core at top-center */
+    radial-gradient(ellipse 50% 48% at 50% 6%,
+      #6366f1 0%,
+      #818cf8 22%,
+      rgba(165, 180, 252, 0.75) 44%,
+      rgba(199, 210, 254, 0.45) 68%,
+      transparent 88%),
+    /* 2. Soft Blush Rose warmth halo (inspired by sample 2) */
+    radial-gradient(ellipse 46% 40% at 50% 18%,
+      rgba(253, 164, 175, 0.45) 0%,
+      rgba(254, 205, 211, 0.30) 40%,
+      transparent 75%),
+    /* 3. Upper left rich periwinkle / lavender-blue wing */
+    radial-gradient(ellipse 55% 55% at 0% 26%,
+      #5982ff 0%,
+      #769eff 26%,
+      rgba(145, 180, 255, 0.95) 50%,
+      rgba(185, 210, 255, 0.60) 72%,
+      transparent 90%),
+    /* 4. Upper right rich periwinkle / lavender-blue wing */
+    radial-gradient(ellipse 55% 55% at 100% 26%,
+      #5982ff 0%,
+      #769eff 26%,
+      rgba(145, 180, 255, 0.95) 50%,
+      rgba(185, 210, 255, 0.60) 72%,
+      transparent 90%),
+    /* 5. Mid-lower left blue flank reaching down near the Vriddhi AI name */
+    radial-gradient(ellipse 54% 54% at 4% 60%,
+      #628dff 0%,
+      #84aaff 28%,
+      rgba(155, 192, 255, 0.92) 52%,
+      rgba(190, 216, 255, 0.55) 75%,
+      transparent 90%),
+    /* 6. Mid-lower right blue flank reaching down near the Vriddhi AI name */
+    radial-gradient(ellipse 54% 54% at 96% 60%,
+      #628dff 0%,
+      #84aaff 28%,
+      rgba(155, 192, 255, 0.92) 52%,
+      rgba(190, 216, 255, 0.55) 75%,
+      transparent 90%),
+    /* 7. Subtle fresh pale sage / mint whisper at perimeter (inspired by sample 3) */
+    radial-gradient(ellipse 65% 45% at 50% 45%,
+      rgba(187, 247, 208, 0.28) 0%,
+      rgba(220, 252, 231, 0.15) 50%,
+      transparent 80%);
+  /* Smooth curved dome arc fade to pure white */
+  mask-image: radial-gradient(ellipse 85% 82% at 50% 0%,
+      black 0%,
+      black 58%,
+      rgba(0, 0, 0, 0.90) 74%,
+      rgba(0, 0, 0, 0.40) 88%,
+      transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 82% at 50% 0%,
+      black 0%,
+      black 58%,
+      rgba(0, 0, 0, 0.90) 74%,
+      rgba(0, 0, 0, 0.40) 88%,
+      transparent 100%);
+  filter: blur(8px);
+}
+
+/* Bottom composer ambient glow (active in conversation mode) */
+.ai-bottom-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1100px;
+  height: 280px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 40% 60% at 30% 100%, rgba(99, 102, 241, 0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 70% 100%, rgba(199, 210, 254, 0.40) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 50% 100%, rgba(255, 255, 255, 0.95) 0%, transparent 80%);
+  filter: blur(40px);
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.conversation-mode .ai-bottom-glow {
+  opacity: 1;
+}
+
+.conversation-mode .ai-canopy-container {
+  opacity: 0.15;
+}
+
+/* Subtle Orbit & Spark Animations */
+@keyframes spark-shimmer {
+
+  0%,
+  100% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(255, 255, 255, 1));
+    transform: scale(1.08);
+  }
+}
+
+.animate-spark-shimmer {
+  animation: spark-shimmer 3.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Slim Persistent AI Input Pill */
+.ai-input-pill {
+  background: #ffffff;
+  border: 1px solid rgba(58, 63, 92, 0.20);
+  box-shadow: 0 4px 24px rgba(58, 63, 92, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 9999px;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ai-input-pill:focus-within {
+  border-color: rgba(58, 63, 92, 0.65);
+  box-shadow: 0 6px 32px rgba(58, 63, 92, 0.16), 0 0 0 3px rgba(199, 210, 254, 0.55);
+}
+
+.ai-input-pill.ai-input-disabled {
+  opacity: 0.72;
+  background: #f9fafb;
+  cursor: not-allowed;
+  border-color: rgba(58, 63, 92, 0.12);
+}
+
+.ai-input-pill.ai-input-disabled input {
+  cursor: not-allowed;
+  color: #6b7280;
+}
+
+/* AI Send Button - Vibrant Violet-Indigo Gradient */
+.ai-send-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #2563eb 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ai-send-btn:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #6d28d9 50%, #1d4ed8 100%);
+  box-shadow: 0 6px 22px rgba(79, 70, 229, 0.45);
+  transform: scale(1.05);
+}
+
+.ai-send-btn:active {
+  transform: scale(0.95);
+}
+
+/* Category Pills (Landing) */
+.ai-category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.52rem 1.15rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #374151;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.ai-category-pill:hover {
+  border-color: #818cf8;
+  color: #1e2033;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.14);
+}
+
+/* Prompt Chips (Landing "Try asking...") */
+.ai-prompt-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1.05rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  color: #4b5563;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ai-prompt-chip:hover {
+  border-color: #d1d5db;
+  color: #111827;
+  transform: translateY(-1px);
+}
+
+/* Gemini-Style Topic Suggestion Cards (Shown ONLY after AI response completes) */
+.ai-suggestion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.125rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 84px;
+}
+
+.ai-suggestion-card:hover {
+  background: #ffffff;
+  border-color: rgba(99, 102, 241, 0.40);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.10), 0 1px 4px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
+.ai-suggestion-card:active {
+  transform: translateY(0);
+}
+
+.ai-suggestion-card-text {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #1f2937;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.ai-suggestion-card-arrow {
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.ai-suggestion-card:hover .ai-suggestion-card-arrow {
+  color: #6366f1;
+  transform: translateX(2px);
+}
+
+/* Modern Editorial AI Response Formatting */
+.prose-vriddhi,
+.ai-response-body {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #242b35;
+  letter-spacing: -0.01em;
+}
+
+.ai-response-body p {
+  margin-bottom: 0.875rem;
+}
+
+.ai-response-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Callout Entrance Animation */
+@keyframes callout-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.ai-callout-unit {
+  animation: callout-entrance 320ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+/* Streaming Typewriter Cursor */
+.ai-stream-cursor {
+  display: inline-block;
+  width: 5.5px;
+  height: 14px;
+  margin-left: 2px;
+  vertical-align: -1.5px;
+  background-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.7);
+  border-radius: 1px;
+  animation: stream-cursor-blink 0.75s ease-in-out infinite;
+}
+
+@keyframes stream-cursor-blink {
+
+  0%,
+  100% {
+    opacity: 0.95;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Subtle Vriddhi Inline Metric Badge (Periwinkle & Emerald) */
+.ai-inline-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.65rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #93c5fd;
+  border-radius: 9999px;
+  margin: 0 0.2rem;
+  vertical-align: baseline;
+  line-height: 1.35;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.08);
+}
+
+/* Subtle Vriddhi Highlight (Golden Amber Warmth) */
+.ai-highlight {
+  background: linear-gradient(135deg, #fef08a 0%, #fde047 100%);
+  color: #713f12;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* AI Assistant Avatar Badge (Vibrant Violet-Indigo-Blue Gradient) */
+.ai-avatar-badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #2563eb 100%);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ai-avatar-badge img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  display: block;
+}
+
+/* AI User Message Bubble & Avatar */
+.ai-user-bubble {
+  background: linear-gradient(135deg, #4338ca 0%, #6366f1 60%, #4f46e5 100%);
+  color: #ffffff;
+  padding: 0.85rem 1.4rem;
+  border-radius: 22px 6px 22px 22px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  max-width: 82%;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.22);
+  line-height: 1.65;
+}
+
+.ai-user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(99, 102, 241, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   RICH COLOURFUL GRADIENT CARDS & CALLOUT UNITS
+   ============================================================ */
+
+/* 1. Skill Unlock Card — Soft Luminous Periwinkle / Royal Blue Gradient */
+.ai-card-skill {
+  background: linear-gradient(135deg, #edf3fe 0%, #dbe8fe 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 20px;
+  padding: 1.15rem 1.25rem;
+  max-width: 38rem;
+  box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.12), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.ai-card-skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.ai-card-skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1d4ed8;
+}
+
+.ai-card-skill-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+}
+
+.ai-card-skill-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #93c5fd;
+  color: #1e40af;
+  box-shadow: 0 1px 3px rgba(30, 64, 175, 0.06);
+}
+
+.ai-card-skill-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.01em;
+}
+
+.ai-card-skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.ai-pill-jobs {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  color: #1e293b;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.ai-pill-uplift {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #93c5fd;
+  color: #1d4ed8;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.08);
+}
+
+.ai-card-skill-desc {
+  font-size: 0.8125rem;
+  color: #334155;
+  margin-top: 0.65rem;
+  line-height: 1.6;
+}
+
+/* 2. Market Signal / Insight Card — Soft Luminous Sky Blue / Periwinkle Gradient */
+.ai-card-insight {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+  border: 1px solid #bae6fd;
+  border-left: 5px solid #0284c7;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  max-width: 42rem;
+  box-shadow: 0 4px 20px -2px rgba(2, 132, 199, 0.12), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.ai-card-insight-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0369a1;
+  margin-bottom: 0.5rem;
+}
+
+.ai-card-insight-text {
+  font-size: 0.90625rem;
+  color: #0f172a;
+  line-height: 1.65;
+}
+
+/* 3. Recommendation Card — Soft Fresh Mint / Sage Green Gradient */
+.ai-card-recommendation {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid #86efac;
+  border-left: 5px solid #10b981;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  max-width: 42rem;
+  box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.12), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.ai-card-rec-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #047857;
+  margin-bottom: 0.5rem;
+}
+
+.ai-card-rec-text {
+  font-size: 0.90625rem;
+  color: #064e3b;
+  line-height: 1.65;
+}
+
+/* 4. Critical Gap / Warning Card — Soft Warm Rose / Peach Coral Gradient */
+.ai-card-warning {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  border: 1px solid #fecdd3;
+  border-left: 5px solid #f43f5e;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  max-width: 42rem;
+  box-shadow: 0 4px 20px -2px rgba(244, 63, 94, 0.12), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.ai-card-warn-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #be123c;
+  margin-bottom: 0.5rem;
+}
+
+.ai-card-warn-text {
+  font-size: 0.90625rem;
+  color: #4c0519;
+  line-height: 1.65;
+}
+
+/* 5. Benchmark Metric Card — Soft Lavender / Violet Gradient */
+.ai-card-metric {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  border: 1px solid #d8b4fe;
+  border-radius: 18px;
+  padding: 1.1rem 1.35rem;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 210px;
+  box-shadow: 0 4px 20px -2px rgba(168, 85, 247, 0.12), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.ai-card-metric-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7e22ce;
+  margin-bottom: 0.35rem;
+}
+
+.ai-card-metric-value {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #581c87;
+  letter-spacing: -0.02em;
+}
+
+.ai-card-metric-subtext {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #047857;
+  margin-top: 0.35rem;
+}
+
+/* Vriddhi Lottie Loading Animation */
+.vriddhi-lottie-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.vriddhi-lottie-container svg {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Footer Giant Watermark Lettering (Cleanly balanced near bottom without cropping) */
+.footer-bottom-watermark {
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(4rem, 16.5vw, 17rem);
+  line-height: 0.88;
+  letter-spacing: 0.08em;
+  color: #1c1917;
+  opacity: 0.06;
+  user-select: none;
+  pointer-events: none;
+  margin-bottom: clamp(-1.2rem, -1.35vw, -0.4rem);
+  display: block;
+}

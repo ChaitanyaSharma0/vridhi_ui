@@ -1,0 +1,680 @@
+city_id,city_name,city_category
+1,1St Stage Indira Nagar,Tier 2/3
+2,1St Stage Indira Nagar+2,Tier 2/3
+3,7Th Block Jayanagar,Tier 2/3
+4,Ad Block Pitampura,Tier 2/3
+5,Ad Block Pitampura+25,Tier 2/3
+6,Adilabad,Tier 2/3
+7,Adithanar Nagar+1,Tier 2/3
+8,Adyar,Tier 2/3
+9,Aerocity,Tier 2/3
+10,Africa,Tier 2/3
+11,Agartala,Tier 2/3
+12,Agra,Tier 2/3
+13,Ahmedabad,Tier 2/3
+14,Ahmednagar,Tier 2/3
+15,Aizawl,Tier 2/3
+16,Ajmer,Tier 2/3
+17,Akola,Tier 2/3
+18,Akurli,Tier 2/3
+19,Alandur,Tier 2/3
+20,Aligarh,Tier 2/3
+21,Alipurduar,Tier 2/3
+22,Allahabad,Tier 2/3
+23,Alwar,Tier 2/3
+24,Alwarpet,Tier 2/3
+25,Alwarthirunagar,Tier 2/3
+26,Ambala,Tier 2/3
+27,Ambawadi,Tier 2/3
+28,Ambedkar Nagar+10,Tier 2/3
+29,Ambernath,Tier 2/3
+30,Ameerpet,Tier 2/3
+31,Amethi,Tier 2/3
+32,Aminjikarai,Tier 2/3
+33,Amravati,Tier 2/3
+34,Amritsar,Tier 2/3
+35,Amroha,Tier 2/3
+36,Anand,Tier 2/3
+37,Anantapur,Tier 2/3
+38,Anepalya,Tier 2/3
+39,Angul,Tier 2/3
+40,Ankleshwar,Tier 2/3
+41,Anna Nagar,Tier 2/3
+42,Anna Nagar East,Tier 2/3
+43,Anna Nagar Extension,Tier 2/3
+44,Anna Salai,Tier 2/3
+45,Anywhere India,Tier 2/3
+46,Anywhere in India,Unspecified
+47,Ara,Tier 2/3
+48,Arumbakkam,Tier 2/3
+49,Asansol,Tier 2/3
+50,Ashram Road,Tier 2/3
+51,Asiad Village,Tier 2/3
+52,Auraiya,Tier 2/3
+53,Aurangabad,Tier 2/3
+54,Azad Pur,Tier 2/3
+55,Azadpur,Tier 2/3
+56,Azamgarh,Tier 2/3
+57,B Block Sushant Lok Phase - I,Tier 2/3
+58,Baddi,Tier 2/3
+59,Bagalur,Tier 2/3
+60,Baghpat,Tier 2/3
+61,Bahadurgarh,Tier 2/3
+62,Bahraich,Tier 2/3
+63,Ballia,Tier 2/3
+64,Balod,Tier 2/3
+65,Balurghat,Tier 2/3
+66,Banashankari,Tier 2/3
+67,Banashankari+1,Tier 2/3
+68,Banda,Tier 2/3
+69,Bande Bommasandra,Tier 2/3
+70,Bande Bommasandra+1,Tier 2/3
+71,Bankura,Tier 2/3
+72,Banswara,Tier 2/3
+73,Banur,Tier 2/3
+74,Barabanki,Tier 2/3
+75,Baramati,Tier 2/3
+76,Barddhaman,Tier 2/3
+77,Bareilly,Tier 2/3
+78,Barmer,Tier 2/3
+79,Barnala,Tier 2/3
+80,Basavangudi,Tier 2/3
+81,Basti,Tier 2/3
+82,Bathinda,Tier 2/3
+83,Bavdhan,Tier 2/3
+84,Bavdhan+1,Tier 2/3
+85,Bawal,Tier 2/3
+86,Behrampur,Tier 2/3
+87,Belgaum,Tier 2/3
+88,Bellary,Tier 2/3
+89,Bengaluru,Tier 1 metro
+90,Bettiah,Tier 2/3
+91,Bhagalpur,Tier 2/3
+92,Bharuch,Tier 2/3
+93,Bhavnagar,Tier 2/3
+94,Bhikaji Cama,Tier 2/3
+95,Bhikaji Cama+1,Tier 2/3
+96,Bhilai,Tier 2/3
+97,Bhillai,Tier 2/3
+98,Bhilwara,Tier 2/3
+99,Bhiwadi,Tier 2/3
+100,Bhiwani,Tier 2/3
+101,Bhopal,Tier 2/3
+102,Bhubaneswar,Tier 2/3
+103,Bhugaon,Tier 2/3
+104,Bhuj,Tier 2/3
+105,Bidadi,Tier 2/3
+106,Bidar,Tier 2/3
+107,Bijnor,Tier 2/3
+108,Bikaner,Tier 2/3
+109,Bilaspur,Tier 2/3
+110,Binola,Tier 2/3
+111,Birbhum,Tier 2/3
+112,Bodakdev,Tier 2/3
+113,Boisar,Tier 2/3
+114,Bokaro,Tier 2/3
+115,Bommanahalli,Tier 2/3
+116,Bommenahalli,Tier 2/3
+117,Bommenahalli+6,Tier 2/3
+118,Bopal,Tier 2/3
+119,Brunei Darussalam,Tier 2/3
+120,Budaun,Tier 2/3
+121,Bulandshahr,Tier 2/3
+122,Burma,Tier 2/3
+123,C Block Sushant Lok Phase - I,Tier 2/3
+124,California,Tier 2/3
+125,Camp,Tier 2/3
+126,Cathedral Road,Tier 2/3
+127,Chaibasa,Tier 2/3
+128,Chamba,Tier 2/3
+129,Chandauli,Tier 2/3
+130,Chandigarh,Tier 2/3
+131,Charni Road,Tier 2/3
+132,Chatra,Tier 2/3
+133,Cheeriyal,Tier 2/3
+134,Chennai,Tier 1 metro
+135,Chennai City,Tier 2/3
+136,Cherlapally,Tier 2/3
+137,Chhapra,Tier 2/3
+138,Chikka Bommasandra,Tier 2/3
+139,Chinchpokli+1,Tier 2/3
+140,Chinchwad,Tier 2/3
+141,Chiplun,Tier 2/3
+142,Chitrakoot,Tier 2/3
+143,Churchgate,Tier 2/3
+144,Churi Wadi,Tier 2/3
+145,City Centre+1,Tier 2/3
+146,Coimbatore,Tier 2/3
+147,Colaba,Tier 2/3
+148,Cuddalore,Tier 2/3
+149,Cuttack,Tier 2/3
+150,Dadra,Tier 2/3
+151,Dahej,Tier 2/3
+152,Dairy Circle,Tier 2/3
+153,Dalhousie,Tier 2/3
+154,Dallas,Tier 2/3
+155,Daman & Diu,Tier 2/3
+156,Darjiling,Tier 2/3
+157,Daryaganj,Tier 2/3
+158,Dattawadi+1,Tier 2/3
+159,Dehradun,Tier 2/3
+160,Delhi NCR,Tier 1 metro
+161,Denmark,Tier 2/3
+162,Deogar,Tier 2/3
+163,Deoria,Tier 2/3
+164,Dhanbad,Tier 2/3
+165,Dharmasala,Tier 2/3
+166,Dharwad,Tier 2/3
+167,Dhole Patil Road,Tier 2/3
+168,Dibrugarh,Tier 2/3
+169,Dilshad Garden+1,Tier 2/3
+170,Dimapur,Tier 2/3
+171,Dindigul,Tier 2/3
+172,Dindugal,Tier 2/3
+173,Dinnur,Tier 2/3
+174,Dn Nagar,Tier 2/3
+175,Dodda Nekkundi,Tier 2/3
+176,Dongargarh,Tier 2/3
+177,Dooravani Nagar,Tier 2/3
+178,Dumka,Tier 2/3
+179,Durgapur,Tier 2/3
+180,East Of Kailash,Tier 2/3
+181,Eindhoven,Tier 2/3
+182,Ekkaduthangal,Tier 2/3
+183,Electronics City Phase 1,Tier 2/3
+184,Engineer Enclave,Tier 2/3
+185,Eon Free Zone,Tier 2/3
+186,Epip Zone,Tier 2/3
+187,Ernakulam,Tier 2/3
+188,Erode,Tier 2/3
+189,Etah,Tier 2/3
+190,Etawah,Tier 2/3
+191,Ethiopia,Tier 2/3
+192,Faizabad,Tier 2/3
+193,Faridkot,Tier 2/3
+194,Farrukhabad,Tier 2/3
+195,Fatehpur,Tier 2/3
+196,Fiji,Tier 2/3
+197,Film Nagar,Tier 2/3
+198,Finland,Tier 2/3
+199,Firozabad,Tier 2/3
+200,Firozpur,Tier 2/3
+201,Frazer Town,Tier 2/3
+202,Gajwel,Tier 2/3
+203,Gandhi Vihar+15,Tier 2/3
+204,Ganganagar,Tier 2/3
+205,Garebhavipalya+1,Tier 2/3
+206,Garhwa,Tier 2/3
+207,Garia+2,Tier 2/3
+208,Gariahat,Tier 2/3
+209,Ghata,Tier 2/3
+210,Ghazipur,Tier 2/3
+211,Ghitorni,Tier 2/3
+212,Gir,Tier 2/3
+213,Goa,Tier 2/3
+214,Goa Other,Tier 2/3
+215,Goalpara,Tier 2/3
+216,Godda,Tier 2/3
+217,Godhra,Tier 2/3
+218,Golaghat,Tier 2/3
+219,Gopalapuram,Tier 2/3
+220,Gorakhpur,Tier 2/3
+221,Gota,Tier 2/3
+222,Govandi,Tier 2/3
+223,Gowahati,Tier 2/3
+224,Greater Kailash,Tier 2/3
+225,Greater Kailash Iii,Tier 2/3
+226,Gst Road,Tier 2/3
+227,Gujrat,Tier 2/3
+228,Gulbarga,Tier 2/3
+229,Gumla,Tier 2/3
+230,Guntur,Tier 2/3
+231,Guwahati,Tier 2/3
+232,Gwal Pahari,Tier 2/3
+233,Gwalior,Tier 2/3
+234,Hailakandi,Tier 2/3
+235,Hajipur,Tier 2/3
+236,Haldia,Tier 2/3
+237,Haldwani,Tier 2/3
+238,Hamirpur,Tier 2/3
+239,Hapur,Tier 2/3
+240,Hardoi,Tier 2/3
+241,Haridwar,Tier 2/3
+242,Hathras,Tier 2/3
+243,Hauz Khas,Tier 2/3
+244,Hazaribagh,Tier 2/3
+245,Himachal,Tier 2/3
+246,Hisar,Tier 2/3
+247,Hmt Layout,Tier 2/3
+248,Hoshiarpur,Tier 2/3
+249,Hoskote,Tier 2/3
+250,Hospet,Tier 2/3
+251,Hosur,Tier 2/3
+252,Howrah,Tier 2/3
+253,Hubli,Tier 2/3
+254,Hugli,Tier 2/3
+255,Hyderabad,Tier 1 metro
+256,Hyderbasthi+2,Tier 2/3
+257,Idukki,Tier 2/3
+258,Imphal,Tier 2/3
+259,In Kerala,Tier 2/3
+260,Indira Nagar,Tier 2/3
+261,Indira Nagar+1,Tier 2/3
+262,Indonesia,Tier 2/3
+263,Indore,Tier 2/3
+264,International,International
+265,Irungattukottai,Tier 2/3
+266,Italy,Tier 2/3
+267,Itanagar,Tier 2/3
+268,Jabalpur,Tier 2/3
+269,Jaipur,Tier 2/3
+270,Jaisalmer,Tier 2/3
+271,Jalandhar,Tier 2/3
+272,Jalaun,Tier 2/3
+273,Jalgaon,Tier 2/3
+274,Jalpaiguri,Tier 2/3
+275,Jammu,Tier 2/3
+276,Jamnagar,Tier 2/3
+277,Jamshedpur,Tier 2/3
+278,Jaunpur,Tier 2/3
+279,Jayamahal Extension,Tier 2/3
+280,Jayanagar,Tier 2/3
+281,Jayanagar+1,Tier 2/3
+282,Jehanabad,Tier 2/3
+283,Jhandewalan,Tier 2/3
+284,Jhansi,Tier 2/3
+285,Jharsa,Tier 2/3
+286,Jind,Tier 2/3
+287,Jodhpur,Tier 2/3
+288,Jordan,Tier 2/3
+289,Jorhat,Tier 2/3
+290,Kadaperi,Tier 2/3
+291,Kailash Colony,Tier 2/3
+292,Kakinada,Tier 2/3
+293,Kala,Tier 2/3
+294,Kalewadi Phata,Tier 2/3
+295,Kalina,Tier 2/3
+296,Kalkaji,Tier 2/3
+297,Kalpakkam,Tier 2/3
+298,Kamalapuram,Tier 2/3
+299,Kamrup,Tier 2/3
+300,Kanakpura Road,Tier 2/3
+301,Kanchipuram,Tier 2/3
+302,Kandanchavadi,Tier 2/3
+303,Kandla,Tier 2/3
+304,Kannamangala+4,Tier 2/3
+305,Kannamwar Nagar Ii+2,Tier 2/3
+306,Kannamwar Nagar Ii+3,Tier 2/3
+307,Kannauj,Tier 2/3
+308,Kannur,Tier 2/3
+309,Kanpur,Tier 2/3
+310,Karapakkam+1,Tier 2/3
+311,Karimganj,Tier 2/3
+312,Karimnagar,Tier 2/3
+313,Karnal,Tier 2/3
+314,Karol Bagh,Tier 2/3
+315,Karur,Tier 2/3
+316,Karve Road,Tier 2/3
+317,Kashipur,Tier 2/3
+318,Kasturi Nagar,Tier 2/3
+319,Katihar,Tier 2/3
+320,Khagaria,Tier 2/3
+321,Khammam,Tier 2/3
+322,Khandsa,Tier 2/3
+323,Khar West,Tier 2/3
+324,Kherki Daula,Tier 2/3
+325,Khopoli,Tier 2/3
+326,Khunti,Tier 2/3
+327,Kiadb Vemegal,Tier 2/3
+328,Kilpauk,Tier 2/3
+329,Kirti Nagar,Tier 2/3
+330,Kirti Nagar Industrial Area+1,Tier 2/3
+331,Kishangang,Tier 2/3
+332,Kochi,Tier 2/3
+333,Kodambakkam,Tier 2/3
+334,Koderma,Tier 2/3
+335,Kodihalli,Tier 2/3
+336,Kohima,Tier 2/3
+337,Kokrajhar,Tier 2/3
+338,Kolhapur,Tier 2/3
+339,Kolkata,Tier 1 metro
+340,Kollam,Tier 2/3
+341,Kompally,Tier 2/3
+342,Kondhwa,Tier 2/3
+343,Koppal,Tier 2/3
+344,Koregaon Park,Tier 2/3
+345,Kota,Tier 2/3
+346,Kothrud,Tier 2/3
+347,Koti,Tier 2/3
+348,Kozhikode,Tier 2/3
+349,Kuala Lumpur,Tier 2/3
+350,Kudlu,Tier 2/3
+351,Kukatpally,Tier 2/3
+352,Kullu,Tier 2/3
+353,Kundalahalli,Tier 2/3
+354,Kundli,Tier 2/3
+355,Kurar Village+1,Tier 2/3
+356,Kurukshetra,Tier 2/3
+357,Kushinagar,Tier 2/3
+358,Lajpat Nagar Iv,Tier 2/3
+359,Lakhimpur,Tier 2/3
+360,Lakhisarai,Tier 2/3
+361,Lakhtar,Tier 2/3
+362,Lakshadweep,Tier 2/3
+363,Lalitpur,Tier 2/3
+364,Langford Gardens,Tier 2/3
+365,Langford Road,Tier 2/3
+366,Langford Road+2,Tier 2/3
+367,Lavelle Road,Tier 2/3
+368,Laxmi Nagar,Tier 2/3
+369,Laxmi Road,Tier 2/3
+370,Lbs Marg,Tier 2/3
+371,Linking Road,Tier 2/3
+372,Loni,Tier 2/3
+373,Lubumbashi,Tier 2/3
+374,Lucknow,Tier 2/3
+375,Ludhiana,Tier 2/3
+376,Lumbumbashi,Tier 2/3
+377,M I D C,Tier 2/3
+378,Maan,Tier 2/3
+379,Madhepura,Tier 2/3
+380,Madhira,Tier 2/3
+381,Madhubani,Tier 2/3
+382,Madiwala,Tier 2/3
+383,Madurai,Tier 2/3
+384,Mahadeva Kodigehalli+1,Tier 2/3
+385,Mahadevpura,Tier 2/3
+386,Mahalaxmi,Tier 2/3
+387,Maharajganj,Tier 2/3
+388,Maharashta,Tier 2/3
+389,Mahim United Industrial Estate,Tier 2/3
+390,Mahoba,Tier 2/3
+391,Mainpuri,Tier 2/3
+392,Majuli,Tier 2/3
+393,Makarba,Tier 2/3
+394,Malappuram,Tier 2/3
+395,Maldives,Tier 2/3
+396,Malur,Tier 2/3
+397,Malur Hosur Road,Tier 2/3
+398,Mamandur,Tier 2/3
+399,Manali,Tier 2/3
+400,Manapakkam,Tier 2/3
+401,Manayata Tech Park,Tier 2/3
+402,Mandi,Tier 2/3
+403,Mangaluru,Tier 2/3
+404,Manikonda,Tier 2/3
+405,Manila,Tier 2/3
+406,Maraimalai Nagar,Tier 2/3
+407,Maraimalai Nagar+1,Tier 2/3
+408,Marine Lines,Tier 2/3
+409,Masjid Bunder West,Tier 2/3
+410,Mathura,Tier 2/3
+411,Mau,Tier 2/3
+412,Mauritius,Tier 2/3
+413,Meerut,Tier 2/3
+414,Mehsana,Tier 2/3
+415,Memnagar,Tier 2/3
+416,Middle East,Tier 2/3
+417,Mindspace,Tier 2/3
+418,Mira Road,Tier 2/3
+419,Mirzapur,Tier 2/3
+420,Moga,Tier 2/3
+421,Mohan Co-Operative,Tier 2/3
+422,Moradabad,Tier 2/3
+423,Morigaon,Tier 2/3
+424,Morinda,Tier 2/3
+425,Morya Nagar,Tier 2/3
+426,Mount Road,Tier 2/3
+427,Mp,Tier 2/3
+428,Mrc Nagar,Tier 2/3
+429,Mulshi,Tier 2/3
+430,Mulund,Tier 2/3
+431,Mumbadevi Area,Tier 2/3
+432,Mumbai,Tier 1 metro
+433,Mumbai Central,Tier 2/3
+434,Mumbai City,Tier 2/3
+435,Mumbra,Tier 2/3
+436,Munger,Tier 2/3
+437,Murad Nagar,Tier 2/3
+438,Murbad,Tier 2/3
+439,Muzaffarpur,Tier 2/3
+440,Mylapore,Tier 2/3
+441,Mylapore+2,Tier 2/3
+442,Mysuru,Tier 2/3
+443,Nacharam,Tier 2/3
+444,Nagaon,Tier 2/3
+445,Nagar,Tier 2/3
+446,Nagar Haveli,Tier 2/3
+447,Nagaram,Tier 2/3
+448,Nagarkarnool,Tier 2/3
+449,Nagavara,Tier 2/3
+450,Nagercoil,Tier 2/3
+451,Nagpur,Tier 2/3
+452,Nalanda,Tier 2/3
+453,Nalbari,Tier 2/3
+454,Nandambakkam,Tier 2/3
+455,Narsampet,Tier 2/3
+456,Nashik,Tier 2/3
+457,Navi Peth,Tier 2/3
+458,Nawada,Tier 2/3
+459,Neemrana,Tier 2/3
+460,Nellore,Tier 2/3
+461,Netaji Subhash Place,Tier 2/3
+462,Netaji Subhash Place+1,Tier 2/3
+463,New Friends Colony,Tier 2/3
+464,New Gurappana Palya,Tier 2/3
+465,New York,Tier 2/3
+466,Nibm,Tier 2/3
+467,Nizamabad,Tier 2/3
+468,North Lakhimpur,Tier 2/3
+469,Okkiyam Thuraipakkam,Tier 2/3
+470,Old Airport Road,Tier 2/3
+471,Old Airport Road+1,Tier 2/3
+472,Old Rajender Nagar,Tier 2/3
+473,Ooty,Tier 2/3
+474,Oragadam,Tier 2/3
+475,Orai,Tier 2/3
+476,Other City,Tier 2/3
+477,Pakur,Tier 2/3
+478,Palace Road,Tier 2/3
+479,Palakkad,Tier 2/3
+480,Palam Vihar,Tier 2/3
+481,Palamu,Tier 2/3
+482,Pali Village,Tier 2/3
+483,Palladma,Tier 2/3
+484,Palwal,Tier 2/3
+485,Panathur+1,Tier 2/3
+486,Panipat,Tier 2/3
+487,Pantnagar,Tier 2/3
+488,Paradeep,Tier 2/3
+489,Park Street,Tier 2/3
+490,Parle Colony,Tier 2/3
+491,Parvati Darshan,Tier 2/3
+492,Pashamailaram,Tier 2/3
+493,Patel Nagar,Tier 2/3
+494,Pathanamthitta,Tier 2/3
+495,Pathankot,Tier 2/3
+496,Patiala,Tier 2/3
+497,Patna,Tier 2/3
+498,Patparganj,Tier 2/3
+499,Paud Road,Tier 2/3
+500,Pauri,Tier 2/3
+501,Peeragarhi,Tier 2/3
+502,Pendra,Tier 2/3
+503,Petlad,Tier 2/3
+504,Phagwara,Tier 2/3
+505,Phursungi,Tier 2/3
+506,Pilibhit,Tier 2/3
+507,Pithoragarh,Tier 2/3
+508,Pondicherry,Tier 2/3
+509,Porbandar,Tier 2/3
+510,Port Blair,Tier 2/3
+511,Prabhadevi,Tier 2/3
+512,Prahlad Nagar,Tier 2/3
+513,Pratapgarh,Tier 2/3
+514,Pune,Tier 1 metro
+515,Pune Nashik Highway,Tier 2/3
+516,Pune Nashik Highway+1,Tier 2/3
+517,Punjabi Basti+21,Tier 2/3
+518,Puri,Tier 2/3
+519,Raebareli,Tier 2/3
+520,Raigad,Tier 2/3
+521,Raigarh,Tier 2/3
+522,Raipur,Tier 2/3
+523,Rajaji Nagar,Tier 2/3
+524,Rajasthan Other,Tier 2/3
+525,Rajgurunagar,Tier 2/3
+526,Rajim,Tier 2/3
+527,Rajkot,Tier 2/3
+528,Ramamurthy Nagar,Tier 2/3
+529,Ramapuram,Tier 2/3
+530,Ramgarh,Tier 2/3
+531,Rampur,Tier 2/3
+532,Ranchi,Tier 2/3
+533,Ranjit Nagar,Tier 2/3
+534,Ratlam,Tier 2/3
+535,Ratnagiri,Tier 2/3
+536,Residency Road,Tier 2/3
+537,Rewa,Tier 2/3
+538,Rewari,Tier 2/3
+539,Richmond Town,Tier 2/3
+540,Ring Road+3,Tier 2/3
+541,Rohtak,Tier 2/3
+542,Rohtas,Tier 2/3
+543,Roorkee,Tier 2/3
+544,Rourkela,Tier 2/3
+545,Royapettah,Tier 2/3
+546,Rudraprayag,Tier 2/3
+547,Rudrapur,Tier 2/3
+548,S,Tier 2/3
+549,Sadashiva Nagar,Tier 2/3
+550,Safdarjung Enclave,Tier 2/3
+551,Sahadnagar,Tier 2/3
+552,Sahar,Tier 2/3
+553,Saharanpur,Tier 2/3
+554,Sahebganj,Tier 2/3
+555,Sainik Farms,Tier 2/3
+556,Sakinaka,Tier 2/3
+557,Salem,Tier 2/3
+558,Samastipur,Tier 2/3
+559,Sambalpur,Tier 2/3
+560,Sambhal,Tier 2/3
+561,Sanath Nagar,Tier 2/3
+562,Sangrur,Tier 2/3
+563,Sanjay Nagar,Tier 2/3
+564,Sankardev Nagar,Tier 2/3
+565,Santa Clara,Tier 2/3
+566,Satara,Tier 2/3
+567,Satellite,Tier 2/3
+568,Satna,Tier 2/3
+569,Science City,Tier 2/3
+570,Seepz,Tier 2/3
+571,Senapati Bapat Road,Tier 2/3
+572,Serbia,Tier 2/3
+573,Shahadra,Tier 2/3
+574,Shahjahanpur,Tier 2/3
+575,Shamirpet,Tier 2/3
+576,Shamli,Tier 2/3
+577,Sheohar,Tier 2/3
+578,Shikrapur,Tier 2/3
+579,Shilaj,Tier 2/3
+580,Shillong,Tier 2/3
+581,Shimla,Tier 2/3
+582,Shimoga,Tier 2/3
+583,Shirwal,Tier 2/3
+584,Shivrinarayan,Tier 2/3
+585,Sierra Leone,Tier 2/3
+586,Sikandarpur,Tier 2/3
+587,Silchar,Tier 2/3
+588,Siliguri,Tier 2/3
+589,Sion Koliwada,Tier 2/3
+590,Sion Trombay Road,Tier 2/3
+591,Sitamarhi,Tier 2/3
+592,Sitapur,Tier 2/3
+593,Sivasagar,Tier 2/3
+594,Siwan,Tier 2/3
+595,Sohna Road+2,Tier 2/3
+596,Sola,Tier 2/3
+597,Solapur,Tier 2/3
+598,Somajiguda,Tier 2/3
+599,South City 2,Tier 2/3
+600,South Extension,Tier 2/3
+601,South Extension I,Tier 2/3
+602,South Korea,Tier 2/3
+603,Southern Peripheral Road,Tier 2/3
+604,Srinagar,Tier 2/3
+605,Sriperumbudur,Tier 2/3
+606,St Thomas Mount,Tier 2/3
+607,Sudan,Tier 2/3
+608,Sultanpur,Tier 2/3
+609,Sundar Nagar,Tier 2/3
+610,Sunder Vihar,Tier 2/3
+611,Supaul,Tier 2/3
+612,Surajpur Industrial Area,Tier 2/3
+613,Surat,Tier 2/3
+614,Surendranagar,Tier 2/3
+615,Tada,Tier 2/3
+616,Tada Sricity,Tier 2/3
+617,Taimoor Nagar,Tier 2/3
+618,Tarapur,Tier 2/3
+619,Tardeo,Tier 2/3
+620,Tarnaka,Tier 2/3
+621,Telengana,Tier 2/3
+622,Teynampet,Tier 2/3
+623,Tezpur,Tier 2/3
+624,Thandalam,Tier 2/3
+625,Thanjavur,Tier 2/3
+626,Thiruvananthapuram,Tier 2/3
+627,Thiyagaraya Nagar,Tier 2/3
+628,Thousand Lights,Tier 2/3
+629,Thrissur,Tier 2/3
+630,Tinsukia,Tier 2/3
+631,Tirunelveli,Tier 2/3
+632,Tirupati,Tier 2/3
+633,Tirupur,Tier 2/3
+634,Tiruvanmiyur,Tier 2/3
+635,Topsia,Tier 2/3
+636,Trichy,Tier 2/3
+637,U.K,Tier 2/3
+638,Udaipur,Tier 2/3
+639,Udalguri,Tier 2/3
+640,Ujjain,Tier 2/3
+641,Ukraine,Tier 2/3
+642,Ulsoor,Tier 2/3
+643,Umesh Nagar,Tier 2/3
+644,Uttarkashi,Tier 2/3
+645,Uzbekistan,Tier 2/3
+646,Vadapalani,Tier 2/3
+647,Vadodara,Tier 2/3
+648,Vaishali,Tier 2/3
+649,Valsad,Tier 2/3
+650,Vapi,Tier 2/3
+651,Varanasi,Tier 2/3
+652,Vasai,Tier 2/3
+653,Vasant Kunj,Tier 2/3
+654,Vasant Vihar,Tier 2/3
+655,Vasanth Nagar,Tier 2/3
+656,Vasco Da Gama,Tier 2/3
+657,Vastrapur,Tier 2/3
+658,Vastrapur+1,Tier 2/3
+659,Veera Desai Road,Tier 2/3
+660,Vellore,Tier 2/3
+661,Victoria Road,Tier 2/3
+662,Vidya Vihar West,Tier 2/3
+663,Vijay Nagar,Tier 2/3
+664,Vijay Nagar+9,Tier 2/3
+665,Vijayawada,Tier 2/3
+666,Vikas Puri,Tier 2/3
+667,Visakhapatnam,Tier 2/3
+668,Vishrantwadi,Tier 2/3
+669,Wadala,Tier 2/3
+670,Wanawari,Tier 2/3
+671,Warangal,Tier 2/3
+672,West Mambalam,Tier 2/3
+673,West Patel Nagar,Tier 2/3
+674,West Tambaram,Tier 2/3
+675,Wilson Garden,Tier 2/3
+676,Yamunanagar,Tier 2/3
+677,Yangon,Tier 2/3
+678,Yavat,Tier 2/3
+679,Yelahanka+1,Tier 2/3

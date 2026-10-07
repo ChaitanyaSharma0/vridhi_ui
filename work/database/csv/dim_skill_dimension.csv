@@ -1,0 +1,6 @@
+dimension_id,dimension_code,dimension_name,jds_score_column
+1,big_data,Big data,big_data_skills
+2,maths_stats,Maths & statistics,maths_stats_skills
+3,coding,Coding,coding_skills
+4,ai_ml,AI & machine learning,ai_and_ml_skills
+5,dashboard_story,Dashboards & storytelling,dashboard_and_storytelling_skills

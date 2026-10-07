@@ -1,0 +1,6 @@
+model,auc_mean,auc_sd,accuracy,f1,brier,outer_folds,best_params_full_data
+Logistic regression,0.9632941176470586,0.0330956622020714,0.9125189393939394,0.9204407225877814,0.09739299952007896,50,"{""logisticregression__C"": 0.01, ""logisticregression__penalty"": ""l2""}"
+Decision tree,0.940625,0.041417581966752985,0.9155113636363638,0.9205520346706554,0.07178334004595699,50,"{""criterion"": ""gini"", ""max_depth"": 4, ""min_samples_leaf"": 12}"
+Random forest,0.9967320261437909,0.005341912873647705,0.9605429292929293,0.9625272696240438,0.03223741278637316,15,"{""max_depth"": null, ""max_features"": ""sqrt"", ""min_samples_leaf"": 1}"
+Gradient boosting,0.9878104575163398,0.016833190267669156,0.9316919191919192,0.9373127596072768,0.049446834952671645,15,"{""learning_rate"": 0.1, ""max_depth"": 3, ""n_estimators"": 300, ""subsample"": 0.8}"
+Baseline (guess majority class),0.5,0.0,0.5279503105590062,,0.2492187801396551,0,

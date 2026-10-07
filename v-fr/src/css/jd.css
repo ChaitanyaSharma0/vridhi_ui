@@ -1,0 +1,74 @@
+/* JD audit + live homepage additions, on the design-system tokens (dist/css/styles.css stays untouched). */
+.jd-strip { max-width: 1000px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (min-width: 768px) { .jd-strip { grid-template-columns: repeat(5, 1fr); } }
+.jd-strip div { text-align: center; }
+.jd-strip b { display: block; font: 800 26px "JetBrains Mono", monospace; letter-spacing: -0.02em; color: #1c1917; }
+.jd-strip span { font-size: 12.5px; color: #78716c; }
+.jd-offline { display: none; text-align: center; margin: 16px auto 0; max-width: 560px; font-size: 13px; color: #be123c; background: #fff1f2; border: 1px solid #fecdd3; border-radius: 14px; padding: 8px 12px; }
+.jd-offline.on { display: block; }
+
+/* landing: steps + composer */
+.jd-steps { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; font-size: 13.5px; color: #374151; margin-bottom: 4px; }
+.jd-steps b { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #eef2ff; color: #4f46e5; font: 700 11px "JetBrains Mono", monospace; margin-right: 6px; }
+.jd-composer { border-radius: 26px !important; }
+.jd-composer textarea { max-height: 220px; line-height: 1.5; }
+.jd-hint { text-align: center; font-size: 12px; color: #a8a29e; margin: 10px 0 0; }
+.conversation-mode .jd-hint { display: none; }
+
+/* results */
+.jd-block { animation: jdRise .45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.jd-block + .jd-block { margin-top: 36px; }
+@keyframes jdRise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.jd-step { font: 700 11px "JetBrains Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: #a5460f; }
+.jd-h { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.1; letter-spacing: -0.02em; color: #111; margin: 4px 0 6px; }
+.jd-sub { font-size: 14.5px; color: #4b5563; line-height: 1.6; margin: 0 0 16px; max-width: 680px; }
+.jd-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 24px; box-shadow: 0 0 40px rgba(0,0,0,.04); padding: 22px 24px; }
+.jd-text { white-space: pre-wrap; font-size: 14.5px; line-height: 1.75; color: #242b35; max-height: 260px; overflow: auto; }
+.jd-text mark { border-radius: 6px; padding: 1px 5px; color: #fff; font-weight: 600; }
+.jd-tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 16px; }
+@media (min-width: 700px) { .jd-tiles { grid-template-columns: repeat(5, 1fr); } }
+.jd-tile { border-radius: 16px; padding: 12px 12px; border: 1px solid #e6e6e6; background: #fafaf9; color: #a8a29e; font-size: 13px; font-weight: 600; transition: all .3s ease; }
+.jd-tile small { display: block; font-weight: 500; font-size: 11.5px; margin-top: 3px; }
+.jd-tile.on { color: #fff; border-color: transparent; }
+.jd-role { display: inline-flex; gap: 8px; align-items: center; font-size: 13px; color: #374151; background: #f5f5f4; border-radius: 999px; padding: 5px 12px; margin-bottom: 12px; }
+
+.jd-cover { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-bottom: 18px; }
+.jd-cover .big { font: 800 56px "JetBrains Mono", monospace; letter-spacing: -0.03em; line-height: 1; color: #1c1917; }
+.jd-cover .txt { font-size: 15px; color: #374151; max-width: 420px; line-height: 1.5; }
+.jd-segbar { display: flex; height: 14px; border-radius: 999px; overflow: hidden; background: #f5f5f4; margin: 4px 0 20px; }
+.jd-segbar i { display: block; height: 100%; transition: opacity .3s; }
+.jd-row { display: grid; grid-template-columns: minmax(150px, 1.1fr) 2fr 128px; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid #f0f0f0; }
+.jd-row .nm { font-weight: 600; font-size: 14.5px; display: flex; align-items: center; gap: 9px; }
+.jd-row .nm small { display: block; font-weight: 400; color: #78716c; font-size: 12px; }
+.jd-row .bar { height: 12px; background: #f5f5f4; border-radius: 999px; position: relative; }
+.jd-row .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; }
+.jd-row .bar span { position: absolute; right: -4px; top: -20px; font: 600 11px "JetBrains Mono", monospace; color: #57534e; }
+.jd-pill { border-radius: 999px; padding: 5px 12px; font-size: 12px; font-weight: 700; white-space: nowrap; text-align: center; }
+.jd-pill.ok { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+.jd-pill.add { background: #fff1f2; color: #be123c; border: 1px solid #fecdd3; }
+.jd-pill.na { background: #f5f5f4; color: #78716c; border: 1px solid #e7e5e4; }
+.dot9 { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+
+.jd-new { white-space: pre-wrap; font-size: 14.5px; line-height: 1.75; color: #242b35; }
+.jd-new ins { display: block; text-decoration: none; background: #ecfdf5; border-left: 4px solid #10b981; border-radius: 8px; padding: 6px 10px; margin: 6px 0; color: #064e3b; }
+.jd-new ins b { font: 700 10.5px "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .05em; color: #047857; display: block; }
+.jd-note { background: #fffbeb; border: 1px solid #fde68a; border-left: 4px solid #d97706; border-radius: 12px; padding: 9px 12px; font-size: 13.5px; color: #78350f; margin-top: 10px; }
+
+.jd-effect { display: grid; grid-template-columns: 1fr auto 1fr; gap: 18px; align-items: center; }
+.jd-effect .side { text-align: center; padding: 18px; border-radius: 20px; background: #fafaf9; border: 1px solid #e7e5e4; }
+.jd-effect .side.after { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-color: #86efac; }
+.jd-effect .num { font: 800 46px "JetBrains Mono", monospace; letter-spacing: -0.03em; color: #1c1917; }
+.jd-effect .lbl { font-size: 13px; color: #4b5563; margin-top: 4px; }
+.jd-effect .arrow { font-size: 30px; color: #a8a29e; }
+.jd-cap { font-size: 12.5px; color: #78716c; line-height: 1.55; margin-top: 12px; }
+.jd-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.jd-btn { border: 1px solid rgba(30,32,51,.14); background: linear-gradient(#fff, #f0f1f5); color: #1e2033; border-radius: 999px; padding: 9px 18px; font: 500 13.5px "Plus Jakarta Sans", sans-serif; cursor: pointer; }
+.jd-btn.dark { background: linear-gradient(#3a3f5c, #1e2033); color: #fff; border: 0; }
+.jd-foot { text-align: center; font-size: 12.5px; color: #a8a29e; margin: 34px 0 10px; line-height: 1.6; }
+.jd-err { background: #fff1f2; border: 1px solid #fecdd3; color: #be123c; border-radius: 14px; padding: 10px 14px; font-size: 14px; }
+#vriddhi-ai-view.conversation-mode #ai-composer-wrapper { padding-bottom: 18px; }
+.conversation-mode .jd-composer textarea { max-height: 70px; }
+@media (max-width: 640px) { .jd-row { grid-template-columns: 1fr; } .jd-effect { grid-template-columns: 1fr; } .jd-effect .arrow { transform: rotate(90deg); justify-self: center; } }
+@media (prefers-reduced-motion: reduce) { .jd-block { animation: none; } }
+.skel { background: linear-gradient(90deg, #f5f5f4 25%, #fafaf9 50%, #f5f5f4 75%); background-size: 200% 100%; animation: jdSk 1.2s infinite; border-radius: 14px; }
+@keyframes jdSk { from { background-position: 200% 0; } to { background-position: -200% 0; } }

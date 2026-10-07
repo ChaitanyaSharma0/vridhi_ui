@@ -1,0 +1,11 @@
+model,variable,importance
+Gradient boosting,Agreeableness,0.029495098039215684
+Gradient boosting,Conscientiousness,0.06887254901960785
+Gradient boosting,Extraversion,0.02397303921568627
+Gradient boosting,Neuroticism,0.00037500000000000315
+Gradient boosting,Openness,0.10100735294117646
+Random forest,Agreeableness,0.023622549019607836
+Random forest,Conscientiousness,0.07609313725490195
+Random forest,Extraversion,0.022852941176470586
+Random forest,Neuroticism,0.004274509803921569
+Random forest,Openness,0.1370575980392157

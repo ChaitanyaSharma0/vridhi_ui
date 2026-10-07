@@ -1,0 +1,46 @@
+role_family,skill_area,share,postings
+Data Analyst / Analytics,Big data,0.0709433962264151,1325
+Business Analyst,Big data,0.029745042492917848,706
+Data Scientist / ML / AI,Big data,0.2325925925925926,675
+Data Engineer / Big Data,Big data,0.7982905982905983,585
+Risk / Credit / Quant Analytics,Big data,0.0035087719298245615,570
+Statistical Modelling / SAS,Big data,0.058577405857740586,478
+BI / Reporting / MIS,Big data,0.1581769436997319,373
+Research / Market Research,Big data,0.023728813559322035,295
+Marketing / Web Analytics,Big data,0.0,120
+Data Analyst / Analytics,Maths & statistics,0.17886792452830189,1325
+Business Analyst,Maths & statistics,0.04107648725212465,706
+Data Scientist / ML / AI,Maths & statistics,0.25037037037037035,675
+Data Engineer / Big Data,Maths & statistics,0.03247863247863248,585
+Risk / Credit / Quant Analytics,Maths & statistics,0.14736842105263157,570
+Statistical Modelling / SAS,Maths & statistics,0.46234309623430964,478
+BI / Reporting / MIS,Maths & statistics,0.058981233243967826,373
+Research / Market Research,Maths & statistics,0.04406779661016949,295
+Marketing / Web Analytics,Maths & statistics,0.11666666666666667,120
+Data Analyst / Analytics,Coding,0.38339622641509435,1325
+Business Analyst,Coding,0.16855524079320114,706
+Data Scientist / ML / AI,Coding,0.7229629629629629,675
+Data Engineer / Big Data,Coding,0.7076923076923077,585
+Risk / Credit / Quant Analytics,Coding,0.22280701754385965,570
+Statistical Modelling / SAS,Coding,0.7322175732217573,478
+BI / Reporting / MIS,Coding,0.3646112600536193,373
+Research / Market Research,Coding,0.05084745762711865,295
+Marketing / Web Analytics,Coding,0.3,120
+Data Analyst / Analytics,AI & machine learning,0.14415094339622642,1325
+Business Analyst,AI & machine learning,0.053824362606232294,706
+Data Scientist / ML / AI,AI & machine learning,0.8577777777777778,675
+Data Engineer / Big Data,AI & machine learning,0.09743589743589744,585
+Risk / Credit / Quant Analytics,AI & machine learning,0.02982456140350877,570
+Statistical Modelling / SAS,AI & machine learning,0.17364016736401675,478
+BI / Reporting / MIS,AI & machine learning,0.03753351206434316,373
+Research / Market Research,AI & machine learning,0.04406779661016949,295
+Marketing / Web Analytics,AI & machine learning,0.06666666666666667,120
+Data Analyst / Analytics,Dashboards & storytelling,0.2181132075471698,1325
+Business Analyst,Dashboards & storytelling,0.14022662889518414,706
+Data Scientist / ML / AI,Dashboards & storytelling,0.06814814814814815,675
+Data Engineer / Big Data,Dashboards & storytelling,0.08888888888888889,585
+Risk / Credit / Quant Analytics,Dashboards & storytelling,0.08947368421052632,570
+Statistical Modelling / SAS,Dashboards & storytelling,0.19665271966527198,478
+BI / Reporting / MIS,Dashboards & storytelling,0.6300268096514745,373
+Research / Market Research,Dashboards & storytelling,0.09830508474576272,295
+Marketing / Web Analytics,Dashboards & storytelling,0.15833333333333333,120

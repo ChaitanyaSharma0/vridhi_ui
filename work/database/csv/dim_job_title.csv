@@ -1,0 +1,11 @@
+job_title_id,job_title,base_role,seniority
+1,Business Analyst,Business Analyst,Junior/Mid
+2,Senior Business Analyst,Business Analyst,Senior
+3,Data Analyst,Data Analyst,Junior/Mid
+4,Senior Data Analyst,Data Analyst,Senior
+5,Data Architect,Data Architect,Junior/Mid
+6,Data Engineer,Data Engineer,Junior/Mid
+7,Senior Data Engineer,Data Engineer,Senior
+8,Data Scientist,Data Scientist,Junior/Mid
+9,Senior Data Scientist,Data Scientist,Senior
+10,Machine Learning Engineer,Machine Learning Engineer,Junior/Mid

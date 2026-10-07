@@ -1,0 +1,128 @@
+file,column,origin,type,description,missing_pct,distinct
+DataScience Jobs,row_id,derived,int,Surrogate unique key (reference_no is not unique),0.0,1602
+DataScience Jobs,reference_no,original,int64,Row identification number (NOT unique - see row_id),0.0,1460
+DataScience Jobs,company_name,original,str,Recruiting company,0.0,642
+DataScience Jobs,job_title,original,str,Job title (10 values),0.0,10
+DataScience Jobs,min_experience,original,int64,Minimum required experience (years),0.0,18
+DataScience Jobs,num_of_jobs,original,int64,Number of postings by the company for the title,0.0,220
+DataScience Jobs,company_group,derived,text,"Parent employer group (links a company's India/technology units, e.g. HSBC / Hsbc Technology)",0.0,640
+DataScience Jobs,is_placeholder_employer,derived,0/1,"Employer name is a placeholder, not a real company",0.0,2
+DataScience Jobs,min_salary_lpa,derived,float,min salary in lakhs per annum (parsed from text like '7.8L'),0.0,197
+DataScience Jobs,avg_salary_lpa,derived,float,avg salary in lakhs per annum (parsed from text like '7.8L'),0.0,305
+DataScience Jobs,max_salary_lpa,derived,float,max salary in lakhs per annum (parsed from text like '7.8L'),0.0,304
+DataScience Jobs,min_salary_implausible,derived,0/1,"min salary < 1 LPA, likely monthly or stipend value",0.0,2
+DataScience Jobs,salary_range_ratio,derived,float,max_salary / min_salary,0.0,383
+DataScience Jobs,wide_salary_range,derived,0/1,max salary > 6x min salary,0.0,2
+DataScience Jobs,seniority,derived,cat,Senior vs Junior/Mid from job_title,0.0,2
+DataScience Jobs,role,derived,cat,Job title without the 'Senior' prefix (6 roles),0.0,6
+DataScience Jobs,senior_zero_exp,derived,0/1,Senior title with 0 years minimum experience,0.0,2
+DataScience Jobs,num_jobs_outlier,derived,0/1,num_of_jobs above Q3 + 3xIQR,0.0,2
+DataScience Jobs,log_num_jobs,derived,float,log(1 + num_of_jobs),0.0,220
+DataScience Jobs,salary_outlier_in_title,derived,0/1,avg salary more than 3 robust SDs from the title median,0.0,2
+DataScience Jobs,avg_salary_lpa_w,derived,float,avg salary winsorised at 1st/99th percentile,0.0,283
+DataScience Jobs,company_type,derived,cat,IT services/consulting vs product/captive/other (curated list),0.0,2
+DataScience Jobs,company_total_openings,derived,int,Total openings by the company across all roles,0.0,225
+DataScience Jobs,company_scale,derived,cat,Company hiring scale from total openings,0.0,3
+DataScience Jobs,salary_spread_lpa,derived,float,max - min salary,0.0,404
+DataScience Jobs,exp_band,derived,cat,Minimum experience band,0.0,5
+DataScience Jobs,in_analysis_sample,derived,0/1,Real employer (placeholder employers excluded),0.0,2
+Analytics Jobs,s_no,original,int64,Row identification number,0.0,14840
+Analytics Jobs,experience,original,str,Experience required (text range),0.0,128
+Analytics Jobs,job_description,original,str,"Job description (cleaned, often truncated)",22.7,7800
+Analytics Jobs,job_desig,original,str,Designation as posted (raw),0.0,10088
+Analytics Jobs,job_type,derived,str,,77.9,5
+Analytics Jobs,key_skills,original,str,Key skills as posted (raw),0.0,11155
+Analytics Jobs,location,original,str,Location as posted (raw),0.0,1355
+Analytics Jobs,salary,original,str,Salary band as posted (raw),0.0,6
+Analytics Jobs,job_title_clean,derived,text,"Designation with recruiting noise, locations and brackets removed",0.0,9711
+Analytics Jobs,exp_min,derived,float,Minimum years required,0.0,22
+Analytics Jobs,exp_max,derived,float,Maximum years required,0.0,29
+Analytics Jobs,exp_mid,derived,float,Midpoint of the experience range,0.0,50
+Analytics Jobs,exp_range_width,derived,float,exp_max - exp_min,0.0,11
+Analytics Jobs,exp_band,derived,cat,Experience band from exp_mid,0.0,5
+Analytics Jobs,salary_band_ord,derived,int,Salary band as ordinal 1 (0-3 LPA) to 6 (25-50 LPA),0.0,6
+Analytics Jobs,salary_low_lpa,derived,float,Band lower bound,0.0,6
+Analytics Jobs,salary_high_lpa,derived,float,Band upper bound,0.0,6
+Analytics Jobs,salary_mid_lpa,derived,float,Band midpoint,0.0,6
+Analytics Jobs,salary_band,derived,cat,Readable band label,0.0,6
+Analytics Jobs,high_pay_15plus,derived,0/1,Salary band 15 LPA or more (modelling target),0.0,2
+Analytics Jobs,salary_exp_inconsistent,derived,0/1,0-3 LPA band with 8+ years required,0.0,2
+Analytics Jobs,job_type_tagged,derived,0/1,Posting was tagged 'analytics' in the raw job_type field,0.0,2
+Analytics Jobs,cities,derived,text,"All canonical cities, '|' separated",0.0,881
+Analytics Jobs,n_cities,derived,int,Number of cities listed,0.0,11
+Analytics Jobs,is_multi_city,derived,0/1,More than one city listed,0.0,2
+Analytics Jobs,is_international,derived,0/1,Only overseas locations,0.0,2
+Analytics Jobs,primary_city,derived,cat,First canonical city (metro areas merged),0.0,187
+Analytics Jobs,city_tier,derived,cat,Tier 1 metro / Tier 2-3 / Unspecified / International,0.0,4
+Analytics Jobs,skills,derived,text,"Clean technical/domain skills from key_skills, '|' separated",0.0,10987
+Analytics Jobs,soft_skills,derived,text,Soft skills from key_skills,0.0,121
+Analytics Jobs,education_mentioned,derived,text,Degrees/certifications found in key_skills,0.0,51
+Analytics Jobs,job_meta_tags,derived,text,"Non-skill tags (fresher, BPO, shift ...)",0.0,77
+Analytics Jobs,n_skills,derived,int,Number of clean skills,0.0,13
+Analytics Jobs,skills_truncated,derived,0/1,Raw key_skills ended with '...',0.0,2
+Analytics Jobs,skills_from_desc,derived,text,Vocabulary skills found in the description,0.0,1555
+Analytics Jobs,skills_all,derived,text,Union of skills and skills_from_desc,0.0,11105
+Analytics Jobs,n_skills_all,derived,int,Size of skills_all,0.0,17
+Analytics Jobs,dim_big_data,derived,0/1,Posting asks for any 'big_data' skill (taxonomy bridging to the JDS skill score),0.0,2
+Analytics Jobs,dim_maths_stats,derived,0/1,Posting asks for any 'maths_stats' skill (taxonomy bridging to the JDS skill score),0.0,2
+Analytics Jobs,dim_coding,derived,0/1,Posting asks for any 'coding' skill (taxonomy bridging to the JDS skill score),0.0,2
+Analytics Jobs,dim_ai_ml,derived,0/1,Posting asks for any 'ai_ml' skill (taxonomy bridging to the JDS skill score),0.0,2
+Analytics Jobs,dim_dashboard_story,derived,0/1,Posting asks for any 'dashboard_story' skill (taxonomy bridging to the JDS skill score),0.0,2
+Analytics Jobs,n_dims,derived,int,How many of the 5 analytics skill dimensions the posting asks for (0-5),0.0,6
+Analytics Jobs,has_python,derived,int64,Posting lists the skill 'python',0.0,2
+Analytics Jobs,has_r,derived,int64,Posting lists the skill 'r',0.0,2
+Analytics Jobs,has_sql,derived,int64,Posting lists the skill 'sql',0.0,2
+Analytics Jobs,has_sas,derived,int64,Posting lists the skill 'sas',0.0,2
+Analytics Jobs,has_excel,derived,int64,Posting lists the skill 'excel',0.0,2
+Analytics Jobs,has_tableau,derived,int64,Posting lists the skill 'tableau',0.0,2
+Analytics Jobs,has_power_bi,derived,int64,Posting lists the skill 'power bi',0.0,2
+Analytics Jobs,has_hadoop,derived,int64,Posting lists the skill 'hadoop',0.0,2
+Analytics Jobs,has_spark,derived,int64,Posting lists the skill 'spark',0.0,2
+Analytics Jobs,has_machine_learning,derived,int64,Posting lists the skill 'machine learning',0.0,2
+Analytics Jobs,has_deep_learning,derived,int64,Posting lists the skill 'deep learning',0.0,2
+Analytics Jobs,has_statistics,derived,int64,Posting lists the skill 'statistics',0.0,2
+Analytics Jobs,has_java,derived,int64,Posting lists the skill 'java',0.0,2
+Analytics Jobs,has_aws,derived,int64,Posting lists the skill 'aws',0.0,2
+Analytics Jobs,role_family,derived,cat,18 role families + Other,0.0,23
+Analytics Jobs,role_source,derived,cat,"Whether role came from title, skills, or neither",0.0,3
+Analytics Jobs,seniority,derived,cat,Entry / Mid / Senior / Manager-Lead / Leadership from title,0.0,5
+Analytics Jobs,is_analytics_role,derived,0/1,Role family is one of the 9 analytics families,0.0,2
+Analytics Jobs,is_near_duplicate,derived,0/1,Repeat of an earlier posting after normalisation,0.0,2
+Analytics Jobs,possible_repost,derived,0/1,Same title/skills/city/experience as an earlier posting but different salary band,0.0,2
+Analytics Jobs,is_spam,derived,0/1,Spam/low-quality posting,0.0,2
+Analytics Jobs,desc_missing,derived,0/1,No description,0.0,2
+Analytics Jobs,desc_truncated,derived,0/1,Description cut off with '...',0.0,2
+Analytics Jobs,desc_length,derived,int,Characters in description,0.0,86
+Analytics Jobs,in_india_sample,derived,0/1,"Not spam, not overseas-only, not a near-duplicate",0.0,2
+Analytics Jobs,in_core_analytics,derived,0/1,India sample AND an analytics role family - main market sample,0.0,2
+Analytics Jobs,in_salary_model,derived,0/1,Core analytics AND salary consistent with experience,0.0,2
+JDS Skill Traits,row_id,derived,num/cat,Surrogate key,0.0,139
+JDS Skill Traits,id,original,int64,Employee id (NOT unique - see row_id),0.0,137
+JDS Skill Traits,big_data_skills,original,float64,Big-data skill score 1-5,0.0,28
+JDS Skill Traits,maths_stats_skills,original,float64,Maths & statistics skill score 1-5,0.0,27
+JDS Skill Traits,coding_skills,original,float64,"Coding skill score 1-5 (SAS, Python, SQL ...)",0.0,22
+JDS Skill Traits,ai_and_ml_skills,original,float64,AI & ML skill score 1-5,0.0,22
+JDS Skill Traits,dashboard_and_storytelling_skills,original,float64,"Visualisation, reporting & storytelling score 1-5",0.0,21
+JDS Skill Traits,salary_hike_high,original,int64,"Target: performance-based salary hike, 1 = high, 0 = low",0.0,2
+JDS Skill Traits,skill_mean,derived,num/cat,Mean of 5 skills,0.0,66
+JDS Skill Traits,skill_min,derived,num/cat,Lowest skill,0.0,27
+JDS Skill Traits,skill_range,derived,num/cat,Max - min skill,0.0,27
+JDS Skill Traits,n_skills_at_max,derived,num/cat,Skills scored exactly 5,0.0,5
+JDS Skill Traits,weakest_skill,derived,num/cat,Lowest-scoring area,0.0,5
+JDS Skill Traits,strongest_skill,derived,num/cat,Highest-scoring area,0.0,5
+SDS Personality Traits,row_id,derived,num/cat,Surrogate key,0.0,161
+SDS Personality Traits,id,original,int64,Employee id (NOT unique - see row_id),0.0,152
+SDS Personality Traits,neuroticism,original,int64,Big Five neuroticism (normalised),0.0,45
+SDS Personality Traits,extraversion,original,int64,Big Five extraversion (normalised),0.0,47
+SDS Personality Traits,openness_to_experience,original,int64,Big Five openness (normalised),0.0,46
+SDS Personality Traits,agreeableness,original,int64,Big Five agreeableness (normalised),0.0,47
+SDS Personality Traits,conscientiousness,original,int64,Big Five conscientiousness (normalised),0.0,46
+SDS Personality Traits,success_high,original,int64,"Target: success classification, 1 = high, 0 = low",0.0,2
+SDS Personality Traits,neuroticism_z,derived,float64,z-score of neuroticism,0.0,45
+SDS Personality Traits,extraversion_z,derived,float64,z-score of extraversion,0.0,47
+SDS Personality Traits,openness_to_experience_z,derived,float64,z-score of openness_to_experience,0.0,46
+SDS Personality Traits,agreeableness_z,derived,float64,z-score of agreeableness,0.0,47
+SDS Personality Traits,conscientiousness_z,derived,float64,z-score of conscientiousness,0.0,46
+SDS Personality Traits,emotional_stability_z,derived,num/cat,Reversed neuroticism z-score,0.0,45
+SDS Personality Traits,trait_mean,derived,num/cat,Mean of the 4 positive traits,0.0,86
+SDS Personality Traits,dominant_trait,derived,num/cat,Trait with highest z-score,0.0,5

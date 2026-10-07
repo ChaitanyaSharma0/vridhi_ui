@@ -1,0 +1,18 @@
+M12 senior_ensembles_benchmark - run 2026-10-07 17:34 - seed 42
+Random forest: nested CV AUC 0.997 +/- 0.005 over 15 outer folds; acc 0.961; best params on full data {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Gradient boosting: nested CV AUC 0.988 +/- 0.017 over 15 outer folds; acc 0.932; best params on full data {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 300, 'subsample': 0.8}
+table saved: results/model_comparison.csv  (+ vfl copy)
+                          model  auc_mean  auc_sd  accuracy     f1  brier  outer_folds
+            Logistic regression    0.9633  0.0331    0.9125 0.9204 0.0974           50
+                  Decision tree    0.9406  0.0414    0.9155 0.9206 0.0718           50
+                  Random forest    0.9967  0.0053    0.9605 0.9625 0.0322           15
+              Gradient boosting    0.9878  0.0168    0.9317 0.9373 0.0494           15
+Baseline (guess majority class)    0.5000  0.0000    0.5280    NaN 0.2492            0
+table saved: results/roc_points.csv  (+ vfl copy)
+figure saved: figures/01_roc_curves.png
+figure saved: figures/02_model_comparison_auc.png
+table saved: results/permutation_importance.csv  (+ vfl copy)
+figure saved: figures/03_permutation_importance.png
+figure saved: figures/04_confusion_matrix_best.png
+table saved: results/confusion_matrix_best.csv
+finished in 555.6s

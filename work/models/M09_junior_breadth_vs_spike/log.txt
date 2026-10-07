@@ -1,0 +1,25 @@
+M09 junior_breadth_vs_spike - run 2026-10-07 17:34 - seed 42
+table saved: results/single_measure_auc.csv  (+ vfl copy)
+                    measure   auc          direction  auc_either_direction
+        Average of 5 skills 0.917 higher = high hike                 0.917
+              Weakest skill 0.852 higher = high hike                 0.852
+            Strongest skill 0.588 higher = high hike                 0.588
+      Gap strongest-weakest 0.189  lower = high hike                 0.811
+Unevenness (sd of 5 skills) 0.200  lower = high hike                 0.800
+table saved: results/nested_tests_vs_average.csv  (+ vfl copy)
+           added_to_average  or_per_sd  p_value  lr_stat   lr_p
+              Weakest skill     1.1782   0.7004   0.1477 0.7008
+            Strongest skill     0.7219   0.7005   0.1456 0.7028
+      Gap strongest-weakest     0.8445   0.6641   0.1881 0.6645
+Unevenness (sd of 5 skills)     0.7613   0.4472   0.5766 0.4477
+figure saved: figures/01_breadth_vs_spike_auc.png
+table saved: results/hike_rate_by_level_and_shape.csv  (+ vfl copy)
+ average_level    profile_shape  high_hike_rate  people
+ Lower average Balanced profile           0.125       8
+ Lower average    Spiky profile           0.077      39
+Middle average Balanced profile           0.720      25
+Middle average    Spiky profile           0.517      29
+   Top average Balanced profile           0.947      38
+   Top average    Spiky profile             NaN       0
+figure saved: figures/02_hike_rate_by_level_and_shape.png
+finished in 0.2s

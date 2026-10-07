@@ -1,0 +1,3 @@
+model,cv_r2_mean,cv_r2_sd
+Linear regression (log salary),0.5879644175826445,0.025883818569667937
+Random forest (tuned),0.5952830100388488,0.028468078140913258

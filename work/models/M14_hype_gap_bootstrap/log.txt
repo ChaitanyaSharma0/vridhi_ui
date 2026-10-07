@@ -1,0 +1,13 @@
+M14 hype_gap_bootstrap - run 2026-10-07 17:24 - seed 42
+bootstrap: Dashboards & storytelling effect > Coding effect in 90.5% of 2000 resamples
+bootstrap: Maths & statistics effect > Coding effect in 83.3% of 2000 resamples
+table saved: results/hype_gap.csv  (+ vfl copy)
+               skill_area  demand_share  demand_ci_low  demand_ci_high  effect_size_d  d_ci_low  d_ci_high  demand_rank  reward_rank                            quadrant  p_beats_coding
+                 Big data         0.163          0.153           0.173          0.224    -0.128      0.566            4            5                           Uncertain             NaN
+       Maths & statistics         0.158          0.147           0.168          1.045     0.820      1.265            5            2 Hidden edge: rewarded, rarely asked           0.833
+                   Coding         0.428          0.414           0.441          0.886     0.588      1.174            1            3        Core: asked for and rewarded             NaN
+    AI & machine learning         0.195          0.184           0.206          0.807     0.567      1.048            2            4 Hidden edge: rewarded, rarely asked             NaN
+Dashboards & storytelling         0.178          0.168           0.189          1.106     0.858      1.351            3            1 Hidden edge: rewarded, rarely asked           0.906
+figure saved: figures/01_hype_gap_map.png
+figure saved: figures/02_rank_flip.png
+finished in 0.5s

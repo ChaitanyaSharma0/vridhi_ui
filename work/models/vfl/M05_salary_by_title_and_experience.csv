@@ -1,0 +1,40 @@
+job_title,exp_band,median,size
+Business Analyst,0-1,6.9,88
+Business Analyst,2-3,9.5,85
+Business Analyst,4-5,12.5,13
+Data Analyst,0-1,4.8,161
+Data Analyst,2-3,7.9,23
+Data Architect,10+,25.5,26
+Data Architect,2-3,11.2,1
+Data Architect,4-5,12.5,3
+Data Architect,6-9,24.25,20
+Data Engineer,0-1,9.6,104
+Data Engineer,2-3,12.850000000000001,72
+Data Engineer,4-5,18.0,10
+Data Engineer,6-9,6.9,1
+Data Scientist,0-1,10.7,81
+Data Scientist,2-3,14.1,101
+Data Scientist,4-5,20.9,3
+Machine Learning Engineer,0-1,6.199999999999999,36
+Machine Learning Engineer,2-3,9.600000000000001,16
+Machine Learning Engineer,4-5,14.100000000000001,4
+Machine Learning Engineer,6-9,24.8,1
+Senior Business Analyst,0-1,8.6,11
+Senior Business Analyst,10+,28.0,1
+Senior Business Analyst,2-3,11.55,68
+Senior Business Analyst,4-5,12.7,69
+Senior Business Analyst,6-9,17.5,38
+Senior Data Analyst,0-1,7.0,27
+Senior Data Analyst,2-3,8.0,108
+Senior Data Analyst,4-5,10.3,45
+Senior Data Analyst,6-9,14.3,7
+Senior Data Engineer,0-1,11.8,3
+Senior Data Engineer,10+,25.9,1
+Senior Data Engineer,2-3,15.7,43
+Senior Data Engineer,4-5,16.9,93
+Senior Data Engineer,6-9,22.2,43
+Senior Data Scientist,0-1,18.0,7
+Senior Data Scientist,10+,29.0,1
+Senior Data Scientist,2-3,18.9,71
+Senior Data Scientist,4-5,21.45,76
+Senior Data Scientist,6-9,26.7,29

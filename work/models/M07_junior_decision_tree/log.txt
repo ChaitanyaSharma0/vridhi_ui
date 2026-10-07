@@ -1,0 +1,32 @@
+M07 junior_decision_tree - run 2026-10-07 17:24 - seed 42
+Decision tree: nested CV AUC 0.814 +/- 0.065 over 50 outer folds; acc 0.766; best params on full data {'criterion': 'gini', 'max_depth': 4, 'min_samples_leaf': 5}
+figure saved: figures/01_decision_tree.png
+tree rules:
+|--- Dashboards & storytelling <= 4.15
+|   |--- Maths & statistics <= 4.60
+|   |   |--- weights: [26.00, 0.00] class: 0
+|   |--- Maths & statistics >  4.60
+|   |   |--- Dashboards & storytelling <= 2.65
+|   |   |   |--- weights: [3.00, 2.00] class: 0
+|   |   |--- Dashboards & storytelling >  2.65
+|   |   |   |--- Maths & statistics <= 4.95
+|   |   |   |   |--- weights: [4.00, 1.00] class: 0
+|   |   |   |--- Maths & statistics >  4.95
+|   |   |   |   |--- weights: [5.00, 0.00] class: 0
+|--- Dashboards & storytelling >  4.15
+|   |--- Maths & statistics <= 3.55
+|   |   |--- weights: [9.00, 0.00] class: 0
+|   |--- Maths & statistics >  3.55
+|   |   |--- Coding <= 4.65
+|   |   |   |--- Dashboards & storytelling <= 4.85
+|   |   |   |   |--- weights: [7.00, 5.00] class: 0
+|   |   |   |--- Dashboards & storytelling >  4.85
+|   |   |   |   |--- weights: [6.00, 14.00] class: 1
+|   |   |--- Coding >  4.65
+|   |   |   |--- Big data <= 3.15
+|   |   |   |   |--- weights: [4.00, 10.00] class: 1
+|   |   |   |--- Big data >  3.15
+|   |   |   |   |--- weights: [2.00, 41.00] class: 1
+
+table saved: results/leaf_summary.csv  (+ vfl copy)
+finished in 611.9s

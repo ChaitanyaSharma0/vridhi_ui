@@ -1,0 +1,7 @@
+salary_band_id,band_code,band_label,low_lpa,high_lpa
+1,0to3,0-3 LPA,0,3
+2,3to6,3-6 LPA,3,6
+3,6to10,6-10 LPA,6,10
+4,10to15,10-15 LPA,10,15
+5,15to25,15-25 LPA,15,25
+6,25to50,25-50 LPA,25,50

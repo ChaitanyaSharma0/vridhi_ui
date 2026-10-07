@@ -1,0 +1,36 @@
+M02 skill_pairs_association_rules - run 2026-10-07 17:22 - seed 42
+transactions 5127; generic tokens excluded: ['analysis', 'analyst', 'analytical', 'analytical skills', 'analytics', 'business', 'business analysis', 'data', 'data analysis', 'data analyst', 'data analytics', 'it', 'learning', 'management', 'reporting', 'research']; items with support >= 1.5%: 55
+table saved: results/skill_pair_rules_all.csv
+table saved: results/top_25_skill_pairs_by_lift.csv  (+ vfl copy)
+             skill_a                     skill_b  together  support  conf_a_to_b  conf_b_to_a   lift
+    business process                 outsourcing        64    0.012        0.557        0.577 25.705
+               scala                       spark        78    0.015        0.729        0.332 15.904
+                hive                       nosql        54    0.011        0.307        0.519 15.126
+       deep learning natural language processing        61    0.012        0.430        0.401 14.490
+              hadoop                        hive       131    0.026        0.489        0.744 14.239
+                hive                       spark       113    0.022        0.642        0.481 14.008
+               nosql                       spark        57    0.011        0.548        0.243 11.957
+              hadoop                       spark       142    0.028        0.530        0.604 11.560
+                 c++                        java        59    0.012        0.522        0.218  9.878
+              hadoop                       scala        55    0.011        0.205        0.514  9.833
+                java                       scala        53    0.010        0.196        0.495  9.371
+               excel                         vba        58    0.011        0.149        0.699  9.234
+             banking                      credit        59    0.012        0.292        0.328  8.319
+            big data                       spark       113    0.022        0.380        0.481  8.301
+            big data                      hadoop       115    0.022        0.387        0.429  7.407
+            big data                        hive        68    0.013        0.229        0.386  6.670
+    machine learning natural language processing       118    0.023        0.197        0.776  6.645
+       deep learning            machine learning       108    0.021        0.761        0.180  6.510
+                java                       spark        80    0.016        0.295        0.340  6.440
+                hive                        java        59    0.012        0.335        0.218  6.342
+              hadoop                        java        88    0.017        0.328        0.325  6.212
+    machine learning                      python       340    0.066        0.568        0.530  4.533
+                   r       statistical modelling        64    0.012        0.111        0.504  4.486
+predictive modelling                         sas        83    0.016        0.553        0.131  4.475
+predictive analytics                           r        63    0.012        0.500        0.109  4.451
+figure saved: figures/01_top_skill_pairs_lift.png
+figure saved: figures/02_skill_network.png
+table saved: results/network_edges.csv  (+ vfl copy)
+table saved: results/skill_area_cooccurrence_lift.csv  (+ vfl copy)
+figure saved: figures/03_skill_area_cooccurrence.png
+finished in 0.6s

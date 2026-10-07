@@ -1,0 +1,51 @@
+M05 salary_regression_ds_jobs - run 2026-10-07 17:00 - seed 42
+n = 1590 company x title rows (placeholder / implausible rows excluded: 12)
+                              OLS Regression Results                              
+==================================================================================
+Dep. Variable:     np.log(avg_salary_lpa)   R-squared:                       0.596
+Model:                                OLS   Adj. R-squared:                  0.592
+Method:                     Least Squares   F-statistic:                     170.3
+Date:                    Wed, 07 Oct 2026   Prob (F-statistic):          7.46e-289
+Time:                            17:00:40   Log-Likelihood:                -753.90
+No. Observations:                    1590   AIC:                             1536.
+Df Residuals:                        1576   BIC:                             1611.
+Df Model:                              13                                         
+Covariance Type:                      HC3                                         
+=======================================================================================================================================================
+                                                                                          coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                               1.4013      0.039     35.748      0.000       1.324       1.478
+C(job_title, Treatment('Data Analyst'))[T.Business Analyst]                             0.4013      0.045      8.905      0.000       0.313       0.490
+C(job_title, Treatment('Data Analyst'))[T.Data Architect]                               0.5783      0.087      6.618      0.000       0.407       0.750
+C(job_title, Treatment('Data Analyst'))[T.Data Engineer]                                0.6947      0.048     14.447      0.000       0.600       0.789
+C(job_title, Treatment('Data Analyst'))[T.Data Scientist]                               0.8607      0.045     19.056      0.000       0.772       0.949
+C(job_title, Treatment('Data Analyst'))[T.Machine Learning Engineer]                    0.5415      0.071      7.602      0.000       0.402       0.681
+C(job_title, Treatment('Data Analyst'))[T.Senior Business Analyst]                      0.5498      0.050     10.999      0.000       0.452       0.648
+C(job_title, Treatment('Data Analyst'))[T.Senior Data Analyst]                          0.3257      0.053      6.201      0.000       0.223       0.429
+C(job_title, Treatment('Data Analyst'))[T.Senior Data Engineer]                         0.8794      0.051     17.289      0.000       0.780       0.979
+C(job_title, Treatment('Data Analyst'))[T.Senior Data Scientist]                        1.1089      0.049     22.563      0.000       1.013       1.205
+C(company_scale, Treatment('Large (>100)'))[T.Mid (21-100)]                            -0.1334      0.024     -5.639      0.000      -0.180      -0.087
+C(company_scale, Treatment('Large (>100)'))[T.Small (<=20 openings)]                   -0.1783      0.034     -5.233      0.000      -0.245      -0.111
+C(company_type, Treatment('IT services / consulting'))[T.Product / captive / other]     0.1935      0.024      8.151      0.000       0.147       0.240
+min_experience                                                                          0.1126      0.007     16.232      0.000       0.099       0.126
+==============================================================================
+Omnibus:                       35.238   Durbin-Watson:                   1.941
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               59.086
+Skew:                          -0.178   Prob(JB):                     1.48e-13
+Kurtosis:                       3.874   Cond. No.                         45.8
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+table saved: results/salary_effects_pct.csv  (+ vfl copy)
+figure saved: figures/01_salary_effects.png
+table saved: results/cv_r2_comparison.csv  (+ vfl copy)
+                         model  cv_r2_mean  cv_r2_sd
+Linear regression (log salary)      0.5880    0.0259
+         Random forest (tuned)      0.5953    0.0285
+figure saved: figures/02_salary_by_title.png
+table saved: results/salary_by_title_and_experience.csv  (+ vfl copy)
+table saved: results/pay_spread_by_title.csv  (+ vfl copy)
+table saved: results/pay_spread_by_company_scale.csv  (+ vfl copy)
+figure saved: figures/03_pay_spread.png
+finished in 62.5s

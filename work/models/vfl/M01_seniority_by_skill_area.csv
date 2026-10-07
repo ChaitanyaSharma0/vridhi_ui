@@ -1,0 +1,26 @@
+seniority,skill_area,share
+Entry,Big data,0.024691358024691357
+Mid,Big data,0.17052122885743873
+Senior,Big data,0.12751677852348994
+Manager / Lead,Big data,0.2015065913370998
+Leadership,Big data,0.08771929824561403
+Entry,Maths & statistics,0.08641975308641975
+Mid,Maths & statistics,0.14325163962720056
+Senior,Maths & statistics,0.1261744966442953
+Manager / Lead,Maths & statistics,0.2184557438794727
+Leadership,Maths & statistics,0.17543859649122806
+Entry,Coding,0.2222222222222222
+Mid,Coding,0.4307904729030031
+Senior,Coding,0.41073825503355704
+Manager / Lead,Coding,0.4425612052730697
+Leadership,Coding,0.4415204678362573
+Entry,AI & machine learning,0.1111111111111111
+Mid,AI & machine learning,0.1919226786330687
+Senior,AI & machine learning,0.22281879194630871
+Manager / Lead,AI & machine learning,0.1864406779661017
+Leadership,AI & machine learning,0.20760233918128654
+Entry,Dashboards & storytelling,0.07407407407407407
+Mid,Dashboards & storytelling,0.18260269244045566
+Senior,Dashboards & storytelling,0.1865771812080537
+Manager / Lead,Dashboards & storytelling,0.19303201506591336
+Leadership,Dashboards & storytelling,0.1023391812865497

@@ -1,0 +1,167 @@
+[M01] M01 demand_profile - run 2026-10-07 16:53 - seed 42
+[M01] core analytics postings: 5127
+[M01] table saved: results/skill_area_demand.csv  (+ vfl copy)
+[M01]                skill_area  postings  share  ci_low  ci_high
+                   Coding      2193 0.4277  0.4143   0.4413
+    AI & machine learning      1000 0.1950  0.1844   0.2061
+Dashboards & storytelling       914 0.1783  0.1680   0.1890
+                 Big data       835 0.1629  0.1530   0.1732
+       Maths & statistics       808 0.1576  0.1479   0.1678
+[M01] figure saved: figures/01_skill_area_demand.png
+[M01] table saved: results/role_by_skill_area.csv  (+ vfl copy)
+[M01] figure saved: figures/02_role_by_skill_area_heatmap.png
+[M01] table saved: results/top_25_skills.csv  (+ vfl copy)
+[M01] figure saved: figures/03_top_25_skills.png
+[M01] table saved: results/tool_demand.csv  (+ vfl copy)
+[M01]             tool  share
+             sql  0.195
+             sas  0.137
+          python  0.127
+machine learning  0.118
+               r  0.113
+           excel  0.083
+      statistics  0.082
+            java  0.059
+          hadoop  0.053
+           spark  0.047
+         tableau  0.038
+   deep learning  0.028
+        power bi  0.016
+             aws  0.004
+[M01] table saved: results/seniority_by_skill_area.csv  (+ vfl copy)
+[M01] finished in 1.5s
+[M02] M02 skill_pairs_association_rules - run 2026-10-07 16:53 - seed 42
+[M02] transactions 5127; generic tokens excluded: ['analysis', 'analyst', 'analytical', 'analytical skills', 'analytics', 'business', 'business analysis', 'data', 'data analysis', 'data analyst', 'data analytics', 'it', 'management', 'reporting', 'research']; items with support >= 1.5%: 56
+[M02] table saved: results/skill_pair_rules_all.csv
+[M02] table saved: results/top_25_skill_pairs_by_lift.csv  (+ vfl copy)
+[M02]              skill_a                     skill_b  together  support  conf_a_to_b  conf_b_to_a   lift
+    business process                 outsourcing        64    0.012        0.557        0.577 25.705
+               scala                       spark        78    0.015        0.729        0.332 15.904
+                hive                       nosql        54    0.011        0.307        0.519 15.126
+       deep learning natural language processing        61    0.012        0.430        0.401 14.490
+              hadoop                        hive       131    0.026        0.489        0.744 14.239
+                hive                       spark       113    0.022        0.642        0.481 14.008
+               nosql                       spark        57    0.011        0.548        0.243 11.957
+              hadoop                       spark       142    0.028        0.530        0.604 11.560
+                 c++                        java        59    0.012        0.522        0.218  9.878
+              hadoop                       scala        55    0.011        0.205        0.514  9.833
+                java                       scala        53    0.010        0.196        0.495  9.371
+               excel                         vba        58    0.011        0.149        0.699  9.234
+             banking                      credit        59    0.012        0.292        0.328  8.319
+            big data                       spark       113    0.022        0.380        0.481  8.301
+            learning            machine learning       120    0.023        0.923        0.200  7.901
+            big data                      hadoop       115    0.022        0.387        0.429  7.407
+            big data                        hive        68    0.013        0.229        0.386  6.670
+    machine learning natural language processing       118    0.023        0.197        0.776  6.645
+       deep learning            machine learning       108    0.021        0.761        0.180  6.510
+                java                       spark        80    0.016        0.295        0.340  6.440
+                hive                        java        59    0.012        0.335        0.218  6.342
+              hadoop                        java        88    0.017        0.328        0.325  6.212
+    machine learning                      python       340    0.066        0.568        0.530  4.533
+                   r       statistical modelling        64    0.012        0.111        0.504  4.486
+predictive modelling                         sas        83    0.016        0.553        0.131  4.475
+[M02] figure saved: figures/01_top_skill_pairs_lift.png
+[M02] figure saved: figures/02_skill_network.png
+[M02] table saved: results/network_edges.csv  (+ vfl copy)
+[M02] table saved: results/skill_area_cooccurrence_lift.csv  (+ vfl copy)
+[M02] figure saved: figures/03_skill_area_cooccurrence.png
+[M02] finished in 2.2s
+[M03] M03 salary_band_ordinal_regression - run 2026-10-07 16:53 - seed 42
+[M03] n = 5122; reference role = Data Analyst / Analytics; reference city = Tier 1 metro; outcome = 6 ordered salary bands
+[M03] converged: True; log-likelihood -7235.9; null -8708.8; pseudo R2 (McFadden) 0.169
+[M03] table saved: results/odds_ratios.csv  (+ vfl copy)
+[M03]                                factor    coef  odds_ratio  or_ci_low  or_ci_high  p_value
+        Experience (years, mid-point)  0.4425      1.5566     1.5260      1.5877   0.0000
+               Role: Business Analyst  0.3388      1.4032     1.1835      1.6638   0.0001
+       Role: Data Scientist / ML / AI  0.6095      1.8396     1.4833      2.2814   0.0000
+       Role: Data Engineer / Big Data  0.0646      1.0667     0.8585      1.3254   0.5598
+Role: Risk / Credit / Quant Analytics  0.7444      2.1051     1.7419      2.5441   0.0000
+    Role: Statistical Modelling / SAS  0.6656      1.9457     1.5961      2.3720   0.0000
+           Role: BI / Reporting / MIS -0.3202      0.7260     0.5837      0.9030   0.0040
+     Role: Research / Market Research  0.2392      1.2703     1.0034      1.6081   0.0468
+      Role: Marketing / Web Analytics  0.1746      1.1907     0.8511      1.6660   0.3083
+                       City: Tier 2/3 -1.1872      0.3051     0.2387      0.3900   0.0000
+                    City: Unspecified  1.2435      3.4678     2.1217      5.6680   0.0000
+                    Asks for Big data  0.2164      1.2416     1.0408      1.4811   0.0162
+          Asks for Maths & statistics  0.2247      1.2520     1.0774      1.4548   0.0034
+                      Asks for Coding  0.3587      1.4315     1.2708      1.6125   0.0000
+       Asks for AI & machine learning  0.2839      1.3284     1.1164      1.5806   0.0014
+   Asks for Dashboards & storytelling -0.2343      0.7911     0.6875      0.9104   0.0011
+[M03] figure saved: figures/01_odds_ratios_forest.png
+[M03] table saved: results/predicted_pay_by_experience.csv  (+ vfl copy)
+[M03] figure saved: figures/02_predicted_pay_by_experience.png
+[M03] finished in 8.0s
+[M04] M04 salary_band_gradient_boosting - run 2026-10-07 16:54 - seed 42
+[M04] Experience only: nested-CV exact 0.359, within-1 0.794, QWK 0.579
+[M04] Experience + role + seniority + city: nested-CV exact 0.384, within-1 0.804, QWK 0.618
+[M04] Experience + role + seniority + city + skills: nested-CV exact 0.379, within-1 0.809, QWK 0.624
+[M04] tuned params (full set, refit on all data): {'min_samples_leaf': 50, 'max_leaf_nodes': 15, 'max_iter': 200, 'max_depth': 3, 'learning_rate': 0.03, 'l2_regularization': 5.0}
+[M04] Skills only: nested-CV exact 0.255, within-1 0.672, QWK 0.226
+[M04] table saved: results/model_comparison.csv  (+ vfl copy)
+[M04] figure saved: figures/01_model_comparison.png
+[M04] table saved: results/grouped_permutation_importance.csv  (+ vfl copy)
+[M04]                  factor_group  importance_drop_in_kappa     sd
+                   Experience                    0.4966 0.0238
+Skills (areas, tools, counts)                    0.0479 0.0084
+                  Role family                    0.0187 0.0057
+                    Seniority                    0.0115 0.0053
+                    City tier                    0.0088 0.0041
+[M04] figure saved: figures/02_grouped_importance.png
+[M04] finished in 305.0s
+[M05] M05 salary_regression_ds_jobs - run 2026-10-07 16:59 - seed 42
+[M05] n = 1590 company x title rows (placeholder / implausible rows excluded: 12)
+[M05]                               OLS Regression Results                              
+==================================================================================
+Dep. Variable:     np.log(avg_salary_lpa)   R-squared:                       0.596
+Model:                                OLS   Adj. R-squared:                  0.592
+Method:                     Least Squares   F-statistic:                     170.3
+Date:                    Wed, 07 Oct 2026   Prob (F-statistic):          7.46e-289
+Time:                            16:59:07   Log-Likelihood:                -753.90
+No. Observations:                    1590   AIC:                             1536.
+Df Residuals:                        1576   BIC:                             1611.
+Df Model:                              13                                         
+Covariance Type:                      HC3                                         
+=======================================================================================================================================================
+                                                                                          coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                               1.4013      0.039     35.748      0.000       1.324       1.478
+C(job_title, Treatment('Data Analyst'))[T.Business Analyst]                             0.4013      0.045      8.905      0.000       0.313       0.490
+C(job_title, Treatment('Data Analyst'))[T.Data Architect]                               0.5783      0.087      6.618      0.000       0.407       0.750
+C(job_title, Treatment('Data Analyst'))[T.Data Engineer]                                0.6947      0.048     14.447      0.000       0.600       0.789
+C(job_title, Treatment('Data Analyst'))[T.Data Scientist]                               0.8607      0.045     19.056      0.000       0.772       0.949
+C(job_title, Treatment('Data Analyst'))[T.Machine Learning Engineer]                    0.5415      0.071      7.602      0.000       0.402       0.681
+C(job_title, Treatment('Data Analyst'))[T.Senior Business Analyst]                      0.5498      0.050     10.999      0.000       0.452       0.648
+C(job_title, Treatment('Data Analyst'))[T.Senior Data Analyst]                          0.3257      0.053      6.201      0.000       0.223       0.429
+C(job_title, Treatment('Data Analyst'))[T.Senior Data Engineer]                         0.8794      0.051     17.289      0.000       0.780       0.979
+C(job_title, Treatment('Data Analyst'))[T.Senior Data Scientist]                        1.1089      0.049     22.563      0.000       1.013       1.205
+C(company_scale, Treatment('Large (>100)'))[T.Mid (21-100)]                            -0.1334      0.024     -5.639      0.000      -0.180      -0.087
+C(company_scale, Treatment('Large (>100)'))[T.Small (<=20 openings)]                   -0.1783      0.034     -5.233      0.000      -0.245      -0.111
+C(company_type, Treatment('IT services / consulting'))[T.Product / captive / other]     0.1935      0.024      8.151      0.000       0.147       0.240
+min_experience                                                                          0.1126      0.007     16.232      0.000       0.099       0.126
+==============================================================================
+Omnibus:                       35.238   Durbin-Watson:                   1.941
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               59.086
+Skew:                          -0.178   Prob(JB):                     1.48e-13
+Kurtosis:                       3.874   Cond. No.                         45.8
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[M05] table saved: results/salary_effects_pct.csv  (+ vfl copy)
+[M05] figure saved: figures/01_salary_effects.png
+[M05] table saved: results/cv_r2_comparison.csv  (+ vfl copy)
+[M05]                          model  cv_r2_mean  cv_r2_sd
+Linear regression (log salary)      0.5880    0.0259
+         Random forest (tuned)      0.5953    0.0285
+Traceback (most recent call last):
+  File "C:\Users\Chaitanya Sharma\Desktop\New Vridhi\work\models\run_models.py", line 759, in <module>
+    fn()
+  File "C:\Users\Chaitanya Sharma\Desktop\New Vridhi\work\models\run_models.py", line 393, in m05
+    ax.boxplot([d.loc[d.job_title == t, "avg_salary_lpa"] for t in order], vert=False, labels=order, showfliers=False,
+  File "C:\ALL MY PROJECTS\Vridhi\.venv\Lib\site-packages\matplotlib\_api\deprecation.py", line 477, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ALL MY PROJECTS\Vridhi\.venv\Lib\site-packages\matplotlib\__init__.py", line 1531, in inner
+    return func(
+           ^^^^^
+TypeError: Axes.boxplot() got an unexpected keyword argument 'labels'
